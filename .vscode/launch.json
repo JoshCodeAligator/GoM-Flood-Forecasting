@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Check baseline",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "hydro_pipeline.cli",
+        "args": ["--task", "check-baseline"],
+        "justMyCode": true,
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}/src"
+        },
+        "python": "${workspaceFolder}/.venv/bin/python"
+      }
+    ]
+  }
+  

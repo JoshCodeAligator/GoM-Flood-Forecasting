@@ -1,18 +1,30 @@
 import argparse
 from pathlib import Path
-from .io import load_baseline
-from .visualize import save_simple
+from . import flows, precip, fall_report, basins, outlooks, api_model, scenarios
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--task", choices=["check-baseline"], required=True)
+    p.add_argument("--task", required=True, choices=[
+        "flows", "precip", "fall", "basins", "outlooks", "api", "whatif"
+    ])
     args = p.parse_args()
 
-    if args.task == "check-baseline":
-        df = load_baseline()
-        # Example: quick plot of Red/Emerson baseline value (demonstration)
-        s = df.query("basin=='Red' and station=='Emerson' and metric=='flow'").set_index("asof_date")["value_SI"]
-        save_simple("Red – Emerson baseline flow (SI)", s, Path("reports/figures/red_emerson_baseline.png"))
+    outdir = Path("reports/figures")
+
+    if args.task == "flows":
+        flows.main(outdir)
+    elif args.task == "precip":
+        precip.main(outdir)
+    elif args.task == "fall":
+        fall_report.main(outdir)
+    elif args.task == "basins":
+        basins.main(outdir)
+    elif args.task == "outlooks":
+        outlooks.main(outdir)
+    elif args.task == "api":
+        api_model.main(outdir)
+    elif args.task == "whatif":
+        scenarios.main(outdir)
 
 if __name__ == "__main__":
     main()

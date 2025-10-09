@@ -1,0 +1,22 @@
+date,metric,value_SI,station,unit_SI,source
+2025-09-29,flow,74.5,Emerson,m³/s,emerson-daily-discharge.csv
+2025-09-30,flow,77.2,Emerson,m³/s,emerson-daily-discharge.csv
+2025-10-01,flow,81.1,Emerson,m³/s,emerson-daily-discharge.csv
+2025-10-02,flow,84.6,Emerson,m³/s,emerson-daily-discharge.csv
+2025-10-03,flow,85.2,Emerson,m³/s,emerson-daily-discharge.csv
+2025-10-04,flow,84.4,Emerson,m³/s,emerson-daily-discharge.csv
+2025-10-05,flow,83.8,Emerson,m³/s,emerson-daily-discharge.csv
+2025-10-06,flow,84.8,Emerson,m³/s,api_realtime
+2025-10-07,flow,83.5,Emerson,m³/s,api_realtime
+2025-10-08,flow,80.6,Emerson,m³/s,api_realtime
+2025-10-05,level,228.778,Emerson,m,api_realtime
+2025-10-06,level,228.776,Emerson,m,api_realtime
+2025-10-07,level,228.753,Emerson,m,api_realtime
+2025-10-08,level,228.704,Emerson,m,api_realtime
+2025-09-29,level,223.885,James Ave,m,james-ave-water-level.csv
+2025-09-30,level,223.904,James Ave,m,james-ave-water-level.csv
+2025-10-01,level,223.9,James Ave,m,james-ave-water-level.csv
+2025-10-02,level,223.867,James Ave,m,james-ave-water-level.csv
+2025-10-03,level,223.843,James Ave,m,james-ave-water-level.csv
+2025-10-04,level,223.851,James Ave,m,james-ave-water-level.csv
+2025-10-05,level,223.842,James Ave,m,james-ave-water-level.csv

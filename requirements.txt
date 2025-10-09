@@ -27,3 +27,8 @@ shapely==2.1.2
 six==1.17.0
 tzdata==2025.2
 xarray==2025.9.1
+requests
+fiona
+seaborn
+pyyaml
+tqd

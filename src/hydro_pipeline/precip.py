@@ -252,7 +252,6 @@ def append_precip_timeseries(dfs: Iterable[pd.DataFrame], outfile: Optional[Path
     return out
 
 
-# ---- Convenience CLI entrypoint (optional) ----
 def _discover_maps(folder: Path = MAPS) -> list[Path]:
     exts = (".jpg", ".jpeg", ".png")
     return sorted([p for p in folder.glob("*") if p.suffix.lower() in exts])

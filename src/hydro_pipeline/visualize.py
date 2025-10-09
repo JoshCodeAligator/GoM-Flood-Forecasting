@@ -10,33 +10,64 @@ from pathlib import Path
 from typing import Dict, Optional, Tuple, Union
 
 import matplotlib.pyplot as plt
+import matplotlib.ticker as mticker
+from .io import REPORTS
 import pandas as pd
 
 # -----------------------------------------------------------------------------
 # Internal utils
 # -----------------------------------------------------------------------------
 
-def _ensure_parent(out_path: Optional[Union[str, Path]]) -> None:
+
+def _resolve_out_path(out_path: Optional[Union[str, Path]]) -> Optional[Path]:
     if out_path is None:
-        return
+        return None
     p = Path(out_path)
+    # If caller passed a relative path (e.g., "emerson_flow.png"), save under root reports/figures
+    if not p.is_absolute():
+        p = REPORTS / p
+    return p
+
+
+def _ensure_parent(out_path: Optional[Union[str, Path]]) -> None:
+    p = _resolve_out_path(out_path)
+    if p is None:
+        return
     p.parent.mkdir(parents=True, exist_ok=True)
+
+
+def _infer_unit_label(df_like) -> str:
+    try:
+        col = df_like["unit_SI"]
+        if hasattr(col, "dropna"):
+            v = col.dropna()
+            if len(v):
+                return str(v.iloc[0])
+    except Exception:
+        pass
+    return ""
 
 
 def _finalize(fig: plt.Figure, out_path: Optional[Union[str, Path]]) -> Tuple[plt.Figure, plt.Axes]:
     """Tight layout and optional save, returning (fig, ax)."""
+    p = _resolve_out_path(out_path)
+    # enforce plain (non-scientific) y-axis across all axes
     for ax in fig.axes:
-        ax.set_xlabel(ax.get_xlabel() or "date")
+        ax.set_xlabel(ax.get_xlabel() or "Date")
+        ax.yaxis.set_major_formatter(mticker.ScalarFormatter(useOffset=False))
+        ax.yaxis.get_major_formatter().set_scientific(False)
+        ax.ticklabel_format(style='plain', axis='y')
+    fig.autofmt_xdate()
     plt.tight_layout()
-    if out_path:
-        _ensure_parent(out_path)
-        fig.savefig(out_path, dpi=200)
+    if p:
+        _ensure_parent(p)
+        fig.savefig(p, dpi=200)
     # return first axes for convenience
     return fig, fig.axes[0]
 
 
 # -----------------------------------------------------------------------------
-# Core plots used in Step 1 and later
+# Core plots used
 # -----------------------------------------------------------------------------
 
 def plot_hydrograph(
@@ -44,7 +75,6 @@ def plot_hydrograph(
     station: str,
     metric: str,
     ylabel: Optional[str] = None,
-    freeze_marker: Optional[Dict[str, Union[pd.Timestamp, float]]] = None,
     title: Optional[str] = None,
     out_path: Optional[Union[str, Path]] = None,
 ) -> Tuple[plt.Figure, plt.Axes]:
@@ -55,8 +85,7 @@ def plot_hydrograph(
     df : DataFrame with columns ['station','date','metric','value_SI', 'unit_SI']
     station : station name to filter
     metric : 'flow' or 'level' (or other standardized metric)
-    ylabel : y-axis label; if None, will u\e df['unit_SI'] for that subset
-    freeze_marker : optional dict with keys {'date', 'value_SI'} to annotate Dec 5, 2024 baseline
+    ylabel : y-axis label; if None, will use df['unit_SI'] for that subset
     title : plot title; if None, auto-generated
     out_path : where to save PNG; if None, only returns fig/ax
     """
@@ -66,10 +95,7 @@ def plot_hydrograph(
           .sort_values("date")
           .set_index("date")
     )
-    # Optionally restrict to freeze-up forward
-    if freeze_marker and "date" in freeze_marker:
-        start_date = pd.to_datetime(freeze_marker["date"])
-        sub = sub[sub.index >= start_date]
+    sub.index = pd.to_datetime(sub.index)
     fig, ax = plt.subplots(figsize=(10, 4))
     if sub.empty:
         ax.set_title(title or f"{station} — {metric} (no data)")
@@ -77,19 +103,10 @@ def plot_hydrograph(
 
     sub["value_SI"].plot(ax=ax, label="daily")
 
-    # Baseline marker (freeze-up)
-    if freeze_marker and freeze_marker.get("date") is not None:
-        fm_date = pd.to_datetime(freeze_marker["date"])  # normalize
-        fm_val = freeze_marker.get("value_SI")
-        ax.axvline(fm_date, linestyle="--", alpha=0.5, label="freeze-up")
-        if fm_val is not None:
-            ax.scatter([fm_date], [fm_val], s=25, zorder=3)
-        # Ensure x-axis starts at freeze-up
-        ax.set_xlim(left=fm_date)
-
-    ax.set_ylabel(ylabel or sub.get("unit_SI", pd.Series([""])).iloc[0])
+    ax.set_ylabel(ylabel or _infer_unit_label(sub))
     ax.set_title(title or f"{station} — {metric}")
     ax.legend()
+    ax.grid(True, alpha=0.3)
     return _finalize(fig, out_path)
 
 
@@ -97,8 +114,8 @@ def plot_rolling(
     df: pd.DataFrame,
     station: str,
     metric: str,
+    ylabel: Optional[str] = None,
     win: int = 7,
-    freeze_marker: Optional[Dict[str, Union[pd.Timestamp, float]]] = None,
     title: Optional[str] = None,
     out_path: Optional[Union[str, Path]] = None,
 ) -> Tuple[plt.Figure, plt.Axes]:
@@ -109,10 +126,7 @@ def plot_rolling(
           .sort_values("date")
           .set_index("date")
     )
-    # Optionally restrict to freeze-up forward
-    if freeze_marker and "date" in freeze_marker:
-        start_date = pd.to_datetime(freeze_marker["date"])
-        sub = sub[sub.index >= start_date]
+    sub.index = pd.to_datetime(sub.index)
     fig, ax = plt.subplots(figsize=(10, 4))
     if sub.empty:
         ax.set_title(title or f"{station} — {metric} (no data)")
@@ -121,18 +135,11 @@ def plot_rolling(
     sub["value_SI"].plot(ax=ax, alpha=0.35, label="daily")
     sub["value_SI"].rolling(win, min_periods=1).mean().plot(ax=ax, label=f"{win}-day mean")
 
-    # Baseline marker (freeze-up)
-    if freeze_marker and freeze_marker.get("date") is not None:
-        fm_date = pd.to_datetime(freeze_marker["date"])  # normalize
-        fm_val = freeze_marker.get("value_SI")
-        ax.axvline(fm_date, linestyle="--", alpha=0.5, label="freeze-up")
-        if fm_val is not None:
-            ax.scatter([fm_date], [fm_val], s=25, zorder=3)
-        # Ensure x-axis starts at freeze-up
-        ax.set_xlim(left=fm_date)
-
     ax.set_title(title or f"{station} — {metric} (rolling {win}d)")
+    if ylabel is None:
+        ax.set_ylabel(_infer_unit_label(sub))
     ax.legend()
+    ax.grid(True, alpha=0.3)
     return _finalize(fig, out_path)
 
 
@@ -170,6 +177,7 @@ def plot_bands(
     ax.plot(idx, p50, linestyle="--", label="Official p50")
     ax.set_title(title)
     ax.legend()
+    ax.grid(True, alpha=0.3)
     return _finalize(fig, out_path)
 
 
@@ -187,6 +195,7 @@ def plot_map(
         gdf.plot(ax=ax, markersize=20)
     if title:
         ax.set_title(title)
+    ax.grid(True, alpha=0.2)
     return _finalize(fig, out_path)
 
 
@@ -198,6 +207,7 @@ def simple_bar(data: Union[pd.Series, pd.DataFrame], title: str, out_path: Union
     else:
         data.plot(kind="bar", ax=ax)
     ax.set_title(title)
+    ax.grid(True, axis="y", alpha=0.3)
     return _finalize(fig, out_path)
 
 
@@ -209,7 +219,6 @@ def plot_climatology_band(
     df: pd.DataFrame,
     station: str,
     metric: str,
-    freeze_marker: Optional[Dict[str, Union[pd.Timestamp, float]]] = None,
     title: Optional[str] = None,
     out_path: Optional[Union[str, Path]] = None,
     pct_low: float = 10,
@@ -226,10 +235,6 @@ def plot_climatology_band(
           .sort_values("date")
           .set_index("date")
     )
-    # Optionally restrict to freeze-up forward
-    if freeze_marker and "date" in freeze_marker:
-        start_date = pd.to_datetime(freeze_marker["date"])
-        sub = sub[sub.index >= start_date]
     fig, ax = plt.subplots(figsize=(10, 4))
     if sub.empty:
         ax.set_title(title or f"{station} — {metric} (no data)")
@@ -259,6 +264,7 @@ def plot_climatology_band(
     ax.set_title(title or f"{station} — {metric} climatology")
     ax.set_xlabel("day of year")
     ax.legend()
+    ax.grid(True, alpha=0.3)
     return _finalize(fig, out_path)
 
 
@@ -266,7 +272,6 @@ def plot_anomaly(
     df: pd.DataFrame,
     station: str,
     metric: str,
-    freeze_marker: Optional[Dict[str, Union[pd.Timestamp, float]]] = None,
     title: Optional[str] = None,
     out_path: Optional[Union[str, Path]] = None,
 ) -> Tuple[plt.Figure, plt.Axes]:
@@ -277,10 +282,6 @@ def plot_anomaly(
           .sort_values("date")
           .set_index("date")
     )
-    # Optionally restrict to freeze-up forward
-    if freeze_marker and "date" in freeze_marker:
-        start_date = pd.to_datetime(freeze_marker["date"])
-        sub = sub[sub.index >= start_date]
     fig, ax = plt.subplots(figsize=(10, 3.5))
     if sub.empty:
         ax.set_title(title or f"{station} — {metric} (no data)")
@@ -292,19 +293,10 @@ def plot_anomaly(
     anomaly = s - median_by_doy.reindex(s.index.dayofyear).values
     anomaly.plot(ax=ax, label="anomaly")
 
-    # Baseline marker (freeze-up)
-    if freeze_marker and freeze_marker.get("date") is not None:
-        fm_date = pd.to_datetime(freeze_marker["date"])  # normalize
-        fm_val = freeze_marker.get("value_SI")
-        ax.axvline(fm_date, linestyle="--", alpha=0.5, label="freeze-up")
-        if fm_val is not None:
-            ax.scatter([fm_date], [fm_val], s=25, zorder=3)
-        # Ensure x-axis starts at freeze-up
-        ax.set_xlim(left=fm_date)
-
     ax.axhline(0, linestyle="--", alpha=0.5)
     ax.set_title(title or f"{station} — {metric} anomaly vs climatology")
     ax.legend()
+    ax.grid(True, alpha=0.3)
     return _finalize(fig, out_path)
 
 
@@ -312,7 +304,6 @@ def plot_fdc(
     df: pd.DataFrame,
     station: str,
     metric: str,
-    freeze_marker: Optional[Dict[str, Union[pd.Timestamp, float]]] = None,
     title: Optional[str] = None,
     out_path: Optional[Union[str, Path]] = None,
 ) -> Tuple[plt.Figure, plt.Axes]:
@@ -321,19 +312,6 @@ def plot_fdc(
         df.query("station == @station and metric == @metric")
           .dropna(subset=["value_SI"])  # safety
     )
-    # Optionally restrict to freeze-up forward
-    if freeze_marker and "date" in freeze_marker:
-        start_date = pd.to_datetime(freeze_marker["date"])
-        # sub may not be indexed by date in this function; ensure we filter on a datetime column if present
-        if "date" in sub.columns:
-            sub = sub[sub["date"] >= start_date]
-        else:
-            # if not, try to filter by index assuming it's datetime
-            try:
-                sub = sub.set_index("date")
-                sub = sub[sub.index >= start_date].reset_index()
-            except Exception:
-                pass
     fig, ax = plt.subplots(figsize=(8, 4))
     if sub.empty:
         ax.set_title(title or f"{station} — {metric} (no data)")
@@ -344,19 +322,10 @@ def plot_fdc(
     exceed_pct = (vals.rank(method="first", ascending=True) / (n + 1)) * 100.0
     ax.plot(exceed_pct, vals)
 
-    # Baseline marker (freeze-up)
-    if freeze_marker and freeze_marker.get("date") is not None:
-        fm_date = pd.to_datetime(freeze_marker["date"])  # normalize
-        fm_val = freeze_marker.get("value_SI")
-        ax.axvline(fm_date, linestyle="--", alpha=0.5, label="freeze-up")
-        if fm_val is not None:
-            ax.scatter([fm_date], [fm_val], s=25, zorder=3)
-        # Ensure x-axis starts at freeze-up
-        ax.set_xlim(left=fm_date)
-
     ax.set_xlabel("exceedance probability (%)")
-    ax.set_ylabel(sub.get("unit_SI", pd.Series([""])).iloc[0])
+    ax.set_ylabel(_infer_unit_label(sub))
     ax.set_title(title or f"{station} — {metric} FDC")
     ax.set_xscale("linear")
     # y-axis often benefits from log scale for flows; caller can modify outside if desired
+    ax.grid(True, which="both", alpha=0.3)
     return _finalize(fig, out_path)

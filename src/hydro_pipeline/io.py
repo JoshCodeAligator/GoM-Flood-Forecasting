@@ -7,6 +7,13 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data" 
 REPORTS = ROOT / "reports" / "figures"
 
+
+def reports_path(name: str) -> Path:
+    """Return absolute path under project_root/reports/figures and ensure dirs exist."""
+    p = REPORTS / name
+    p.parent.mkdir(parents=True, exist_ok=True)
+    return p
+
 # CSV Input/Output Methods
 def load_csv(filename, parse_dates=None):
     return pd.read_csv(DATA / filename, parse_dates=parse_dates)

@@ -1,0 +1,318 @@
+/3.2
+(ODB.1
+	FirstRootClassName:	"Legend"
+	Roots:	2
+	Version:	32
+)
+
+(Legend.2
+	SymType:	0x03
+	LegType:	0x08
+	ClassType:	0x03
+	FieldNames:	3
+	Symbols:	4
+	Class:	41
+	Class:	42
+	Class:	43
+	Class:	44
+	StdDevs:	1.00000000000000
+	NullSym:	45
+	NullValues:	54
+	StatValues:	55
+	Precision:	-3
+)
+
+(AVStr.3
+	S:	"Color"
+)
+
+(SymList.4
+	Child:	5
+	Child:	14
+	Child:	23
+	Child:	32
+)
+
+(TxSym.5
+	Color:	6
+	Font:	7
+	BgColor:	12
+	OlColor:	13
+	Size:	12.00000000000000
+)
+
+(TClr.6
+	Green:	0x23d6
+)
+
+(NFont.7
+	Family:	8
+	Name:	9
+	Style:	10
+	CommonFamily:	11
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.8
+	S:	"Arial"
+)
+
+(AVStr.9
+	S:	"Arial"
+)
+
+(AVStr.10
+	S:	"Normal"
+)
+
+(AVStr.11
+	S:	"Helvetica"
+)
+
+(TClr.12
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.13
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TxSym.14
+	Color:	15
+	Font:	16
+	BgColor:	21
+	OlColor:	22
+	Size:	12.00000000000000
+)
+
+(TClr.15
+	Red:	0xd9d
+	Green:	0x81
+	Blue:	0x8200
+)
+
+(NFont.16
+	Family:	17
+	Name:	18
+	Style:	19
+	CommonFamily:	20
+	Italic:	1
+	Serif:	1
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.17
+	S:	"Times New Roman"
+)
+
+(AVStr.18
+	S:	"Times New Roman Italic"
+)
+
+(AVStr.19
+	S:	"Italic"
+)
+
+(AVStr.20
+	S:	"Times"
+)
+
+(TClr.21
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.22
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TxSym.23
+	Color:	24
+	Font:	25
+	BgColor:	30
+	OlColor:	31
+	Size:	12.00000000000000
+)
+
+(TClr.24
+)
+
+(NFont.25
+	Family:	26
+	Name:	27
+	Style:	28
+	CommonFamily:	29
+	Bold:	1
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.26
+	S:	"Arial"
+)
+
+(AVStr.27
+	S:	"Arial Bold"
+)
+
+(AVStr.28
+	S:	"Bold"
+)
+
+(AVStr.29
+	S:	"Helvetica"
+)
+
+(TClr.30
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.31
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TxSym.32
+	Color:	33
+	Font:	34
+	BgColor:	39
+	OlColor:	40
+	Size:	12.00000000000000
+)
+
+(TClr.33
+	Name:	"Transparent"
+)
+
+(NFont.34
+	Family:	35
+	Name:	36
+	Style:	37
+	CommonFamily:	38
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.35
+	S:	"Arial"
+)
+
+(AVStr.36
+	S:	"Arial"
+)
+
+(AVStr.37
+	S:	"Normal"
+)
+
+(AVStr.38
+	S:	"Helvetica"
+)
+
+(TClr.39
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.40
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(LClass.41
+	Label:	"98"
+	MinNum:	98.00000000000000
+	MaxNum:	98.00000000000000
+	Precision:	-3
+)
+
+(LClass.42
+	Label:	"Lakes"
+	MinNum:	106.00000000000000
+	MaxNum:	106.00000000000000
+	Precision:	-3
+)
+
+(LClass.43
+	Label:	"Places"
+	MinNum:	162.00000000000000
+	MaxNum:	162.00000000000000
+	Precision:	-3
+)
+
+(LClass.44
+	IsNoData:	1
+	Label:	"No Data"
+	MaxNum:	-1.00000000000000
+	Precision:	-3
+)
+
+(TxSym.45
+	Color:	46
+	Font:	47
+	BgColor:	52
+	OlColor:	53
+	Size:	12.00000000000000
+)
+
+(TClr.46
+	Name:	"Transparent"
+)
+
+(NFont.47
+	Family:	48
+	Name:	49
+	Style:	50
+	CommonFamily:	51
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.48
+	S:	"Arial"
+)
+
+(AVStr.49
+	S:	"Arial"
+)
+
+(AVStr.50
+	S:	"Normal"
+)
+
+(AVStr.51
+	S:	"Helvetica"
+)
+
+(TClr.52
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.53
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(NameDict.54
+)
+
+(NameDict.55
+)
+

@@ -1,0 +1,14 @@
+                LAND INFORMATION DIVISION
+             MANITOBA 1:500000   5KHYD-PY.TXT
+
+FA02650000                      12   BOUNDARY - INTERNATIONAL            
+FA02700000                     606   BOUNDARY - INTERPROVINCIAL          
+GA24850000                      79   RIVER/STREAM - DOUBLE LINE          
+GA24850005                     210   RIVER - (CLOSE-OFF DOUBLE RIVER)    
+GB15300001                      40   LAKE - MAJOR                        
+GB15300002                     141   LAKE - MEDIUM                       
+GB15300003                   23601   LAKE - MINOR                        
+GE14850000                    2326   ISLAND                              
+GG05800000                       7   COASTLINE                           
+NEAT                             1   MAP NEATLINE                        
+

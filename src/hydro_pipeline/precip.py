@@ -1,17 +1,17 @@
-
-
 from __future__ import annotations
-
+from pathlib import Path
 """
-Step 2 – Precipitation Context helpers.
+Step 2 – Precipitation Context in relation to flood forecasting.
 
 This module provides:
-- load_basins(): read Manitoba basin polygons and ensure CRS=EPSG:4326
-- load_stations(): read a simple stations CSV (lon/lat in WGS84) and return a pandas DataFrame
 - parse_map_date_from_filename(): best-effort date parser from JPEG filenames
 - overlay_precip_map(): qualitative overlay of basins + stations on top of a precipitation JPEG
 - basin_average_precip_from_raster(): (stub) numeric extraction for GeoTIFF/NetCDF rasters
 - append_precip_timeseries(): helper to persist basin-averaged precipitation
+
+Inputs: 
+- load_basins(): read Manitoba basin polygons and ensure CRS=EPSG:4326. Method from io.py.
+- load_stations(): read a simple stations CSV (lon/lat in WGS84) and return a pandas DataFrame. Method from io.py.
 
 Outputs:
 - reports/figures/precip_overlay_<filename>.png
@@ -22,8 +22,6 @@ Notes:
 - For quantitative work, use gridded rasters (GeoTIFF/NetCDF) and implement
   `basin_average_precip_from_raster()` using rasterio/xarray.
 """
-
-from pathlib import Path
 import re
 from typing import Optional, Iterable
 
@@ -31,90 +29,7 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import pandas as pd
 import geopandas as gpd
-
-# ---- Project paths (aligned with io.py conventions) ----
-ROOT = Path(__file__).resolve().parents[2]
-DATA = ROOT / "data"
-PROCESSED = DATA / "processed"
-MAPS = ROOT / "precip-maps"
-RESOURCES = ROOT / "basin-resources"
-REPORTS = ROOT / "reports" / "figures"
-
-# ---- Public API ----
-
-
-def load_basins(path: Optional[Path] = None) -> gpd.GeoDataFrame:
-    """
-    Load Manitoba basins/watersheds polygons.
-
-    Parameters
-    ----------
-    path : Optional[Path]
-        Path to a vector dataset (Shapefile directory, .shp, or .geojson).
-        If None, tries common defaults under basin-resources/shapefiles.
-
-    Returns
-    -------
-    GeoDataFrame in EPSG:4326 (lon/lat)
-    """
-    if path is None:
-        # Try common names; adjust as needed for your resource filenames.
-        candidates = [
-            RESOURCES / "shapefiles" / "manitoba_basins.shp",
-            RESOURCES / "shapefiles" / "mb_basins.shp",
-            RESOURCES / "shapefiles" / "manitoba_basins.geojson",
-            RESOURCES / "manitoba_basins.geojson",
-        ]
-        path = next((p for p in candidates if p.exists()), None)
-        if path is None:
-            raise FileNotFoundError(
-                "Could not find a basins shapefile/geojson under basin-resources/. "
-                "Place it under basin-resources/shapefiles/ and point load_basins() to it."
-            )
-
-    gdf = gpd.read_file(path)
-    if gdf.empty:
-        raise ValueError(f"Basins file loaded but contains no features: {path}")
-
-    # Ensure lon/lat for plotting with imshow extent
-    if gdf.crs is None:
-        # Assume WGS84 if missing; change if your data uses a projected CRS.
-        gdf.set_crs(epsg=4326, inplace=True)
-    else:
-        gdf = gdf.to_crs(epsg=4326)
-
-    return gdf
-
-
-def load_stations(path: Optional[Path] = None) -> pd.DataFrame:
-    """
-    Load a minimal stations CSV with columns:
-        station, type, lon, lat, basin (optional)
-
-    If no path is provided, tries basin-resources/stations.csv.
-
-    Returns
-    -------
-    pandas.DataFrame
-    """
-    if path is None:
-        path = RESOURCES / "stations.csv"
-    if not path.exists():
-        # Provide a tiny default with Red River test points so plotting doesn't fail.
-        df = pd.DataFrame(
-            [
-                {"station": "Emerson", "type": "flow", "lon": -97.21, "lat": 49.00, "basin": "Red"},
-                {"station": "James Ave", "type": "level", "lon": -97.14, "lat": 49.90, "basin": "Red"},
-            ]
-        )
-        return df
-
-    df = pd.read_csv(path)
-    required = {"station", "lon", "lat"}
-    missing = required - set(df.columns)
-    if missing:
-        raise ValueError(f"stations.csv missing required columns: {missing}")
-    return df
+from .io import DATA, MAPS, RESOURCES, REPORTS, PROCESSED, reports_path, load_basins, load_stations
 
 
 def parse_map_date_from_filename(p: Path) -> Optional[pd.Timestamp]:
@@ -177,20 +92,22 @@ def overlay_precip_map(
     fig, ax = plt.subplots(figsize=(10, 8))
 
     # Show JPEG stretched to basin extent
-    ax.imshow(img, extent=[minx, maxx, miny, maxy], origin="upper", alpha=alpha_img)
+    ax.imshow(img, extent=[minx, maxx, miny, maxy], origin="lower", alpha=alpha_img)
 
     # Plot basins
     basins_gdf.boundary.plot(ax=ax, color=basin_edge, linewidth=basin_linewidth)
 
-    # Plot stations
-    if not stations_df.empty:
-        ax.scatter(
-            stations_df["lon"], stations_df["lat"],
-            s=25, c="tab:red", marker="o", label="Stations", zorder=3
-        )
-        # Text labels with slight offset
-        for _, r in stations_df.iterrows():
-            ax.text(r["lon"] + 0.05, r["lat"] + 0.05, r["station"], fontsize=8, color="tab:red")
+    # Plot stations (drop rows without coordinates)
+    if isinstance(stations_df, pd.DataFrame) and not stations_df.empty:
+        s = stations_df.dropna(subset=["lon", "lat"])
+        if not s.empty:
+            ax.scatter(
+                s["lon"], s["lat"],
+                s=25, c="tab:red", marker="o", label="Stations", zorder=3
+            )
+            # Text labels with slight offset
+            for _, r in s.iterrows():
+                ax.text(float(r["lon"]) + 0.05, float(r["lat"]) + 0.05, str(r["station"]), fontsize=8, color="tab:red")
 
     # Title & cosmetics
     map_date = parse_map_date_from_filename(map_path)
@@ -257,9 +174,11 @@ def _discover_maps(folder: Path = MAPS) -> list[Path]:
     return sorted([p for p in folder.glob("*") if p.suffix.lower() in exts])
 
 
-def run_precip_overlay():
+# Executes Precipitation Overlay for all discovered JPEGs
+def main(outdir=None):
     basins = load_basins()
-    stations = load_stations()
+    stations_ret = load_stations()
+    stations = stations_ret[0] if isinstance(stations_ret, tuple) else stations_ret
     maps = _discover_maps(MAPS)
     if not maps:
         print(f"[precip] No JPEG maps found under: {MAPS}")
@@ -271,4 +190,4 @@ def run_precip_overlay():
 
 
 if __name__ == "__main__":
-    run_precip_overlay()
+    main()

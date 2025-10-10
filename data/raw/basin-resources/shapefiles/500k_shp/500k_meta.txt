@@ -1,0 +1,245 @@
+Identification_Information:
+	Citation:
+		Citation_Information:
+			Originator: Manitoba Department of Natural Resources, Land Information Centre
+			Publication_Date: 19960000
+			Publication_Time: Unknown
+			Title: Manitoba Topographic Base Map, Scale 1 to 500,000
+			Edition: 1996
+			Geospatial_Data_Presentation_Form: map
+			Series_Information:
+			Publication_Information:
+			Other_Citation_Details:
+				Although the web site does not yet provide a means to
+				access land based information directly, the site does
+				contain some relevant information and provides a means to
+				contact the agency.
+			Online_Linkage: http://www.gov.mb.ca/natres
+			Online_Linkage: http://www.land-nav.com
+			Larger_Work_Citation:
+				Citation_Information:
+					Series_Information:
+					Publication_Information:
+	Description:
+		Abstract:
+			The 1 to 500,000 scale Topographic Base Map series are
+			digital maps that show lakes, rivers, streams, railway lines,
+			city limits, towns and villages in Manitoba. Additional
+			features such as township, range, first nations lands, parks,
+			and longitude / latitude lines are also shown.
+		Purpose:
+			To provide the public with medium resolution topographic
+			base map coverage of Manitoba.
+	Time_Period_of_Content:
+		Time_Period_Information:
+			Single_Date/Time:
+				Calendar_Date: 19960000
+			Range_of_Dates/Times:
+			Multiple_Dates/Times:
+		Currentness_Reference: Publication Date
+	Status:
+		Progress: Complete
+		Maintenance_and_Update_Frequency: As needed
+	Spatial_Domain:
+		Bounding_Coordinates:
+			West_Bounding_Coordinate: -102.004000
+			East_Bounding_Coordinate: -089.000800
+			North_Bounding_Coordinate: +60.000300
+			South_Bounding_Coordinate: +49.000000
+	Keywords:
+		Theme:
+			Theme_Keyword_Thesaurus: None
+			Theme_Keyword: Topgraphy
+			Theme_Keyword: Base Map
+			Theme_Keyword: Topographic
+		Place:
+			Place_Keyword_Thesaurus: None
+			Place_Keyword: Manitoba
+			Place_Keyword: Red River Basin
+		Stratum:
+		Temporal:
+	Access_Constraints: None
+	Use_Constraints:
+		The data represent the results of data collection /
+		processing for a specific activity and indicates the general
+		existing conditions. As such, it is only valid for its intended
+		use, content, time, and accuracy specifications. The user
+		is responsible for the results of any application of the data
+		for other than its intended purpose.
+	Point_of_Contact:
+		Contact_Information:
+			Contact_Person_Primary:
+			Contact_Organization_Primary:
+				Contact_Organization: Manitoba Department of Natural Resources, Land Information Centre
+				Contact_Person: Rod Lehmann
+			Contact_Position: Chief, Digital Mapping Applications
+			Contact_Address:
+				Address_Type: mailing and physical address
+				Address: 1007 Century Street
+				City: Winnipeg
+				State_or_Province: Manitoba
+				Postal_Code: R3H 0W4
+				Country: Canada
+			Contact_Voice_Telephone: (204) 945-6599
+			Contact_Facsimile_Telephone: (204) 945-1365
+			Contact_Electronic_Mail_Address: rlehmann@nr.gov.mb.ca
+	Security_Information:
+	Native_Data_Set_Environment:
+		Operating System is Windows NT.
+		Applications are based on the CARIS Geographic
+		Information System.
+		Data is available in Caris / DXF formats.
+	Cross_Reference:
+		Citation_Information:
+			Series_Information:
+			Publication_Information:
+Data_Quality_Information:
+	Attribute_Accuracy:
+	Positional_Accuracy:
+		Horizontal_Positional_Accuracy:
+		Vertical_Positional_Accuracy:
+	Lineage:
+		Source_Information:
+			Source_Citation:
+				Citation_Information:
+					Series_Information:
+					Publication_Information:
+					Larger_Work_Citation:
+						Citation_Information:
+							Series_Information:
+							Publication_Information:
+			Source_Time_Period_of_Content:
+				Time_Period_Information:
+					Single_Date/Time:
+					Range_of_Dates/Times:
+					Multiple_Dates/Times:
+		Process_Step:
+			Process_Contact:
+				Contact_Information:
+					Contact_Person_Primary:
+					Contact_Organization_Primary:
+					Contact_Address:
+Spatial_Data_Organization_Information:
+	Spatial_Reference_Information:
+		Horizontal_Coordinate_System_Definition:
+			Planar:
+				Map_Projection:
+					Map_Projection_Name: Other Projection
+					Albers_Conical_Equal_Area:
+					Azimuthal_Equidistant:
+					Equidistant_Conic:
+					Equirectangular:
+					General_Vertical_Near-sided_Perspective:
+					Gnomonic:
+					Lambert_Azimuthal_Equal_Area:
+					Lambert_Conformal_Conic:
+					Mercator:
+					Modified_Stereographic_for_Alaska:
+					Miller_Cylindrical:
+					Oblique_Mercator:
+						Oblique_Line_Point:
+					Orthographic:
+					Polar_Stereographic:
+					Polyconic:
+					Robinson:
+					Sinusoidal:
+					van_der_Grinten:
+					Space_Oblique_Mercator_(Landsat):
+					Stereographic:
+					Transverse_Mercator:
+					van_der_Grinten:
+					Other_Projection's_Definition: Universal Transverse Mercator (UTM), NAD 83, zone 14.
+				Planar_Coordinate_Information:
+					Planar_Coordinate_Encoding_Method: coordinate pair
+					Coordinate_Representation:
+						Abscissa_Resolution: 100.0
+						Ordinate_Resolution: 100.0
+					Distance_and_Bearing_Representation:
+					Planar_Distance_Units: Meters
+			Geodetic_Model:
+				Horizontal_Datum_Name: North American Datum of 1983
+				Ellipsoid_Name: Geodetic Reference System 80
+				Semi-major_Axis: Unknown
+				Denominator_of_Flattening_Ratio: Unknown
+		Vertical_Coordinate_System_Definition:
+			Altitude_System_Definition:
+				Altitude_Datum_Name: North American Vertical Datum of 1988
+				Altitude_Resolution: 5.0
+				Altitude_Distance_Units: Meters
+				Altitude_Encoding_Method: Explicit elevation coordinate included with horizontal coordinates
+			Depth_System_Definition:
+				Depth_Datum_Name: Local surface
+				Depth_Resolution: 5.0
+				Depth_Distance_Units: Meters
+				Depth_Encoding_Method: Explicit depth coordinate included with horizontal coordinates
+Entity_and_Attribute_Information:
+	Detailed_Description:
+		Entity_Type:
+		Attribute:
+			Attribute_Domain_Values:
+			Attribute_Value_Accuracy_Information:
+	Overview_Description:
+Distribution_Information:
+	Distributor:
+		Contact_Information:
+			Contact_Person_Primary:
+			Contact_Organization_Primary:
+				Contact_Organization: Land Information Division				Contact_Person: Rod Lehmann
+			Contact_Position: Chief, Topographic Mapping Section
+			Contact_Address:
+				Address_Type: mailing and physical address
+				Address: 1007 Century Street
+				City: Winnipeg
+				State_or_Province: Manitoba
+				Postal_Code: R3H 0W4
+				Country: Canada
+			Contact_Voice_Telephone: (204) 945-6599
+			Contact_Facsimile_Telephone: (204) 945-1365
+			Contact_Electronic_Mail_Address: rlehmann@gov.mb.ca
+	Distribution_Liability:
+		The data represent the results of data collection /
+		processing for a specific activity and indicates the general
+		existing conditions. As such, it is only valid for its intended
+		use, content, time, and accuracy specifications. The user
+		is responsible for the results of any application of the data
+		for other than its intended purpose.
+	Standard_Order_Process:
+		Digital_Form:
+			Digital_Transfer_Information:
+			Digital_Transfer_Option:
+				Online_Option:
+					Computer_Contact_Information:
+						Network_Address:
+						Dialup_Instructions:
+				OffLine_Option:
+					Recording_Capacity:
+	Available_Time_Period:
+		Time_Period_Information:
+			Single_Date/Time:
+			Range_of_Dates/Times:
+			Multiple_Dates/Times:
+Metadata_Reference_Information:
+	Metadata_Date: 19981230
+	Metadata_Contact:
+		Contact_Information:
+			Contact_Person_Primary:
+			Contact_Organization_Primary:
+				Contact_Organization: Manitoba Department of Natural Resources, Land Information Centre
+				Contact_Person: Rod Lehmann
+			Contact_Position: Chief, Digital Mapping Applications
+			Contact_Address:
+				Address_Type: mailing and physical address
+				Address: 1007 Century Street
+				City: Winnipeg
+				State_or_Province: Manitoba
+				Postal_Code: R3H 0W4
+				Country: Canada
+			Contact_Voice_Telephone: (204) 945-6599
+			Contact_Facsimile_Telephone: (204) 945-1365
+			Contact_Electronic_Mail_Address: rlehmann@nr.gov.mb.ca
+	Metadata_Standard_Name: FGDC Content Standards for Digital Geospatial Metadata
+	Metadata_Standard_Version: 19940608
+	Metadata_Time_Convention: Local time
+	Metadata_Access_Constraints: None
+	Metadata_Use_Constraints: None
+	Metadata_Security_Information:

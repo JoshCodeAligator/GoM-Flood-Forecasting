@@ -1,0 +1,11 @@
+                  LAND INFORMATION DIVISION
+                MANITOBA 1:500000   5KTPRG.TXT
+
+AR20100000                      74   PARISH
+AR23250000                    1310   RANGE (SURVEYED)
+AR23250002                    6360   RANGE (UNSURVEYED)
+AR26650000                      15   SETTLEMENT
+AR31350000                    1114   TOWNSHIP (SURVEYED)
+AR31350002                    6595   TOWNSHIP (UNSURVEYED)
+KA07960220                     111   CULTURE TEXT-TP,RG NO (SURVEYED)
+KA07960221                     498   CULTURE TEXT-TP,RG NO (UNSURVED)

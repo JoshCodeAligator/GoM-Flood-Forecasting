@@ -1,70 +1,2886 @@
-date,metric,value_SI,station,unit_SI,source
-2025-09-09,flow,95.9,Emerson,m³/s,api_realtime
-2025-09-10,flow,96.1,Emerson,m³/s,api_realtime
-2025-09-11,flow,95.7,Emerson,m³/s,api_realtime
-2025-09-12,flow,94.9,Emerson,m³/s,api_realtime
-2025-09-13,flow,93.5,Emerson,m³/s,api_realtime
-2025-09-14,flow,91.5,Emerson,m³/s,api_realtime
-2025-09-15,flow,90.3,Emerson,m³/s,api_realtime
-2025-09-16,flow,88.6,Emerson,m³/s,api_realtime
-2025-09-17,flow,87.1,Emerson,m³/s,api_realtime
-2025-09-18,flow,85.8,Emerson,m³/s,api_realtime
-2025-09-19,flow,82.8,Emerson,m³/s,api_realtime
-2025-09-20,flow,82.3,Emerson,m³/s,api_realtime
-2025-09-21,flow,83.1,Emerson,m³/s,api_realtime
-2025-09-22,flow,83.5,Emerson,m³/s,api_realtime
-2025-09-23,flow,83.2,Emerson,m³/s,api_realtime
-2025-09-24,flow,81.9,Emerson,m³/s,api_realtime
-2025-09-25,flow,79.2,Emerson,m³/s,api_realtime
-2025-09-26,flow,76.2,Emerson,m³/s,api_realtime
-2025-09-27,flow,74.2,Emerson,m³/s,api_realtime
-2025-09-28,flow,73.8,Emerson,m³/s,api_realtime
-2025-09-29,flow,74.5,Emerson,m³/s,emerson-daily-discharge.csv
-2025-09-30,flow,77.2,Emerson,m³/s,emerson-daily-discharge.csv
-2025-10-01,flow,81.1,Emerson,m³/s,emerson-daily-discharge.csv
-2025-10-02,flow,84.6,Emerson,m³/s,emerson-daily-discharge.csv
-2025-10-03,flow,85.2,Emerson,m³/s,emerson-daily-discharge.csv
-2025-10-04,flow,84.4,Emerson,m³/s,emerson-daily-discharge.csv
-2025-10-05,flow,83.8,Emerson,m³/s,emerson-daily-discharge.csv
-2025-10-06,flow,84.9,Emerson,m³/s,api_realtime
-2025-10-07,flow,83.5,Emerson,m³/s,api_realtime
-2025-10-08,flow,80.6,Emerson,m³/s,api_realtime
-2025-10-09,flow,78.8,Emerson,m³/s,api_realtime
-2025-09-09,level,228.961,Emerson,m,api_realtime
-2025-09-10,level,228.965,Emerson,m,api_realtime
-2025-09-11,level,228.958,Emerson,m,api_realtime
-2025-09-12,level,228.945,Emerson,m,api_realtime
-2025-09-13,level,228.922,Emerson,m,api_realtime
-2025-09-14,level,228.889,Emerson,m,api_realtime
-2025-09-15,level,228.869,Emerson,m,api_realtime
-2025-09-16,level,228.84,Emerson,m,api_realtime
-2025-09-17,level,228.814,Emerson,m,api_realtime
-2025-09-18,level,228.792,Emerson,m,api_realtime
-2025-09-19,level,228.742,Emerson,m,api_realtime
-2025-09-20,level,228.733,Emerson,m,api_realtime
-2025-09-21,level,228.747,Emerson,m,api_realtime
-2025-09-22,level,228.753,Emerson,m,api_realtime
-2025-09-23,level,228.748,Emerson,m,api_realtime
-2025-09-24,level,228.726,Emerson,m,api_realtime
-2025-09-25,level,228.68,Emerson,m,api_realtime
-2025-09-26,level,228.626,Emerson,m,api_realtime
-2025-09-27,level,228.591,Emerson,m,api_realtime
-2025-09-28,level,228.585,Emerson,m,api_realtime
-2025-09-29,level,228.594,Emerson,m,api_realtime
-2025-09-30,level,228.61,Emerson,m,api_realtime
-2025-10-01,level,228.682,Emerson,m,api_realtime
-2025-10-02,level,228.751,Emerson,m,api_realtime
-2025-10-03,level,228.787,Emerson,m,api_realtime
-2025-10-04,level,228.782,Emerson,m,api_realtime
-2025-10-05,level,228.747,Emerson,m,api_realtime
-2025-10-06,level,228.777,Emerson,m,api_realtime
-2025-10-07,level,228.753,Emerson,m,api_realtime
-2025-10-08,level,228.704,Emerson,m,api_realtime
-2025-10-09,level,228.672,Emerson,m,api_realtime
-2025-09-29,level,223.885,James Ave,m,james-ave-water-level.csv
-2025-09-30,level,223.904,James Ave,m,james-ave-water-level.csv
-2025-10-01,level,223.9,James Ave,m,james-ave-water-level.csv
-2025-10-02,level,223.867,James Ave,m,james-ave-water-level.csv
-2025-10-03,level,223.843,James Ave,m,james-ave-water-level.csv
-2025-10-04,level,223.851,James Ave,m,james-ave-water-level.csv
-2025-10-05,level,223.842,James Ave,m,james-ave-water-level.csv
+station,date,metric,value_SI,unit_SI,source
+Breezy Point,2023-03-02,level,217.419,m,breezy-point.csv
+Breezy Point,2023-03-03,level,217.459,m,breezy-point.csv
+Breezy Point,2023-03-04,level,217.451,m,breezy-point.csv
+Breezy Point,2023-03-05,level,217.48,m,breezy-point.csv
+Breezy Point,2023-03-06,level,217.471,m,breezy-point.csv
+Breezy Point,2023-03-07,level,217.466,m,breezy-point.csv
+Breezy Point,2023-03-08,level,217.499,m,breezy-point.csv
+Breezy Point,2023-03-09,level,217.499,m,breezy-point.csv
+Breezy Point,2023-03-10,level,217.478,m,breezy-point.csv
+Breezy Point,2023-03-11,level,217.485,m,breezy-point.csv
+Breezy Point,2023-03-12,level,217.494,m,breezy-point.csv
+Breezy Point,2023-03-13,level,217.443,m,breezy-point.csv
+Breezy Point,2023-03-14,level,217.403,m,breezy-point.csv
+Breezy Point,2023-03-15,level,217.406,m,breezy-point.csv
+Breezy Point,2023-03-16,level,217.457,m,breezy-point.csv
+Breezy Point,2023-03-17,level,217.478,m,breezy-point.csv
+Breezy Point,2023-03-18,level,217.454,m,breezy-point.csv
+Breezy Point,2023-03-19,level,217.415,m,breezy-point.csv
+Breezy Point,2023-03-20,level,217.468,m,breezy-point.csv
+Breezy Point,2023-03-21,level,217.44,m,breezy-point.csv
+Breezy Point,2023-03-22,level,217.449,m,breezy-point.csv
+Breezy Point,2023-03-23,level,217.418,m,breezy-point.csv
+Breezy Point,2023-03-24,level,217.397,m,breezy-point.csv
+Breezy Point,2023-03-25,level,217.456,m,breezy-point.csv
+Breezy Point,2023-03-26,level,217.428,m,breezy-point.csv
+Breezy Point,2023-03-27,level,217.449,m,breezy-point.csv
+Breezy Point,2023-03-28,level,217.415,m,breezy-point.csv
+Breezy Point,2023-03-29,level,217.409,m,breezy-point.csv
+Breezy Point,2023-03-30,level,217.397,m,breezy-point.csv
+Breezy Point,2023-03-31,level,217.445,m,breezy-point.csv
+Breezy Point,2023-04-01,level,217.412,m,breezy-point.csv
+Breezy Point,2023-04-02,level,217.439,m,breezy-point.csv
+Breezy Point,2023-04-03,level,217.484,m,breezy-point.csv
+Breezy Point,2023-04-04,level,217.439,m,breezy-point.csv
+Breezy Point,2023-04-05,level,217.47,m,breezy-point.csv
+Breezy Point,2023-04-06,level,217.447,m,breezy-point.csv
+Breezy Point,2023-04-07,level,217.402,m,breezy-point.csv
+Breezy Point,2023-04-08,level,217.396,m,breezy-point.csv
+Breezy Point,2023-04-09,level,217.393,m,breezy-point.csv
+Breezy Point,2023-04-10,level,217.387,m,breezy-point.csv
+Breezy Point,2023-04-11,level,217.425,m,breezy-point.csv
+Breezy Point,2023-04-12,level,217.574,m,breezy-point.csv
+Breezy Point,2023-04-13,level,217.727,m,breezy-point.csv
+Breezy Point,2023-04-14,level,217.851,m,breezy-point.csv
+Breezy Point,2023-04-15,level,217.98,m,breezy-point.csv
+Breezy Point,2023-04-16,level,218.081,m,breezy-point.csv
+Breezy Point,2023-04-17,level,218.232,m,breezy-point.csv
+Breezy Point,2023-04-18,level,218.432,m,breezy-point.csv
+Breezy Point,2023-04-19,level,218.638,m,breezy-point.csv
+Breezy Point,2023-04-20,level,218.492,m,breezy-point.csv
+Breezy Point,2023-04-21,level,218.366,m,breezy-point.csv
+Breezy Point,2023-04-22,level,218.287,m,breezy-point.csv
+Breezy Point,2023-04-23,level,218.209,m,breezy-point.csv
+Breezy Point,2023-04-24,level,218.152,m,breezy-point.csv
+Breezy Point,2023-04-25,level,218.126,m,breezy-point.csv
+Breezy Point,2023-04-26,level,218.093,m,breezy-point.csv
+Breezy Point,2023-04-27,level,218.095,m,breezy-point.csv
+Breezy Point,2023-04-28,level,218.098,m,breezy-point.csv
+Breezy Point,2023-04-29,level,218.08,m,breezy-point.csv
+Breezy Point,2023-04-30,level,218.095,m,breezy-point.csv
+Breezy Point,2023-05-01,level,218.091,m,breezy-point.csv
+Breezy Point,2023-05-02,level,218.024,m,breezy-point.csv
+Breezy Point,2023-05-03,level,217.983,m,breezy-point.csv
+Breezy Point,2023-05-04,level,218.021,m,breezy-point.csv
+Breezy Point,2023-05-05,level,218.0,m,breezy-point.csv
+Breezy Point,2023-05-06,level,217.997,m,breezy-point.csv
+Breezy Point,2023-05-07,level,218.01,m,breezy-point.csv
+Breezy Point,2023-05-08,level,217.993,m,breezy-point.csv
+Breezy Point,2023-05-09,level,217.968,m,breezy-point.csv
+Breezy Point,2023-05-10,level,217.961,m,breezy-point.csv
+Breezy Point,2023-05-11,level,217.972,m,breezy-point.csv
+Breezy Point,2023-05-12,level,217.991,m,breezy-point.csv
+Breezy Point,2023-05-13,level,218.026,m,breezy-point.csv
+Breezy Point,2023-05-14,level,217.953,m,breezy-point.csv
+Breezy Point,2023-05-15,level,217.88,m,breezy-point.csv
+Breezy Point,2023-05-16,level,217.925,m,breezy-point.csv
+Breezy Point,2023-05-17,level,217.828,m,breezy-point.csv
+Breezy Point,2023-05-18,level,217.964,m,breezy-point.csv
+Breezy Point,2023-05-19,level,217.915,m,breezy-point.csv
+Breezy Point,2023-05-20,level,217.718,m,breezy-point.csv
+Breezy Point,2023-05-21,level,217.874,m,breezy-point.csv
+Breezy Point,2023-05-22,level,217.698,m,breezy-point.csv
+Breezy Point,2023-05-23,level,217.749,m,breezy-point.csv
+Breezy Point,2023-05-24,level,217.637,m,breezy-point.csv
+Breezy Point,2023-05-25,level,217.454,m,breezy-point.csv
+Breezy Point,2023-05-26,level,217.44,m,breezy-point.csv
+Breezy Point,2023-05-27,level,217.632,m,breezy-point.csv
+Breezy Point,2023-05-28,level,217.487,m,breezy-point.csv
+Breezy Point,2023-05-29,level,217.423,m,breezy-point.csv
+Breezy Point,2023-05-30,level,217.547,m,breezy-point.csv
+Breezy Point,2023-05-31,level,217.628,m,breezy-point.csv
+Breezy Point,2023-06-01,level,217.607,m,breezy-point.csv
+Breezy Point,2023-06-02,level,217.603,m,breezy-point.csv
+Breezy Point,2023-06-03,level,217.557,m,breezy-point.csv
+Breezy Point,2023-06-04,level,217.563,m,breezy-point.csv
+Breezy Point,2023-06-05,level,217.561,m,breezy-point.csv
+Breezy Point,2023-06-06,level,217.469,m,breezy-point.csv
+Breezy Point,2023-06-07,level,217.511,m,breezy-point.csv
+Breezy Point,2023-06-08,level,217.47,m,breezy-point.csv
+Breezy Point,2023-06-09,level,217.765,m,breezy-point.csv
+Breezy Point,2023-06-10,level,217.883,m,breezy-point.csv
+Breezy Point,2023-06-11,level,217.601,m,breezy-point.csv
+Breezy Point,2023-06-12,level,217.529,m,breezy-point.csv
+Breezy Point,2023-06-13,level,217.741,m,breezy-point.csv
+Breezy Point,2023-06-14,level,217.69,m,breezy-point.csv
+Breezy Point,2023-06-15,level,217.44,m,breezy-point.csv
+Breezy Point,2023-06-16,level,217.431,m,breezy-point.csv
+Breezy Point,2023-06-17,level,217.515,m,breezy-point.csv
+Breezy Point,2023-06-18,level,217.473,m,breezy-point.csv
+Breezy Point,2023-06-19,level,217.466,m,breezy-point.csv
+Breezy Point,2023-06-20,level,217.526,m,breezy-point.csv
+Breezy Point,2023-06-21,level,217.622,m,breezy-point.csv
+Breezy Point,2023-06-22,level,217.617,m,breezy-point.csv
+Breezy Point,2023-06-23,level,217.516,m,breezy-point.csv
+Breezy Point,2023-06-24,level,217.644,m,breezy-point.csv
+Breezy Point,2023-06-25,level,217.617,m,breezy-point.csv
+Breezy Point,2023-06-26,level,217.711,m,breezy-point.csv
+Breezy Point,2023-06-27,level,217.517,m,breezy-point.csv
+Breezy Point,2023-06-28,level,217.462,m,breezy-point.csv
+Breezy Point,2023-06-29,level,217.666,m,breezy-point.csv
+Breezy Point,2023-06-30,level,217.665,m,breezy-point.csv
+Breezy Point,2023-07-01,level,217.549,m,breezy-point.csv
+Breezy Point,2023-07-02,level,217.413,m,breezy-point.csv
+Breezy Point,2023-07-03,level,217.545,m,breezy-point.csv
+Breezy Point,2023-07-04,level,217.599,m,breezy-point.csv
+Breezy Point,2023-07-05,level,217.784,m,breezy-point.csv
+Breezy Point,2023-07-06,level,217.391,m,breezy-point.csv
+Breezy Point,2023-07-07,level,217.743,m,breezy-point.csv
+Breezy Point,2023-07-08,level,217.597,m,breezy-point.csv
+Breezy Point,2023-07-09,level,217.565,m,breezy-point.csv
+Breezy Point,2023-07-10,level,217.934,m,breezy-point.csv
+Breezy Point,2023-07-11,level,217.868,m,breezy-point.csv
+Breezy Point,2023-07-12,level,217.473,m,breezy-point.csv
+Breezy Point,2023-07-13,level,217.451,m,breezy-point.csv
+Breezy Point,2023-07-14,level,217.693,m,breezy-point.csv
+Breezy Point,2023-07-15,level,217.682,m,breezy-point.csv
+Breezy Point,2023-07-16,level,217.855,m,breezy-point.csv
+Breezy Point,2023-07-17,level,217.739,m,breezy-point.csv
+Breezy Point,2023-07-18,level,217.503,m,breezy-point.csv
+Breezy Point,2023-07-19,level,217.543,m,breezy-point.csv
+Breezy Point,2023-07-20,level,217.59,m,breezy-point.csv
+Breezy Point,2023-07-21,level,217.473,m,breezy-point.csv
+Breezy Point,2023-07-22,level,217.55,m,breezy-point.csv
+Breezy Point,2023-07-23,level,217.537,m,breezy-point.csv
+Breezy Point,2023-07-24,level,217.511,m,breezy-point.csv
+Breezy Point,2023-07-25,level,217.412,m,breezy-point.csv
+Breezy Point,2023-07-26,level,217.443,m,breezy-point.csv
+Breezy Point,2023-07-27,level,217.613,m,breezy-point.csv
+Breezy Point,2023-07-28,level,217.649,m,breezy-point.csv
+Breezy Point,2023-07-29,level,217.533,m,breezy-point.csv
+Breezy Point,2023-07-30,level,217.455,m,breezy-point.csv
+Breezy Point,2023-07-31,level,217.438,m,breezy-point.csv
+Breezy Point,2023-08-01,level,217.32,m,breezy-point.csv
+Breezy Point,2023-08-02,level,217.468,m,breezy-point.csv
+Breezy Point,2023-08-03,level,217.529,m,breezy-point.csv
+Breezy Point,2023-08-04,level,217.366,m,breezy-point.csv
+Breezy Point,2023-08-05,level,217.449,m,breezy-point.csv
+Breezy Point,2023-08-06,level,217.604,m,breezy-point.csv
+Breezy Point,2023-08-07,level,217.474,m,breezy-point.csv
+Breezy Point,2023-08-08,level,217.494,m,breezy-point.csv
+Breezy Point,2023-08-09,level,217.698,m,breezy-point.csv
+Breezy Point,2023-08-10,level,217.423,m,breezy-point.csv
+Breezy Point,2023-08-11,level,217.331,m,breezy-point.csv
+Breezy Point,2023-08-12,level,217.428,m,breezy-point.csv
+Breezy Point,2023-08-13,level,217.381,m,breezy-point.csv
+Breezy Point,2023-08-14,level,217.346,m,breezy-point.csv
+Breezy Point,2023-08-15,level,217.36,m,breezy-point.csv
+Breezy Point,2023-08-16,level,217.433,m,breezy-point.csv
+Breezy Point,2023-08-17,level,217.688,m,breezy-point.csv
+Breezy Point,2023-08-18,level,217.122,m,breezy-point.csv
+Breezy Point,2023-08-19,level,217.301,m,breezy-point.csv
+Breezy Point,2023-08-20,level,217.561,m,breezy-point.csv
+Breezy Point,2023-08-21,level,217.313,m,breezy-point.csv
+Breezy Point,2023-08-22,level,217.413,m,breezy-point.csv
+Breezy Point,2023-08-23,level,217.323,m,breezy-point.csv
+Breezy Point,2023-08-24,level,217.365,m,breezy-point.csv
+Breezy Point,2023-08-25,level,217.611,m,breezy-point.csv
+Breezy Point,2023-08-26,level,217.404,m,breezy-point.csv
+Breezy Point,2023-08-27,level,217.169,m,breezy-point.csv
+Breezy Point,2023-08-28,level,217.475,m,breezy-point.csv
+Breezy Point,2023-08-29,level,217.5,m,breezy-point.csv
+Breezy Point,2023-08-30,level,217.271,m,breezy-point.csv
+Breezy Point,2023-08-31,level,217.073,m,breezy-point.csv
+Breezy Point,2023-09-01,level,217.23,m,breezy-point.csv
+Breezy Point,2023-09-02,level,217.234,m,breezy-point.csv
+Breezy Point,2023-09-03,level,217.379,m,breezy-point.csv
+Breezy Point,2023-09-04,level,217.271,m,breezy-point.csv
+Breezy Point,2023-09-05,level,217.741,m,breezy-point.csv
+Breezy Point,2023-09-06,level,217.532,m,breezy-point.csv
+Breezy Point,2023-09-07,level,217.029,m,breezy-point.csv
+Breezy Point,2023-09-08,level,217.24,m,breezy-point.csv
+Breezy Point,2023-09-09,level,217.341,m,breezy-point.csv
+Breezy Point,2023-09-10,level,217.387,m,breezy-point.csv
+Breezy Point,2023-09-11,level,217.376,m,breezy-point.csv
+Breezy Point,2023-09-12,level,217.188,m,breezy-point.csv
+Breezy Point,2023-09-13,level,216.922,m,breezy-point.csv
+Breezy Point,2023-09-14,level,217.037,m,breezy-point.csv
+Breezy Point,2023-09-15,level,217.339,m,breezy-point.csv
+Breezy Point,2023-09-16,level,217.46,m,breezy-point.csv
+Breezy Point,2023-09-17,level,217.107,m,breezy-point.csv
+Breezy Point,2023-09-18,level,216.881,m,breezy-point.csv
+Breezy Point,2023-09-19,level,216.977,m,breezy-point.csv
+Breezy Point,2023-09-20,level,217.323,m,breezy-point.csv
+Breezy Point,2023-09-21,level,217.22,m,breezy-point.csv
+Breezy Point,2023-09-25,level,217.182,m,breezy-point.csv
+Breezy Point,2023-09-26,level,217.176,m,breezy-point.csv
+Breezy Point,2023-09-27,level,216.962,m,breezy-point.csv
+Breezy Point,2023-09-28,level,216.868,m,breezy-point.csv
+Breezy Point,2023-09-29,level,217.082,m,breezy-point.csv
+Breezy Point,2023-09-30,level,217.158,m,breezy-point.csv
+Breezy Point,2023-10-01,level,217.249,m,breezy-point.csv
+Breezy Point,2023-10-02,level,217.359,m,breezy-point.csv
+Breezy Point,2023-10-03,level,217.262,m,breezy-point.csv
+Breezy Point,2023-10-04,level,217.471,m,breezy-point.csv
+Breezy Point,2023-10-05,level,217.385,m,breezy-point.csv
+Breezy Point,2023-10-06,level,217.608,m,breezy-point.csv
+Breezy Point,2023-10-07,level,217.271,m,breezy-point.csv
+Breezy Point,2023-10-08,level,217.19,m,breezy-point.csv
+Breezy Point,2023-10-09,level,217.247,m,breezy-point.csv
+Breezy Point,2023-10-10,level,217.29,m,breezy-point.csv
+Breezy Point,2023-10-11,level,217.175,m,breezy-point.csv
+Breezy Point,2023-10-12,level,217.227,m,breezy-point.csv
+Breezy Point,2023-10-13,level,217.298,m,breezy-point.csv
+Breezy Point,2023-10-14,level,217.195,m,breezy-point.csv
+Breezy Point,2023-10-15,level,217.221,m,breezy-point.csv
+Breezy Point,2023-10-16,level,217.112,m,breezy-point.csv
+Breezy Point,2023-10-17,level,217.07,m,breezy-point.csv
+Breezy Point,2023-10-18,level,217.239,m,breezy-point.csv
+Breezy Point,2023-10-19,level,217.204,m,breezy-point.csv
+Breezy Point,2023-10-20,level,217.014,m,breezy-point.csv
+Breezy Point,2023-10-21,level,217.353,m,breezy-point.csv
+Breezy Point,2023-10-22,level,217.127,m,breezy-point.csv
+Breezy Point,2023-10-23,level,217.377,m,breezy-point.csv
+Breezy Point,2023-10-24,level,217.397,m,breezy-point.csv
+Breezy Point,2023-10-25,level,217.268,m,breezy-point.csv
+Breezy Point,2023-10-26,level,217.286,m,breezy-point.csv
+Breezy Point,2023-10-27,level,217.219,m,breezy-point.csv
+Breezy Point,2023-10-28,level,217.122,m,breezy-point.csv
+Breezy Point,2023-10-29,level,217.249,m,breezy-point.csv
+Breezy Point,2023-10-30,level,217.371,m,breezy-point.csv
+Breezy Point,2023-10-31,level,217.4,m,breezy-point.csv
+Breezy Point,2024-02-27,level,216.963,m,breezy-point.csv
+Breezy Point,2024-02-28,level,216.953,m,breezy-point.csv
+Breezy Point,2024-02-29,level,216.991,m,breezy-point.csv
+Breezy Point,2024-03-01,level,217.008,m,breezy-point.csv
+Breezy Point,2024-04-08,level,217.31,m,breezy-point.csv
+Breezy Point,2024-04-09,level,217.283,m,breezy-point.csv
+Breezy Point,2024-04-10,level,217.285,m,breezy-point.csv
+Breezy Point,2024-04-11,level,217.231,m,breezy-point.csv
+Breezy Point,2024-04-12,level,217.16,m,breezy-point.csv
+Breezy Point,2024-04-13,level,217.08,m,breezy-point.csv
+Breezy Point,2024-04-14,level,217.068,m,breezy-point.csv
+Breezy Point,2024-04-15,level,217.052,m,breezy-point.csv
+Breezy Point,2024-04-16,level,217.078,m,breezy-point.csv
+Breezy Point,2024-04-17,level,217.078,m,breezy-point.csv
+Breezy Point,2024-04-18,level,217.078,m,breezy-point.csv
+Breezy Point,2024-04-19,level,217.124,m,breezy-point.csv
+Breezy Point,2024-04-20,level,217.099,m,breezy-point.csv
+Breezy Point,2024-04-21,level,217.063,m,breezy-point.csv
+Breezy Point,2024-04-22,level,217.053,m,breezy-point.csv
+Breezy Point,2024-04-23,level,217.188,m,breezy-point.csv
+Breezy Point,2024-04-24,level,217.063,m,breezy-point.csv
+Breezy Point,2024-04-25,level,217.027,m,breezy-point.csv
+Breezy Point,2024-04-26,level,217.018,m,breezy-point.csv
+Breezy Point,2024-04-27,level,217.256,m,breezy-point.csv
+Breezy Point,2024-04-28,level,217.163,m,breezy-point.csv
+Breezy Point,2024-04-29,level,217.078,m,breezy-point.csv
+Breezy Point,2024-04-30,level,217.09,m,breezy-point.csv
+Breezy Point,2024-05-01,level,217.116,m,breezy-point.csv
+Breezy Point,2024-05-02,level,217.093,m,breezy-point.csv
+Breezy Point,2024-05-03,level,217.182,m,breezy-point.csv
+Breezy Point,2024-05-04,level,217.155,m,breezy-point.csv
+Breezy Point,2024-05-05,level,217.095,m,breezy-point.csv
+Breezy Point,2024-05-06,level,217.113,m,breezy-point.csv
+Breezy Point,2024-05-07,level,217.167,m,breezy-point.csv
+Breezy Point,2024-05-08,level,217.221,m,breezy-point.csv
+Breezy Point,2024-05-09,level,217.177,m,breezy-point.csv
+Breezy Point,2024-05-10,level,217.211,m,breezy-point.csv
+Breezy Point,2024-05-11,level,217.144,m,breezy-point.csv
+Breezy Point,2024-05-12,level,217.336,m,breezy-point.csv
+Breezy Point,2024-05-13,level,217.361,m,breezy-point.csv
+Breezy Point,2024-05-14,level,217.15,m,breezy-point.csv
+Breezy Point,2024-05-15,level,217.157,m,breezy-point.csv
+Breezy Point,2024-05-16,level,217.101,m,breezy-point.csv
+Breezy Point,2024-05-17,level,217.142,m,breezy-point.csv
+Breezy Point,2024-05-18,level,217.098,m,breezy-point.csv
+Breezy Point,2024-05-19,level,217.156,m,breezy-point.csv
+Breezy Point,2024-05-20,level,217.207,m,breezy-point.csv
+Breezy Point,2024-05-21,level,217.293,m,breezy-point.csv
+Breezy Point,2024-05-22,level,217.423,m,breezy-point.csv
+Breezy Point,2024-05-23,level,217.33,m,breezy-point.csv
+Breezy Point,2024-05-24,level,217.471,m,breezy-point.csv
+Breezy Point,2024-05-25,level,217.379,m,breezy-point.csv
+Breezy Point,2024-05-26,level,217.321,m,breezy-point.csv
+Breezy Point,2024-05-27,level,217.35,m,breezy-point.csv
+Breezy Point,2024-05-28,level,217.508,m,breezy-point.csv
+Breezy Point,2024-05-29,level,217.322,m,breezy-point.csv
+Breezy Point,2024-05-30,level,217.254,m,breezy-point.csv
+Breezy Point,2024-05-31,level,217.269,m,breezy-point.csv
+Breezy Point,2024-06-01,level,217.321,m,breezy-point.csv
+Breezy Point,2024-06-02,level,217.366,m,breezy-point.csv
+Breezy Point,2024-06-03,level,217.457,m,breezy-point.csv
+Breezy Point,2024-06-04,level,217.413,m,breezy-point.csv
+Breezy Point,2024-06-05,level,217.365,m,breezy-point.csv
+Breezy Point,2024-06-06,level,217.649,m,breezy-point.csv
+Breezy Point,2024-06-07,level,217.479,m,breezy-point.csv
+Breezy Point,2024-06-08,level,217.462,m,breezy-point.csv
+Breezy Point,2024-06-09,level,217.628,m,breezy-point.csv
+Breezy Point,2024-06-10,level,217.434,m,breezy-point.csv
+Breezy Point,2024-06-11,level,217.308,m,breezy-point.csv
+Breezy Point,2024-06-12,level,217.458,m,breezy-point.csv
+Breezy Point,2024-06-13,level,217.44,m,breezy-point.csv
+Breezy Point,2024-06-14,level,217.407,m,breezy-point.csv
+Breezy Point,2024-06-15,level,217.322,m,breezy-point.csv
+Breezy Point,2024-06-16,level,217.211,m,breezy-point.csv
+Breezy Point,2024-06-17,level,217.369,m,breezy-point.csv
+Breezy Point,2024-06-18,level,217.536,m,breezy-point.csv
+Breezy Point,2024-06-19,level,217.563,m,breezy-point.csv
+Breezy Point,2024-06-20,level,217.284,m,breezy-point.csv
+Breezy Point,2024-06-21,level,217.374,m,breezy-point.csv
+Breezy Point,2024-06-22,level,217.41,m,breezy-point.csv
+Breezy Point,2024-06-23,level,217.51,m,breezy-point.csv
+Breezy Point,2024-06-24,level,217.316,m,breezy-point.csv
+Breezy Point,2024-06-25,level,217.568,m,breezy-point.csv
+Breezy Point,2024-06-26,level,217.627,m,breezy-point.csv
+Breezy Point,2024-06-27,level,217.416,m,breezy-point.csv
+Breezy Point,2024-06-28,level,217.602,m,breezy-point.csv
+Breezy Point,2024-06-29,level,217.777,m,breezy-point.csv
+Breezy Point,2024-06-30,level,217.458,m,breezy-point.csv
+Breezy Point,2024-07-01,level,217.297,m,breezy-point.csv
+Breezy Point,2024-07-02,level,217.347,m,breezy-point.csv
+Breezy Point,2024-07-03,level,217.681,m,breezy-point.csv
+Breezy Point,2024-07-04,level,217.585,m,breezy-point.csv
+Breezy Point,2024-07-05,level,217.693,m,breezy-point.csv
+Breezy Point,2024-07-06,level,217.599,m,breezy-point.csv
+Breezy Point,2024-07-07,level,217.646,m,breezy-point.csv
+Breezy Point,2024-07-08,level,217.686,m,breezy-point.csv
+Breezy Point,2024-07-09,level,217.638,m,breezy-point.csv
+Breezy Point,2024-07-10,level,217.634,m,breezy-point.csv
+Breezy Point,2024-07-11,level,217.487,m,breezy-point.csv
+Breezy Point,2024-07-12,level,217.562,m,breezy-point.csv
+Breezy Point,2024-07-13,level,217.669,m,breezy-point.csv
+Breezy Point,2024-07-14,level,217.693,m,breezy-point.csv
+Breezy Point,2024-07-15,level,217.726,m,breezy-point.csv
+Breezy Point,2024-07-16,level,217.86,m,breezy-point.csv
+Breezy Point,2024-07-17,level,217.686,m,breezy-point.csv
+Breezy Point,2024-07-18,level,217.461,m,breezy-point.csv
+Breezy Point,2024-07-19,level,217.532,m,breezy-point.csv
+Breezy Point,2024-07-20,level,217.588,m,breezy-point.csv
+Breezy Point,2024-07-21,level,217.555,m,breezy-point.csv
+Breezy Point,2024-07-22,level,217.63,m,breezy-point.csv
+Breezy Point,2024-07-23,level,217.55,m,breezy-point.csv
+Breezy Point,2024-07-24,level,217.475,m,breezy-point.csv
+Breezy Point,2024-07-25,level,217.325,m,breezy-point.csv
+Breezy Point,2024-07-26,level,217.239,m,breezy-point.csv
+Breezy Point,2024-07-27,level,217.444,m,breezy-point.csv
+Breezy Point,2024-07-28,level,217.596,m,breezy-point.csv
+Breezy Point,2024-07-29,level,217.514,m,breezy-point.csv
+Breezy Point,2024-07-30,level,217.439,m,breezy-point.csv
+Breezy Point,2024-07-31,level,217.591,m,breezy-point.csv
+Breezy Point,2024-08-01,level,217.574,m,breezy-point.csv
+Breezy Point,2024-08-02,level,217.691,m,breezy-point.csv
+Breezy Point,2024-08-03,level,217.789,m,breezy-point.csv
+Breezy Point,2024-08-04,level,217.731,m,breezy-point.csv
+Breezy Point,2024-08-05,level,217.648,m,breezy-point.csv
+Breezy Point,2024-08-06,level,217.558,m,breezy-point.csv
+Breezy Point,2024-08-07,level,217.709,m,breezy-point.csv
+Breezy Point,2024-08-08,level,218.217,m,breezy-point.csv
+Breezy Point,2024-08-09,level,217.893,m,breezy-point.csv
+Breezy Point,2024-08-10,level,217.724,m,breezy-point.csv
+Breezy Point,2024-08-11,level,217.642,m,breezy-point.csv
+Breezy Point,2024-08-12,level,217.577,m,breezy-point.csv
+Breezy Point,2024-08-13,level,217.504,m,breezy-point.csv
+Breezy Point,2024-08-14,level,217.436,m,breezy-point.csv
+Breezy Point,2024-08-15,level,217.624,m,breezy-point.csv
+Breezy Point,2024-08-16,level,217.82,m,breezy-point.csv
+Breezy Point,2024-08-17,level,217.766,m,breezy-point.csv
+Breezy Point,2024-08-18,level,217.625,m,breezy-point.csv
+Breezy Point,2024-08-19,level,217.548,m,breezy-point.csv
+Breezy Point,2024-08-20,level,217.422,m,breezy-point.csv
+Breezy Point,2024-08-21,level,217.245,m,breezy-point.csv
+Breezy Point,2024-08-22,level,217.422,m,breezy-point.csv
+Breezy Point,2024-08-23,level,217.632,m,breezy-point.csv
+Breezy Point,2024-08-24,level,217.557,m,breezy-point.csv
+Breezy Point,2024-08-25,level,217.455,m,breezy-point.csv
+Breezy Point,2024-08-26,level,217.806,m,breezy-point.csv
+Breezy Point,2024-08-27,level,217.709,m,breezy-point.csv
+Breezy Point,2024-08-28,level,217.433,m,breezy-point.csv
+Breezy Point,2024-08-29,level,217.316,m,breezy-point.csv
+Breezy Point,2024-08-30,level,217.583,m,breezy-point.csv
+Breezy Point,2024-08-31,level,217.784,m,breezy-point.csv
+Breezy Point,2024-09-01,level,217.852,m,breezy-point.csv
+Breezy Point,2024-09-02,level,217.417,m,breezy-point.csv
+Breezy Point,2024-09-03,level,217.448,m,breezy-point.csv
+Breezy Point,2024-09-04,level,217.748,m,breezy-point.csv
+Breezy Point,2024-09-05,level,217.734,m,breezy-point.csv
+Breezy Point,2024-09-06,level,217.631,m,breezy-point.csv
+Breezy Point,2024-09-07,level,217.366,m,breezy-point.csv
+Breezy Point,2024-09-08,level,217.551,m,breezy-point.csv
+Breezy Point,2024-09-09,level,217.467,m,breezy-point.csv
+Breezy Point,2024-09-10,level,217.426,m,breezy-point.csv
+Breezy Point,2024-09-11,level,217.749,m,breezy-point.csv
+Breezy Point,2024-09-12,level,217.481,m,breezy-point.csv
+Breezy Point,2024-09-13,level,217.178,m,breezy-point.csv
+Breezy Point,2024-09-14,level,217.228,m,breezy-point.csv
+Breezy Point,2024-09-15,level,217.451,m,breezy-point.csv
+Breezy Point,2024-09-16,level,217.523,m,breezy-point.csv
+Breezy Point,2024-09-17,level,217.502,m,breezy-point.csv
+Breezy Point,2024-09-18,level,217.553,m,breezy-point.csv
+Breezy Point,2024-09-19,level,217.363,m,breezy-point.csv
+Breezy Point,2024-09-20,level,217.53,m,breezy-point.csv
+Breezy Point,2024-09-21,level,217.835,m,breezy-point.csv
+Breezy Point,2024-09-22,level,217.763,m,breezy-point.csv
+Breezy Point,2024-09-23,level,217.307,m,breezy-point.csv
+Breezy Point,2024-09-24,level,217.435,m,breezy-point.csv
+Breezy Point,2024-09-25,level,217.504,m,breezy-point.csv
+Breezy Point,2024-09-26,level,217.226,m,breezy-point.csv
+Breezy Point,2024-09-27,level,217.387,m,breezy-point.csv
+Breezy Point,2024-09-28,level,217.478,m,breezy-point.csv
+Breezy Point,2024-09-29,level,217.331,m,breezy-point.csv
+Breezy Point,2024-09-30,level,217.048,m,breezy-point.csv
+Breezy Point,2024-10-01,level,217.612,m,breezy-point.csv
+Breezy Point,2024-10-02,level,217.534,m,breezy-point.csv
+Breezy Point,2024-10-03,level,217.818,m,breezy-point.csv
+Breezy Point,2024-10-04,level,217.469,m,breezy-point.csv
+Breezy Point,2024-10-05,level,217.055,m,breezy-point.csv
+Breezy Point,2024-10-06,level,217.634,m,breezy-point.csv
+Breezy Point,2024-10-07,level,217.505,m,breezy-point.csv
+Breezy Point,2024-10-08,level,217.338,m,breezy-point.csv
+Breezy Point,2024-10-09,level,217.049,m,breezy-point.csv
+Breezy Point,2024-10-10,level,217.359,m,breezy-point.csv
+Breezy Point,2024-10-11,level,217.614,m,breezy-point.csv
+Breezy Point,2024-10-12,level,217.37,m,breezy-point.csv
+Breezy Point,2024-10-13,level,217.762,m,breezy-point.csv
+Breezy Point,2024-10-14,level,217.502,m,breezy-point.csv
+Breezy Point,2024-10-15,level,217.09,m,breezy-point.csv
+Breezy Point,2024-10-16,level,216.981,m,breezy-point.csv
+Breezy Point,2024-10-17,level,217.064,m,breezy-point.csv
+Breezy Point,2024-10-18,level,217.341,m,breezy-point.csv
+Breezy Point,2024-10-19,level,217.136,m,breezy-point.csv
+Breezy Point,2024-10-20,level,217.128,m,breezy-point.csv
+Breezy Point,2024-10-21,level,217.322,m,breezy-point.csv
+Breezy Point,2024-10-22,level,217.513,m,breezy-point.csv
+Breezy Point,2024-10-23,level,217.382,m,breezy-point.csv
+Breezy Point,2024-10-24,level,217.309,m,breezy-point.csv
+Breezy Point,2024-10-25,level,217.373,m,breezy-point.csv
+Breezy Point,2024-10-26,level,217.308,m,breezy-point.csv
+Breezy Point,2024-10-27,level,217.214,m,breezy-point.csv
+Breezy Point,2024-10-28,level,216.947,m,breezy-point.csv
+Breezy Point,2024-10-29,level,217.255,m,breezy-point.csv
+Breezy Point,2024-10-30,level,217.438,m,breezy-point.csv
+Breezy Point,2024-10-31,level,217.276,m,breezy-point.csv
+Breezy Point,2025-09-09,level,217.059,m,api_realtime
+Breezy Point,2025-09-10,level,217.135,m,api_realtime
+Breezy Point,2025-09-11,level,217.065,m,api_realtime
+Breezy Point,2025-09-12,level,216.94,m,api_realtime
+Breezy Point,2025-09-13,level,217.166,m,api_realtime
+Breezy Point,2025-09-14,level,217.123,m,api_realtime
+Breezy Point,2025-09-15,level,217.076,m,api_realtime
+Breezy Point,2025-09-16,level,216.928,m,api_realtime
+Breezy Point,2025-09-17,level,217.276,m,api_realtime
+Breezy Point,2025-09-18,level,217.303,m,api_realtime
+Breezy Point,2025-09-19,level,217.168,m,api_realtime
+Breezy Point,2025-09-20,level,217.086,m,api_realtime
+Breezy Point,2025-09-21,level,217.186,m,api_realtime
+Breezy Point,2025-09-22,level,217.116,m,api_realtime
+Breezy Point,2025-09-23,level,216.986,m,api_realtime
+Breezy Point,2025-09-24,level,217.256,m,api_realtime
+Breezy Point,2025-09-25,level,216.995,m,api_realtime
+Breezy Point,2025-09-26,level,217.431,m,api_realtime
+Breezy Point,2025-09-27,level,216.881,m,api_realtime
+Breezy Point,2025-09-28,level,217.239,m,api_realtime
+Breezy Point,2025-09-29,level,216.922,m,api_realtime
+Breezy Point,2025-09-30,level,217.216,m,api_realtime
+Breezy Point,2025-10-01,level,216.886,m,api_realtime
+Breezy Point,2025-10-02,level,216.848,m,api_realtime
+Breezy Point,2025-10-03,level,217.068,m,api_realtime
+Breezy Point,2025-10-04,level,217.104,m,api_realtime
+Breezy Point,2025-10-05,level,217.302,m,api_realtime
+Breezy Point,2025-10-06,level,217.662,m,api_realtime
+Breezy Point,2025-10-07,level,217.071,m,api_realtime
+Breezy Point,2025-10-08,level,217.233,m,api_realtime
+Emerson,2023-01-01,flow,45.3,m³/s,emerson.csv
+Emerson,2023-01-02,flow,46.0,m³/s,emerson.csv
+Emerson,2023-01-03,flow,46.4,m³/s,emerson.csv
+Emerson,2023-01-04,flow,46.4,m³/s,emerson.csv
+Emerson,2023-01-05,flow,46.4,m³/s,emerson.csv
+Emerson,2023-01-06,flow,46.5,m³/s,emerson.csv
+Emerson,2023-01-07,flow,46.7,m³/s,emerson.csv
+Emerson,2023-01-08,flow,47.0,m³/s,emerson.csv
+Emerson,2023-01-09,flow,47.5,m³/s,emerson.csv
+Emerson,2023-01-10,flow,48.0,m³/s,emerson.csv
+Emerson,2023-01-11,flow,48.4,m³/s,emerson.csv
+Emerson,2023-01-12,flow,48.5,m³/s,emerson.csv
+Emerson,2023-01-13,flow,48.7,m³/s,emerson.csv
+Emerson,2023-01-14,flow,48.7,m³/s,emerson.csv
+Emerson,2023-01-15,flow,48.8,m³/s,emerson.csv
+Emerson,2023-01-16,flow,49.2,m³/s,emerson.csv
+Emerson,2023-01-17,flow,49.5,m³/s,emerson.csv
+Emerson,2023-01-18,flow,49.5,m³/s,emerson.csv
+Emerson,2023-01-19,flow,49.5,m³/s,emerson.csv
+Emerson,2023-01-20,flow,49.5,m³/s,emerson.csv
+Emerson,2023-01-21,flow,49.5,m³/s,emerson.csv
+Emerson,2023-01-22,flow,49.6,m³/s,emerson.csv
+Emerson,2023-01-23,flow,49.5,m³/s,emerson.csv
+Emerson,2023-01-24,flow,49.8,m³/s,emerson.csv
+Emerson,2023-01-25,flow,50.0,m³/s,emerson.csv
+Emerson,2023-01-26,flow,50.1,m³/s,emerson.csv
+Emerson,2023-01-27,flow,50.2,m³/s,emerson.csv
+Emerson,2023-01-28,flow,50.2,m³/s,emerson.csv
+Emerson,2023-01-29,flow,50.2,m³/s,emerson.csv
+Emerson,2023-01-30,flow,50.1,m³/s,emerson.csv
+Emerson,2023-01-31,flow,50.1,m³/s,emerson.csv
+Emerson,2023-02-01,flow,50.1,m³/s,emerson.csv
+Emerson,2023-02-02,flow,50.4,m³/s,emerson.csv
+Emerson,2023-02-03,flow,50.4,m³/s,emerson.csv
+Emerson,2023-02-04,flow,49.9,m³/s,emerson.csv
+Emerson,2023-02-05,flow,49.4,m³/s,emerson.csv
+Emerson,2023-02-06,flow,49.0,m³/s,emerson.csv
+Emerson,2023-02-07,flow,48.7,m³/s,emerson.csv
+Emerson,2023-02-08,flow,48.5,m³/s,emerson.csv
+Emerson,2023-02-09,flow,48.6,m³/s,emerson.csv
+Emerson,2023-02-10,flow,49.2,m³/s,emerson.csv
+Emerson,2023-02-11,flow,49.8,m³/s,emerson.csv
+Emerson,2023-02-12,flow,50.6,m³/s,emerson.csv
+Emerson,2023-02-13,flow,51.7,m³/s,emerson.csv
+Emerson,2023-02-14,flow,52.8,m³/s,emerson.csv
+Emerson,2023-02-15,flow,54.0,m³/s,emerson.csv
+Emerson,2023-02-16,flow,55.0,m³/s,emerson.csv
+Emerson,2023-02-17,flow,55.7,m³/s,emerson.csv
+Emerson,2023-02-18,flow,56.1,m³/s,emerson.csv
+Emerson,2023-02-19,flow,56.4,m³/s,emerson.csv
+Emerson,2023-02-20,flow,56.4,m³/s,emerson.csv
+Emerson,2023-02-21,flow,56.0,m³/s,emerson.csv
+Emerson,2023-02-22,flow,55.3,m³/s,emerson.csv
+Emerson,2023-02-23,flow,54.7,m³/s,emerson.csv
+Emerson,2023-02-24,flow,54.3,m³/s,emerson.csv
+Emerson,2023-02-25,flow,53.7,m³/s,emerson.csv
+Emerson,2023-02-26,flow,53.0,m³/s,emerson.csv
+Emerson,2023-02-27,flow,52.1,m³/s,emerson.csv
+Emerson,2023-02-28,flow,51.9,m³/s,emerson.csv
+Emerson,2023-03-01,flow,52.0,m³/s,emerson.csv
+Emerson,2023-03-02,flow,52.8,m³/s,emerson.csv
+Emerson,2023-03-03,flow,53.2,m³/s,emerson.csv
+Emerson,2023-03-04,flow,53.2,m³/s,emerson.csv
+Emerson,2023-03-05,flow,53.2,m³/s,emerson.csv
+Emerson,2023-03-06,flow,53.3,m³/s,emerson.csv
+Emerson,2023-03-07,flow,53.2,m³/s,emerson.csv
+Emerson,2023-03-08,flow,53.1,m³/s,emerson.csv
+Emerson,2023-03-09,flow,53.2,m³/s,emerson.csv
+Emerson,2023-03-10,flow,53.2,m³/s,emerson.csv
+Emerson,2023-03-11,flow,53.5,m³/s,emerson.csv
+Emerson,2023-03-12,flow,53.9,m³/s,emerson.csv
+Emerson,2023-03-13,flow,54.3,m³/s,emerson.csv
+Emerson,2023-03-14,flow,54.6,m³/s,emerson.csv
+Emerson,2023-03-15,flow,54.8,m³/s,emerson.csv
+Emerson,2023-03-16,flow,55.5,m³/s,emerson.csv
+Emerson,2023-03-17,flow,56.6,m³/s,emerson.csv
+Emerson,2023-03-18,flow,57.9,m³/s,emerson.csv
+Emerson,2023-03-19,flow,59.6,m³/s,emerson.csv
+Emerson,2023-03-20,flow,62.3,m³/s,emerson.csv
+Emerson,2023-03-21,flow,65.6,m³/s,emerson.csv
+Emerson,2023-03-22,flow,68.9,m³/s,emerson.csv
+Emerson,2023-03-23,flow,71.2,m³/s,emerson.csv
+Emerson,2023-03-24,flow,72.9,m³/s,emerson.csv
+Emerson,2023-03-25,flow,74.5,m³/s,emerson.csv
+Emerson,2023-03-26,flow,76.0,m³/s,emerson.csv
+Emerson,2023-03-27,flow,77.3,m³/s,emerson.csv
+Emerson,2023-03-28,flow,78.0,m³/s,emerson.csv
+Emerson,2023-03-29,flow,78.3,m³/s,emerson.csv
+Emerson,2023-03-30,flow,78.2,m³/s,emerson.csv
+Emerson,2023-03-31,flow,77.8,m³/s,emerson.csv
+Emerson,2023-04-01,flow,77.5,m³/s,emerson.csv
+Emerson,2023-04-02,flow,77.3,m³/s,emerson.csv
+Emerson,2023-04-03,flow,77.0,m³/s,emerson.csv
+Emerson,2023-04-04,flow,76.8,m³/s,emerson.csv
+Emerson,2023-04-05,flow,77.4,m³/s,emerson.csv
+Emerson,2023-04-06,flow,77.3,m³/s,emerson.csv
+Emerson,2023-04-07,flow,77.1,m³/s,emerson.csv
+Emerson,2023-04-08,flow,76.9,m³/s,emerson.csv
+Emerson,2023-04-09,flow,76.5,m³/s,emerson.csv
+Emerson,2023-04-10,flow,76.0,m³/s,emerson.csv
+Emerson,2023-04-11,flow,75.6,m³/s,emerson.csv
+Emerson,2023-04-12,flow,82.2,m³/s,emerson.csv
+Emerson,2023-04-13,flow,104.0,m³/s,emerson.csv
+Emerson,2023-04-14,flow,148.0,m³/s,emerson.csv
+Emerson,2023-04-15,flow,241.0,m³/s,emerson.csv
+Emerson,2023-04-16,flow,365.0,m³/s,emerson.csv
+Emerson,2023-04-17,flow,531.0,m³/s,emerson.csv
+Emerson,2023-04-18,flow,703.0,m³/s,emerson.csv
+Emerson,2023-04-19,flow,831.0,m³/s,emerson.csv
+Emerson,2023-04-20,flow,904.0,m³/s,emerson.csv
+Emerson,2023-04-21,flow,930.0,m³/s,emerson.csv
+Emerson,2023-04-22,flow,961.0,m³/s,emerson.csv
+Emerson,2023-04-23,flow,1010.0,m³/s,emerson.csv
+Emerson,2023-04-24,flow,1070.0,m³/s,emerson.csv
+Emerson,2023-04-25,flow,1130.0,m³/s,emerson.csv
+Emerson,2023-04-26,flow,1180.0,m³/s,emerson.csv
+Emerson,2023-04-27,flow,1230.0,m³/s,emerson.csv
+Emerson,2023-04-28,flow,1270.0,m³/s,emerson.csv
+Emerson,2023-04-29,flow,1320.0,m³/s,emerson.csv
+Emerson,2023-04-30,flow,1360.0,m³/s,emerson.csv
+Emerson,2023-05-01,flow,1400.0,m³/s,emerson.csv
+Emerson,2023-05-02,flow,1420.0,m³/s,emerson.csv
+Emerson,2023-05-03,flow,1440.0,m³/s,emerson.csv
+Emerson,2023-05-04,flow,1450.0,m³/s,emerson.csv
+Emerson,2023-05-05,flow,1440.0,m³/s,emerson.csv
+Emerson,2023-05-06,flow,1430.0,m³/s,emerson.csv
+Emerson,2023-05-07,flow,1400.0,m³/s,emerson.csv
+Emerson,2023-05-08,flow,1370.0,m³/s,emerson.csv
+Emerson,2023-05-09,flow,1330.0,m³/s,emerson.csv
+Emerson,2023-05-10,flow,1270.0,m³/s,emerson.csv
+Emerson,2023-05-11,flow,1190.0,m³/s,emerson.csv
+Emerson,2023-05-12,flow,1110.0,m³/s,emerson.csv
+Emerson,2023-05-13,flow,1030.0,m³/s,emerson.csv
+Emerson,2023-05-14,flow,971.0,m³/s,emerson.csv
+Emerson,2023-05-15,flow,925.0,m³/s,emerson.csv
+Emerson,2023-05-16,flow,883.0,m³/s,emerson.csv
+Emerson,2023-05-17,flow,840.0,m³/s,emerson.csv
+Emerson,2023-05-18,flow,795.0,m³/s,emerson.csv
+Emerson,2023-05-19,flow,749.0,m³/s,emerson.csv
+Emerson,2023-05-20,flow,702.0,m³/s,emerson.csv
+Emerson,2023-05-21,flow,653.0,m³/s,emerson.csv
+Emerson,2023-05-22,flow,606.0,m³/s,emerson.csv
+Emerson,2023-05-23,flow,559.0,m³/s,emerson.csv
+Emerson,2023-05-24,flow,513.0,m³/s,emerson.csv
+Emerson,2023-05-25,flow,471.0,m³/s,emerson.csv
+Emerson,2023-05-26,flow,432.0,m³/s,emerson.csv
+Emerson,2023-05-27,flow,399.0,m³/s,emerson.csv
+Emerson,2023-05-28,flow,373.0,m³/s,emerson.csv
+Emerson,2023-05-29,flow,354.0,m³/s,emerson.csv
+Emerson,2023-05-30,flow,340.0,m³/s,emerson.csv
+Emerson,2023-05-31,flow,326.0,m³/s,emerson.csv
+Emerson,2023-06-01,flow,311.0,m³/s,emerson.csv
+Emerson,2023-06-02,flow,298.0,m³/s,emerson.csv
+Emerson,2023-06-03,flow,290.0,m³/s,emerson.csv
+Emerson,2023-06-04,flow,286.0,m³/s,emerson.csv
+Emerson,2023-06-05,flow,282.0,m³/s,emerson.csv
+Emerson,2023-06-06,flow,276.0,m³/s,emerson.csv
+Emerson,2023-06-07,flow,266.0,m³/s,emerson.csv
+Emerson,2023-06-08,flow,261.0,m³/s,emerson.csv
+Emerson,2023-06-09,flow,257.0,m³/s,emerson.csv
+Emerson,2023-06-10,flow,250.0,m³/s,emerson.csv
+Emerson,2023-06-11,flow,244.0,m³/s,emerson.csv
+Emerson,2023-06-12,flow,236.0,m³/s,emerson.csv
+Emerson,2023-06-13,flow,227.0,m³/s,emerson.csv
+Emerson,2023-06-14,flow,218.0,m³/s,emerson.csv
+Emerson,2023-06-15,flow,209.0,m³/s,emerson.csv
+Emerson,2023-06-16,flow,202.0,m³/s,emerson.csv
+Emerson,2023-06-17,flow,194.0,m³/s,emerson.csv
+Emerson,2023-06-18,flow,186.0,m³/s,emerson.csv
+Emerson,2023-06-19,flow,178.0,m³/s,emerson.csv
+Emerson,2023-06-20,flow,172.0,m³/s,emerson.csv
+Emerson,2023-06-21,flow,165.0,m³/s,emerson.csv
+Emerson,2023-06-22,flow,158.0,m³/s,emerson.csv
+Emerson,2023-06-23,flow,153.0,m³/s,emerson.csv
+Emerson,2023-06-24,flow,148.0,m³/s,emerson.csv
+Emerson,2023-06-25,flow,158.0,m³/s,emerson.csv
+Emerson,2023-06-26,flow,206.0,m³/s,emerson.csv
+Emerson,2023-06-27,flow,218.0,m³/s,emerson.csv
+Emerson,2023-06-28,flow,217.0,m³/s,emerson.csv
+Emerson,2023-06-29,flow,221.0,m³/s,emerson.csv
+Emerson,2023-06-30,flow,227.0,m³/s,emerson.csv
+Emerson,2023-07-01,flow,226.0,m³/s,emerson.csv
+Emerson,2023-07-02,flow,214.0,m³/s,emerson.csv
+Emerson,2023-07-03,flow,197.0,m³/s,emerson.csv
+Emerson,2023-07-04,flow,179.0,m³/s,emerson.csv
+Emerson,2023-07-05,flow,165.0,m³/s,emerson.csv
+Emerson,2023-07-06,flow,153.0,m³/s,emerson.csv
+Emerson,2023-07-07,flow,142.0,m³/s,emerson.csv
+Emerson,2023-07-08,flow,133.0,m³/s,emerson.csv
+Emerson,2023-07-09,flow,123.0,m³/s,emerson.csv
+Emerson,2023-07-10,flow,115.0,m³/s,emerson.csv
+Emerson,2023-07-11,flow,111.0,m³/s,emerson.csv
+Emerson,2023-07-12,flow,108.0,m³/s,emerson.csv
+Emerson,2023-07-13,flow,104.0,m³/s,emerson.csv
+Emerson,2023-07-14,flow,101.0,m³/s,emerson.csv
+Emerson,2023-07-15,flow,96.9,m³/s,emerson.csv
+Emerson,2023-07-16,flow,92.9,m³/s,emerson.csv
+Emerson,2023-07-17,flow,89.9,m³/s,emerson.csv
+Emerson,2023-07-18,flow,86.7,m³/s,emerson.csv
+Emerson,2023-07-19,flow,83.5,m³/s,emerson.csv
+Emerson,2023-07-20,flow,80.5,m³/s,emerson.csv
+Emerson,2023-07-21,flow,76.8,m³/s,emerson.csv
+Emerson,2023-07-22,flow,72.8,m³/s,emerson.csv
+Emerson,2023-07-23,flow,69.4,m³/s,emerson.csv
+Emerson,2023-07-24,flow,66.7,m³/s,emerson.csv
+Emerson,2023-07-25,flow,64.6,m³/s,emerson.csv
+Emerson,2023-07-26,flow,66.1,m³/s,emerson.csv
+Emerson,2023-07-27,flow,65.8,m³/s,emerson.csv
+Emerson,2023-07-28,flow,64.5,m³/s,emerson.csv
+Emerson,2023-07-29,flow,63.0,m³/s,emerson.csv
+Emerson,2023-07-30,flow,62.5,m³/s,emerson.csv
+Emerson,2023-07-31,flow,61.7,m³/s,emerson.csv
+Emerson,2023-08-01,flow,59.2,m³/s,emerson.csv
+Emerson,2023-08-02,flow,59.0,m³/s,emerson.csv
+Emerson,2023-08-03,flow,58.6,m³/s,emerson.csv
+Emerson,2023-08-04,flow,58.0,m³/s,emerson.csv
+Emerson,2023-08-05,flow,57.3,m³/s,emerson.csv
+Emerson,2023-08-06,flow,55.7,m³/s,emerson.csv
+Emerson,2023-08-07,flow,54.7,m³/s,emerson.csv
+Emerson,2023-08-08,flow,55.2,m³/s,emerson.csv
+Emerson,2023-08-09,flow,56.0,m³/s,emerson.csv
+Emerson,2023-08-10,flow,58.7,m³/s,emerson.csv
+Emerson,2023-08-11,flow,65.2,m³/s,emerson.csv
+Emerson,2023-08-12,flow,67.5,m³/s,emerson.csv
+Emerson,2023-08-13,flow,63.6,m³/s,emerson.csv
+Emerson,2023-08-14,flow,58.2,m³/s,emerson.csv
+Emerson,2023-08-15,flow,54.9,m³/s,emerson.csv
+Emerson,2023-08-16,flow,54.2,m³/s,emerson.csv
+Emerson,2023-08-17,flow,55.9,m³/s,emerson.csv
+Emerson,2023-08-18,flow,57.7,m³/s,emerson.csv
+Emerson,2023-08-19,flow,59.2,m³/s,emerson.csv
+Emerson,2023-08-20,flow,60.2,m³/s,emerson.csv
+Emerson,2023-08-21,flow,59.5,m³/s,emerson.csv
+Emerson,2023-08-22,flow,59.1,m³/s,emerson.csv
+Emerson,2023-08-23,flow,60.7,m³/s,emerson.csv
+Emerson,2023-08-24,flow,63.4,m³/s,emerson.csv
+Emerson,2023-08-25,flow,63.8,m³/s,emerson.csv
+Emerson,2023-08-26,flow,63.0,m³/s,emerson.csv
+Emerson,2023-08-27,flow,61.1,m³/s,emerson.csv
+Emerson,2023-08-28,flow,59.0,m³/s,emerson.csv
+Emerson,2023-08-29,flow,56.9,m³/s,emerson.csv
+Emerson,2023-08-30,flow,55.1,m³/s,emerson.csv
+Emerson,2023-08-31,flow,52.5,m³/s,emerson.csv
+Emerson,2023-09-01,flow,49.9,m³/s,emerson.csv
+Emerson,2023-09-02,flow,47.6,m³/s,emerson.csv
+Emerson,2023-09-03,flow,45.4,m³/s,emerson.csv
+Emerson,2023-09-04,flow,43.4,m³/s,emerson.csv
+Emerson,2023-09-05,flow,42.6,m³/s,emerson.csv
+Emerson,2023-09-06,flow,42.5,m³/s,emerson.csv
+Emerson,2023-09-07,flow,42.1,m³/s,emerson.csv
+Emerson,2023-09-08,flow,41.4,m³/s,emerson.csv
+Emerson,2023-09-09,flow,40.5,m³/s,emerson.csv
+Emerson,2023-09-10,flow,39.6,m³/s,emerson.csv
+Emerson,2023-09-11,flow,39.3,m³/s,emerson.csv
+Emerson,2023-09-12,flow,40.6,m³/s,emerson.csv
+Emerson,2023-09-13,flow,41.5,m³/s,emerson.csv
+Emerson,2023-09-14,flow,42.2,m³/s,emerson.csv
+Emerson,2023-09-15,flow,42.5,m³/s,emerson.csv
+Emerson,2023-09-16,flow,42.8,m³/s,emerson.csv
+Emerson,2023-09-17,flow,44.1,m³/s,emerson.csv
+Emerson,2023-09-18,flow,45.6,m³/s,emerson.csv
+Emerson,2023-09-19,flow,46.8,m³/s,emerson.csv
+Emerson,2023-09-20,flow,46.7,m³/s,emerson.csv
+Emerson,2023-09-21,flow,46.0,m³/s,emerson.csv
+Emerson,2023-09-22,flow,45.4,m³/s,emerson.csv
+Emerson,2023-09-23,flow,45.0,m³/s,emerson.csv
+Emerson,2023-09-24,flow,45.6,m³/s,emerson.csv
+Emerson,2023-09-25,flow,46.2,m³/s,emerson.csv
+Emerson,2023-09-26,flow,46.3,m³/s,emerson.csv
+Emerson,2023-09-27,flow,46.2,m³/s,emerson.csv
+Emerson,2023-09-28,flow,45.7,m³/s,emerson.csv
+Emerson,2023-09-29,flow,47.1,m³/s,emerson.csv
+Emerson,2023-09-30,flow,48.8,m³/s,emerson.csv
+Emerson,2023-10-01,flow,49.6,m³/s,emerson.csv
+Emerson,2023-10-02,flow,49.3,m³/s,emerson.csv
+Emerson,2023-10-03,flow,50.1,m³/s,emerson.csv
+Emerson,2023-10-04,flow,53.2,m³/s,emerson.csv
+Emerson,2023-10-05,flow,56.9,m³/s,emerson.csv
+Emerson,2023-10-06,flow,58.7,m³/s,emerson.csv
+Emerson,2023-10-07,flow,58.7,m³/s,emerson.csv
+Emerson,2023-10-08,flow,56.4,m³/s,emerson.csv
+Emerson,2023-10-09,flow,54.5,m³/s,emerson.csv
+Emerson,2023-10-10,flow,54.0,m³/s,emerson.csv
+Emerson,2023-10-11,flow,53.9,m³/s,emerson.csv
+Emerson,2023-10-12,flow,53.4,m³/s,emerson.csv
+Emerson,2023-10-13,flow,52.6,m³/s,emerson.csv
+Emerson,2023-10-14,flow,52.3,m³/s,emerson.csv
+Emerson,2023-10-15,flow,51.4,m³/s,emerson.csv
+Emerson,2023-10-16,flow,50.3,m³/s,emerson.csv
+Emerson,2023-10-17,flow,49.4,m³/s,emerson.csv
+Emerson,2023-10-18,flow,48.4,m³/s,emerson.csv
+Emerson,2023-10-19,flow,48.0,m³/s,emerson.csv
+Emerson,2023-10-20,flow,48.1,m³/s,emerson.csv
+Emerson,2023-10-21,flow,48.1,m³/s,emerson.csv
+Emerson,2023-10-22,flow,48.8,m³/s,emerson.csv
+Emerson,2023-10-23,flow,49.5,m³/s,emerson.csv
+Emerson,2023-10-24,flow,50.2,m³/s,emerson.csv
+Emerson,2023-10-25,flow,51.2,m³/s,emerson.csv
+Emerson,2023-10-26,flow,51.9,m³/s,emerson.csv
+Emerson,2023-10-27,flow,53.0,m³/s,emerson.csv
+Emerson,2023-10-28,flow,54.5,m³/s,emerson.csv
+Emerson,2023-10-29,flow,54.4,m³/s,emerson.csv
+Emerson,2023-10-30,flow,53.9,m³/s,emerson.csv
+Emerson,2023-10-31,flow,53.5,m³/s,emerson.csv
+Emerson,2023-11-01,flow,53.8,m³/s,emerson.csv
+Emerson,2023-11-02,flow,54.6,m³/s,emerson.csv
+Emerson,2023-11-03,flow,54.4,m³/s,emerson.csv
+Emerson,2023-11-04,flow,53.8,m³/s,emerson.csv
+Emerson,2023-11-05,flow,53.1,m³/s,emerson.csv
+Emerson,2023-11-06,flow,52.4,m³/s,emerson.csv
+Emerson,2023-11-07,flow,52.9,m³/s,emerson.csv
+Emerson,2023-11-08,flow,54.0,m³/s,emerson.csv
+Emerson,2023-11-09,flow,54.7,m³/s,emerson.csv
+Emerson,2023-11-10,flow,55.7,m³/s,emerson.csv
+Emerson,2023-11-11,flow,56.4,m³/s,emerson.csv
+Emerson,2023-11-12,flow,55.5,m³/s,emerson.csv
+Emerson,2023-11-13,flow,55.1,m³/s,emerson.csv
+Emerson,2023-11-14,flow,54.8,m³/s,emerson.csv
+Emerson,2023-11-15,flow,54.0,m³/s,emerson.csv
+Emerson,2023-11-16,flow,53.2,m³/s,emerson.csv
+Emerson,2023-11-17,flow,53.4,m³/s,emerson.csv
+Emerson,2023-11-18,flow,53.3,m³/s,emerson.csv
+Emerson,2023-11-19,flow,53.3,m³/s,emerson.csv
+Emerson,2023-11-20,flow,53.9,m³/s,emerson.csv
+Emerson,2023-11-21,flow,52.8,m³/s,emerson.csv
+Emerson,2023-11-22,flow,51.4,m³/s,emerson.csv
+Emerson,2023-11-23,flow,49.4,m³/s,emerson.csv
+Emerson,2023-11-24,flow,43.3,m³/s,emerson.csv
+Emerson,2023-11-25,flow,34.9,m³/s,emerson.csv
+Emerson,2023-11-26,flow,31.0,m³/s,emerson.csv
+Emerson,2023-11-27,flow,29.0,m³/s,emerson.csv
+Emerson,2023-11-28,flow,27.4,m³/s,emerson.csv
+Emerson,2023-11-29,flow,28.5,m³/s,emerson.csv
+Emerson,2023-11-30,flow,32.2,m³/s,emerson.csv
+Emerson,2023-12-01,flow,36.2,m³/s,emerson.csv
+Emerson,2023-12-02,flow,39.1,m³/s,emerson.csv
+Emerson,2023-12-03,flow,41.7,m³/s,emerson.csv
+Emerson,2023-12-04,flow,42.9,m³/s,emerson.csv
+Emerson,2023-12-05,flow,43.9,m³/s,emerson.csv
+Emerson,2023-12-06,flow,44.4,m³/s,emerson.csv
+Emerson,2023-12-07,flow,44.6,m³/s,emerson.csv
+Emerson,2023-12-08,flow,44.4,m³/s,emerson.csv
+Emerson,2023-12-09,flow,44.5,m³/s,emerson.csv
+Emerson,2023-12-10,flow,44.4,m³/s,emerson.csv
+Emerson,2023-12-11,flow,44.0,m³/s,emerson.csv
+Emerson,2023-12-12,flow,43.1,m³/s,emerson.csv
+Emerson,2023-12-13,flow,42.3,m³/s,emerson.csv
+Emerson,2023-12-14,flow,42.0,m³/s,emerson.csv
+Emerson,2023-12-15,flow,41.2,m³/s,emerson.csv
+Emerson,2023-12-16,flow,41.3,m³/s,emerson.csv
+Emerson,2023-12-17,flow,41.9,m³/s,emerson.csv
+Emerson,2023-12-18,flow,42.8,m³/s,emerson.csv
+Emerson,2023-12-19,flow,42.6,m³/s,emerson.csv
+Emerson,2023-12-20,flow,40.8,m³/s,emerson.csv
+Emerson,2023-12-21,flow,39.1,m³/s,emerson.csv
+Emerson,2023-12-22,flow,38.8,m³/s,emerson.csv
+Emerson,2023-12-23,flow,38.9,m³/s,emerson.csv
+Emerson,2023-12-24,flow,39.2,m³/s,emerson.csv
+Emerson,2023-12-25,flow,40.3,m³/s,emerson.csv
+Emerson,2023-12-26,flow,41.7,m³/s,emerson.csv
+Emerson,2023-12-27,flow,42.6,m³/s,emerson.csv
+Emerson,2023-12-28,flow,43.8,m³/s,emerson.csv
+Emerson,2023-12-29,flow,45.6,m³/s,emerson.csv
+Emerson,2023-12-30,flow,48.1,m³/s,emerson.csv
+Emerson,2023-12-31,flow,52.2,m³/s,emerson.csv
+Emerson,2025-09-09,flow,95.1,m³/s,api_realtime
+Emerson,2025-09-10,flow,96.1,m³/s,api_realtime
+Emerson,2025-09-11,flow,96.1,m³/s,api_realtime
+Emerson,2025-09-12,flow,95.1,m³/s,api_realtime
+Emerson,2025-09-13,flow,93.6,m³/s,api_realtime
+Emerson,2025-09-14,flow,92.3,m³/s,api_realtime
+Emerson,2025-09-15,flow,90.3,m³/s,api_realtime
+Emerson,2025-09-16,flow,88.6,m³/s,api_realtime
+Emerson,2025-09-17,flow,87.1,m³/s,api_realtime
+Emerson,2025-09-18,flow,85.3,m³/s,api_realtime
+Emerson,2025-09-19,flow,82.2,m³/s,api_realtime
+Emerson,2025-09-20,flow,81.7,m³/s,api_realtime
+Emerson,2025-09-21,flow,83.1,m³/s,api_realtime
+Emerson,2025-09-22,flow,83.4,m³/s,api_realtime
+Emerson,2025-09-23,flow,83.4,m³/s,api_realtime
+Emerson,2025-09-24,flow,82.3,m³/s,api_realtime
+Emerson,2025-09-25,flow,80.0,m³/s,api_realtime
+Emerson,2025-09-26,flow,76.4,m³/s,api_realtime
+Emerson,2025-09-27,flow,74.9,m³/s,api_realtime
+Emerson,2025-09-28,flow,73.8,m³/s,api_realtime
+Emerson,2025-09-29,flow,73.8,m³/s,api_realtime
+Emerson,2025-09-30,flow,74.9,m³/s,api_realtime
+Emerson,2025-10-01,flow,77.7,m³/s,api_realtime
+Emerson,2025-10-02,flow,82.5,m³/s,api_realtime
+Emerson,2025-10-03,flow,85.2,m³/s,api_realtime
+Emerson,2025-10-04,flow,85.8,m³/s,api_realtime
+Emerson,2025-10-05,flow,83.3,m³/s,api_realtime
+Emerson,2025-10-06,flow,84.9,m³/s,api_realtime
+Emerson,2025-10-07,flow,84.4,m³/s,api_realtime
+Emerson,2025-10-08,flow,81.4,m³/s,api_realtime
+Emerson,2025-10-09,flow,79.0,m³/s,api_realtime
+James Ave,2023-01-01,flow,222.053,m³/s,james-ave.csv
+James Ave,2023-01-02,flow,222.043,m³/s,james-ave.csv
+James Ave,2023-01-03,flow,222.047,m³/s,james-ave.csv
+James Ave,2023-01-04,flow,222.053,m³/s,james-ave.csv
+James Ave,2023-01-05,flow,222.057,m³/s,james-ave.csv
+James Ave,2023-01-06,flow,222.06,m³/s,james-ave.csv
+James Ave,2023-01-07,flow,222.064,m³/s,james-ave.csv
+James Ave,2023-01-08,flow,222.073,m³/s,james-ave.csv
+James Ave,2023-01-09,flow,222.078,m³/s,james-ave.csv
+James Ave,2023-01-10,flow,222.08,m³/s,james-ave.csv
+James Ave,2023-01-11,flow,222.083,m³/s,james-ave.csv
+James Ave,2023-01-12,flow,222.089,m³/s,james-ave.csv
+James Ave,2023-01-13,flow,222.091,m³/s,james-ave.csv
+James Ave,2023-01-14,flow,222.102,m³/s,james-ave.csv
+James Ave,2023-01-15,flow,222.106,m³/s,james-ave.csv
+James Ave,2023-01-16,flow,222.107,m³/s,james-ave.csv
+James Ave,2023-01-17,flow,222.105,m³/s,james-ave.csv
+James Ave,2023-01-18,flow,222.102,m³/s,james-ave.csv
+James Ave,2023-01-19,flow,222.104,m³/s,james-ave.csv
+James Ave,2023-01-20,flow,222.107,m³/s,james-ave.csv
+James Ave,2023-01-21,flow,222.113,m³/s,james-ave.csv
+James Ave,2023-01-22,flow,222.118,m³/s,james-ave.csv
+James Ave,2023-01-23,flow,222.131,m³/s,james-ave.csv
+James Ave,2023-01-24,flow,222.145,m³/s,james-ave.csv
+James Ave,2023-01-25,flow,222.161,m³/s,james-ave.csv
+James Ave,2023-01-26,flow,222.168,m³/s,james-ave.csv
+James Ave,2023-01-27,flow,222.186,m³/s,james-ave.csv
+James Ave,2023-01-28,flow,222.202,m³/s,james-ave.csv
+James Ave,2023-01-29,flow,222.197,m³/s,james-ave.csv
+James Ave,2023-02-16,flow,222.236,m³/s,james-ave.csv
+James Ave,2023-02-17,flow,222.236,m³/s,james-ave.csv
+James Ave,2023-02-18,flow,222.244,m³/s,james-ave.csv
+James Ave,2023-02-19,flow,222.261,m³/s,james-ave.csv
+James Ave,2023-02-20,flow,222.27,m³/s,james-ave.csv
+James Ave,2023-02-21,flow,222.274,m³/s,james-ave.csv
+James Ave,2023-02-22,flow,222.272,m³/s,james-ave.csv
+James Ave,2023-02-23,flow,222.265,m³/s,james-ave.csv
+James Ave,2023-02-24,flow,222.258,m³/s,james-ave.csv
+James Ave,2023-02-25,flow,222.256,m³/s,james-ave.csv
+James Ave,2023-02-26,flow,222.257,m³/s,james-ave.csv
+James Ave,2023-02-27,flow,222.262,m³/s,james-ave.csv
+James Ave,2023-02-28,flow,222.279,m³/s,james-ave.csv
+James Ave,2023-03-01,flow,222.278,m³/s,james-ave.csv
+James Ave,2023-03-02,flow,222.272,m³/s,james-ave.csv
+James Ave,2023-03-03,flow,222.274,m³/s,james-ave.csv
+James Ave,2023-03-04,flow,222.286,m³/s,james-ave.csv
+James Ave,2023-03-05,flow,222.299,m³/s,james-ave.csv
+James Ave,2023-03-06,flow,222.304,m³/s,james-ave.csv
+James Ave,2023-03-07,flow,222.301,m³/s,james-ave.csv
+James Ave,2023-03-08,flow,222.307,m³/s,james-ave.csv
+James Ave,2023-03-09,flow,222.318,m³/s,james-ave.csv
+James Ave,2023-03-10,flow,222.33,m³/s,james-ave.csv
+James Ave,2023-03-11,flow,222.34,m³/s,james-ave.csv
+James Ave,2023-03-12,flow,222.345,m³/s,james-ave.csv
+James Ave,2023-03-13,flow,222.34,m³/s,james-ave.csv
+James Ave,2023-03-14,flow,222.338,m³/s,james-ave.csv
+James Ave,2023-03-15,flow,222.339,m³/s,james-ave.csv
+James Ave,2023-03-16,flow,222.336,m³/s,james-ave.csv
+James Ave,2023-03-17,flow,222.319,m³/s,james-ave.csv
+James Ave,2023-03-18,flow,222.304,m³/s,james-ave.csv
+James Ave,2023-03-19,flow,222.303,m³/s,james-ave.csv
+James Ave,2023-03-20,flow,222.307,m³/s,james-ave.csv
+James Ave,2023-03-21,flow,222.313,m³/s,james-ave.csv
+James Ave,2023-03-22,flow,222.337,m³/s,james-ave.csv
+James Ave,2023-03-23,flow,222.36,m³/s,james-ave.csv
+James Ave,2023-03-24,flow,222.382,m³/s,james-ave.csv
+James Ave,2023-03-25,flow,222.402,m³/s,james-ave.csv
+James Ave,2023-03-26,flow,222.401,m³/s,james-ave.csv
+James Ave,2023-03-27,flow,222.394,m³/s,james-ave.csv
+James Ave,2023-03-28,flow,222.383,m³/s,james-ave.csv
+James Ave,2023-03-29,flow,222.372,m³/s,james-ave.csv
+James Ave,2023-03-30,flow,222.363,m³/s,james-ave.csv
+James Ave,2023-03-31,flow,222.339,m³/s,james-ave.csv
+James Ave,2023-04-01,flow,222.281,m³/s,james-ave.csv
+James Ave,2023-04-02,flow,222.215,m³/s,james-ave.csv
+James Ave,2023-04-03,flow,222.174,m³/s,james-ave.csv
+James Ave,2023-04-04,flow,222.121,m³/s,james-ave.csv
+James Ave,2023-04-05,flow,222.126,m³/s,james-ave.csv
+James Ave,2023-04-06,flow,222.172,m³/s,james-ave.csv
+James Ave,2023-04-07,flow,222.083,m³/s,james-ave.csv
+James Ave,2023-04-08,flow,222.025,m³/s,james-ave.csv
+James Ave,2023-04-09,flow,222.024,m³/s,james-ave.csv
+James Ave,2023-04-10,flow,222.049,m³/s,james-ave.csv
+James Ave,2023-04-11,flow,222.109,m³/s,james-ave.csv
+James Ave,2023-04-12,flow,222.307,m³/s,james-ave.csv
+James Ave,2023-04-13,flow,222.909,m³/s,james-ave.csv
+James Ave,2023-04-14,flow,223.635,m³/s,james-ave.csv
+James Ave,2023-04-15,flow,224.168,m³/s,james-ave.csv
+James Ave,2023-04-16,flow,224.826,m³/s,james-ave.csv
+James Ave,2023-04-17,flow,225.32,m³/s,james-ave.csv
+James Ave,2023-04-18,flow,225.956,m³/s,james-ave.csv
+James Ave,2023-04-19,flow,226.758,m³/s,james-ave.csv
+James Ave,2023-04-20,flow,226.974,m³/s,james-ave.csv
+James Ave,2023-04-21,flow,226.828,m³/s,james-ave.csv
+James Ave,2023-04-22,flow,226.957,m³/s,james-ave.csv
+James Ave,2023-04-23,flow,226.993,m³/s,james-ave.csv
+James Ave,2023-04-24,flow,226.987,m³/s,james-ave.csv
+James Ave,2023-04-25,flow,227.057,m³/s,james-ave.csv
+James Ave,2023-04-26,flow,226.989,m³/s,james-ave.csv
+James Ave,2023-04-27,flow,227.076,m³/s,james-ave.csv
+James Ave,2023-04-28,flow,227.116,m³/s,james-ave.csv
+James Ave,2023-04-29,flow,227.154,m³/s,james-ave.csv
+James Ave,2023-04-30,flow,227.211,m³/s,james-ave.csv
+James Ave,2023-05-01,flow,227.195,m³/s,james-ave.csv
+James Ave,2023-05-02,flow,227.172,m³/s,james-ave.csv
+James Ave,2023-05-03,flow,227.143,m³/s,james-ave.csv
+James Ave,2023-05-04,flow,227.128,m³/s,james-ave.csv
+James Ave,2023-05-05,flow,227.117,m³/s,james-ave.csv
+James Ave,2023-05-06,flow,227.103,m³/s,james-ave.csv
+James Ave,2023-05-07,flow,227.115,m³/s,james-ave.csv
+James Ave,2023-05-08,flow,227.102,m³/s,james-ave.csv
+James Ave,2023-05-09,flow,227.089,m³/s,james-ave.csv
+James Ave,2023-05-10,flow,227.09,m³/s,james-ave.csv
+James Ave,2023-05-11,flow,227.085,m³/s,james-ave.csv
+James Ave,2023-05-12,flow,227.048,m³/s,james-ave.csv
+James Ave,2023-05-13,flow,227.012,m³/s,james-ave.csv
+James Ave,2023-05-14,flow,226.983,m³/s,james-ave.csv
+James Ave,2023-05-15,flow,226.95,m³/s,james-ave.csv
+James Ave,2023-05-16,flow,226.89,m³/s,james-ave.csv
+James Ave,2023-05-17,flow,226.807,m³/s,james-ave.csv
+James Ave,2023-05-18,flow,226.698,m³/s,james-ave.csv
+James Ave,2023-05-19,flow,226.561,m³/s,james-ave.csv
+James Ave,2023-05-20,flow,226.376,m³/s,james-ave.csv
+James Ave,2023-05-21,flow,226.17,m³/s,james-ave.csv
+James Ave,2023-05-22,flow,225.959,m³/s,james-ave.csv
+James Ave,2023-05-23,flow,225.747,m³/s,james-ave.csv
+James Ave,2023-05-24,flow,225.528,m³/s,james-ave.csv
+James Ave,2023-05-25,flow,225.273,m³/s,james-ave.csv
+James Ave,2023-05-26,flow,225.101,m³/s,james-ave.csv
+James Ave,2023-05-27,flow,224.875,m³/s,james-ave.csv
+James Ave,2023-05-28,flow,224.693,m³/s,james-ave.csv
+James Ave,2023-05-29,flow,224.544,m³/s,james-ave.csv
+James Ave,2023-05-30,flow,224.417,m³/s,james-ave.csv
+James Ave,2023-05-31,flow,224.331,m³/s,james-ave.csv
+James Ave,2023-06-01,flow,224.248,m³/s,james-ave.csv
+James Ave,2023-06-02,flow,224.169,m³/s,james-ave.csv
+James Ave,2023-06-03,flow,224.097,m³/s,james-ave.csv
+James Ave,2023-06-04,flow,224.036,m³/s,james-ave.csv
+James Ave,2023-06-05,flow,223.981,m³/s,james-ave.csv
+James Ave,2023-06-06,flow,223.943,m³/s,james-ave.csv
+James Ave,2023-06-07,flow,223.934,m³/s,james-ave.csv
+James Ave,2023-06-08,flow,223.871,m³/s,james-ave.csv
+James Ave,2023-06-09,flow,223.847,m³/s,james-ave.csv
+James Ave,2023-06-10,flow,223.915,m³/s,james-ave.csv
+James Ave,2023-06-11,flow,223.923,m³/s,james-ave.csv
+James Ave,2023-06-12,flow,223.903,m³/s,james-ave.csv
+James Ave,2023-06-13,flow,223.87,m³/s,james-ave.csv
+James Ave,2023-06-14,flow,223.87,m³/s,james-ave.csv
+James Ave,2023-06-15,flow,223.833,m³/s,james-ave.csv
+James Ave,2023-06-16,flow,223.821,m³/s,james-ave.csv
+James Ave,2023-06-17,flow,223.795,m³/s,james-ave.csv
+James Ave,2023-06-18,flow,223.826,m³/s,james-ave.csv
+James Ave,2023-06-19,flow,223.881,m³/s,james-ave.csv
+James Ave,2023-06-20,flow,223.811,m³/s,james-ave.csv
+James Ave,2023-06-21,flow,223.736,m³/s,james-ave.csv
+James Ave,2023-06-22,flow,223.71,m³/s,james-ave.csv
+James Ave,2023-06-23,flow,223.709,m³/s,james-ave.csv
+James Ave,2023-06-24,flow,223.788,m³/s,james-ave.csv
+James Ave,2023-06-25,flow,223.923,m³/s,james-ave.csv
+James Ave,2023-06-26,flow,223.901,m³/s,james-ave.csv
+James Ave,2023-06-27,flow,223.863,m³/s,james-ave.csv
+James Ave,2023-06-28,flow,223.862,m³/s,james-ave.csv
+James Ave,2023-06-29,flow,223.843,m³/s,james-ave.csv
+James Ave,2023-06-30,flow,223.821,m³/s,james-ave.csv
+James Ave,2023-07-01,flow,223.864,m³/s,james-ave.csv
+James Ave,2023-07-02,flow,223.936,m³/s,james-ave.csv
+James Ave,2023-07-03,flow,223.932,m³/s,james-ave.csv
+James Ave,2023-07-04,flow,223.843,m³/s,james-ave.csv
+James Ave,2023-07-05,flow,223.781,m³/s,james-ave.csv
+James Ave,2023-07-06,flow,223.786,m³/s,james-ave.csv
+James Ave,2023-07-07,flow,223.812,m³/s,james-ave.csv
+James Ave,2023-07-08,flow,223.804,m³/s,james-ave.csv
+James Ave,2023-07-09,flow,223.791,m³/s,james-ave.csv
+James Ave,2023-07-10,flow,223.743,m³/s,james-ave.csv
+James Ave,2023-07-11,flow,223.77,m³/s,james-ave.csv
+James Ave,2023-07-12,flow,223.757,m³/s,james-ave.csv
+James Ave,2023-07-13,flow,223.73,m³/s,james-ave.csv
+James Ave,2023-07-14,flow,223.765,m³/s,james-ave.csv
+James Ave,2023-07-15,flow,223.779,m³/s,james-ave.csv
+James Ave,2023-07-16,flow,223.769,m³/s,james-ave.csv
+James Ave,2023-07-17,flow,223.733,m³/s,james-ave.csv
+James Ave,2023-07-18,flow,223.734,m³/s,james-ave.csv
+James Ave,2023-07-19,flow,223.748,m³/s,james-ave.csv
+James Ave,2023-07-20,flow,223.747,m³/s,james-ave.csv
+James Ave,2023-07-21,flow,223.733,m³/s,james-ave.csv
+James Ave,2023-07-22,flow,223.746,m³/s,james-ave.csv
+James Ave,2023-07-23,flow,223.737,m³/s,james-ave.csv
+James Ave,2023-07-24,flow,223.71,m³/s,james-ave.csv
+James Ave,2023-07-25,flow,223.839,m³/s,james-ave.csv
+James Ave,2023-07-26,flow,223.877,m³/s,james-ave.csv
+James Ave,2023-07-27,flow,223.883,m³/s,james-ave.csv
+James Ave,2023-07-28,flow,223.873,m³/s,james-ave.csv
+James Ave,2023-07-29,flow,223.849,m³/s,james-ave.csv
+James Ave,2023-07-30,flow,223.807,m³/s,james-ave.csv
+James Ave,2023-07-31,flow,223.765,m³/s,james-ave.csv
+James Ave,2023-08-01,flow,223.804,m³/s,james-ave.csv
+James Ave,2023-08-02,flow,223.816,m³/s,james-ave.csv
+James Ave,2023-08-03,flow,223.765,m³/s,james-ave.csv
+James Ave,2023-08-04,flow,223.721,m³/s,james-ave.csv
+James Ave,2023-08-05,flow,223.714,m³/s,james-ave.csv
+James Ave,2023-08-06,flow,223.705,m³/s,james-ave.csv
+James Ave,2023-08-07,flow,223.686,m³/s,james-ave.csv
+James Ave,2023-08-08,flow,223.656,m³/s,james-ave.csv
+James Ave,2023-08-09,flow,223.645,m³/s,james-ave.csv
+James Ave,2023-08-10,flow,223.7,m³/s,james-ave.csv
+James Ave,2023-08-11,flow,223.83,m³/s,james-ave.csv
+James Ave,2023-08-12,flow,223.917,m³/s,james-ave.csv
+James Ave,2023-08-13,flow,223.974,m³/s,james-ave.csv
+James Ave,2023-08-14,flow,224.008,m³/s,james-ave.csv
+James Ave,2023-08-15,flow,224.003,m³/s,james-ave.csv
+James Ave,2023-08-16,flow,223.975,m³/s,james-ave.csv
+James Ave,2023-08-17,flow,223.959,m³/s,james-ave.csv
+James Ave,2023-08-18,flow,223.933,m³/s,james-ave.csv
+James Ave,2023-08-19,flow,223.908,m³/s,james-ave.csv
+James Ave,2023-08-20,flow,223.911,m³/s,james-ave.csv
+James Ave,2023-08-21,flow,223.917,m³/s,james-ave.csv
+James Ave,2023-08-22,flow,223.908,m³/s,james-ave.csv
+James Ave,2023-08-23,flow,223.908,m³/s,james-ave.csv
+James Ave,2023-08-24,flow,223.908,m³/s,james-ave.csv
+James Ave,2023-08-25,flow,223.908,m³/s,james-ave.csv
+James Ave,2023-08-26,flow,223.926,m³/s,james-ave.csv
+James Ave,2023-08-27,flow,223.923,m³/s,james-ave.csv
+James Ave,2023-08-28,flow,223.915,m³/s,james-ave.csv
+James Ave,2023-08-29,flow,223.904,m³/s,james-ave.csv
+James Ave,2023-08-30,flow,223.895,m³/s,james-ave.csv
+James Ave,2023-08-31,flow,223.868,m³/s,james-ave.csv
+James Ave,2023-09-01,flow,223.84,m³/s,james-ave.csv
+James Ave,2023-09-02,flow,223.808,m³/s,james-ave.csv
+James Ave,2023-09-03,flow,223.766,m³/s,james-ave.csv
+James Ave,2023-09-04,flow,223.715,m³/s,james-ave.csv
+James Ave,2023-09-05,flow,223.687,m³/s,james-ave.csv
+James Ave,2023-09-06,flow,223.659,m³/s,james-ave.csv
+James Ave,2023-09-07,flow,223.644,m³/s,james-ave.csv
+James Ave,2023-09-08,flow,223.647,m³/s,james-ave.csv
+James Ave,2023-09-09,flow,223.677,m³/s,james-ave.csv
+James Ave,2023-09-10,flow,223.694,m³/s,james-ave.csv
+James Ave,2023-09-11,flow,223.689,m³/s,james-ave.csv
+James Ave,2023-09-12,flow,223.698,m³/s,james-ave.csv
+James Ave,2023-09-13,flow,223.705,m³/s,james-ave.csv
+James Ave,2023-09-14,flow,223.724,m³/s,james-ave.csv
+James Ave,2023-09-15,flow,223.763,m³/s,james-ave.csv
+James Ave,2023-09-16,flow,223.803,m³/s,james-ave.csv
+James Ave,2023-09-17,flow,223.828,m³/s,james-ave.csv
+James Ave,2023-09-18,flow,223.841,m³/s,james-ave.csv
+James Ave,2023-09-19,flow,223.854,m³/s,james-ave.csv
+James Ave,2023-09-20,flow,223.865,m³/s,james-ave.csv
+James Ave,2023-09-21,flow,223.895,m³/s,james-ave.csv
+James Ave,2023-09-22,flow,223.902,m³/s,james-ave.csv
+James Ave,2023-09-23,flow,223.885,m³/s,james-ave.csv
+James Ave,2023-09-24,flow,223.878,m³/s,james-ave.csv
+James Ave,2023-09-25,flow,223.881,m³/s,james-ave.csv
+James Ave,2023-09-26,flow,223.887,m³/s,james-ave.csv
+James Ave,2023-09-27,flow,223.89,m³/s,james-ave.csv
+James Ave,2023-09-28,flow,223.894,m³/s,james-ave.csv
+James Ave,2023-09-29,flow,223.871,m³/s,james-ave.csv
+James Ave,2023-09-30,flow,223.842,m³/s,james-ave.csv
+James Ave,2023-10-01,flow,223.819,m³/s,james-ave.csv
+James Ave,2023-10-02,flow,223.811,m³/s,james-ave.csv
+James Ave,2023-10-03,flow,223.858,m³/s,james-ave.csv
+James Ave,2023-10-04,flow,223.841,m³/s,james-ave.csv
+James Ave,2023-10-05,flow,223.875,m³/s,james-ave.csv
+James Ave,2023-10-06,flow,223.844,m³/s,james-ave.csv
+James Ave,2023-10-07,flow,223.782,m³/s,james-ave.csv
+James Ave,2023-10-08,flow,223.765,m³/s,james-ave.csv
+James Ave,2023-10-09,flow,223.787,m³/s,james-ave.csv
+James Ave,2023-10-10,flow,223.803,m³/s,james-ave.csv
+James Ave,2023-10-11,flow,223.807,m³/s,james-ave.csv
+James Ave,2023-10-12,flow,223.8,m³/s,james-ave.csv
+James Ave,2023-10-13,flow,223.771,m³/s,james-ave.csv
+James Ave,2023-10-14,flow,223.748,m³/s,james-ave.csv
+James Ave,2023-10-15,flow,223.687,m³/s,james-ave.csv
+James Ave,2023-10-16,flow,223.587,m³/s,james-ave.csv
+James Ave,2023-10-17,flow,223.461,m³/s,james-ave.csv
+James Ave,2023-10-18,flow,223.32,m³/s,james-ave.csv
+James Ave,2023-10-19,flow,223.192,m³/s,james-ave.csv
+James Ave,2023-10-20,flow,223.045,m³/s,james-ave.csv
+James Ave,2023-10-21,flow,222.895,m³/s,james-ave.csv
+James Ave,2023-10-22,flow,222.758,m³/s,james-ave.csv
+James Ave,2023-10-23,flow,222.635,m³/s,james-ave.csv
+James Ave,2023-10-24,flow,222.515,m³/s,james-ave.csv
+James Ave,2023-10-25,flow,222.387,m³/s,james-ave.csv
+James Ave,2023-10-26,flow,222.286,m³/s,james-ave.csv
+James Ave,2023-10-27,flow,222.245,m³/s,james-ave.csv
+James Ave,2023-10-30,flow,221.923,m³/s,james-ave.csv
+James Ave,2023-10-31,flow,221.869,m³/s,james-ave.csv
+James Ave,2023-11-01,flow,221.763,m³/s,james-ave.csv
+James Ave,2023-11-02,flow,221.684,m³/s,james-ave.csv
+James Ave,2023-11-03,flow,221.683,m³/s,james-ave.csv
+James Ave,2023-11-04,flow,221.71,m³/s,james-ave.csv
+James Ave,2023-11-05,flow,221.734,m³/s,james-ave.csv
+James Ave,2023-11-06,flow,221.802,m³/s,james-ave.csv
+James Ave,2023-11-07,flow,221.806,m³/s,james-ave.csv
+James Ave,2023-11-08,flow,221.816,m³/s,james-ave.csv
+James Ave,2023-11-09,flow,221.807,m³/s,james-ave.csv
+James Ave,2023-11-10,flow,221.795,m³/s,james-ave.csv
+James Ave,2023-11-11,flow,221.783,m³/s,james-ave.csv
+James Ave,2023-11-12,flow,221.784,m³/s,james-ave.csv
+James Ave,2023-11-13,flow,221.813,m³/s,james-ave.csv
+James Ave,2023-11-14,flow,221.836,m³/s,james-ave.csv
+James Ave,2023-11-15,flow,221.854,m³/s,james-ave.csv
+James Ave,2023-11-16,flow,221.867,m³/s,james-ave.csv
+James Ave,2023-11-17,flow,221.864,m³/s,james-ave.csv
+James Ave,2023-11-18,flow,221.856,m³/s,james-ave.csv
+James Ave,2023-11-19,flow,221.848,m³/s,james-ave.csv
+James Ave,2023-11-20,flow,221.844,m³/s,james-ave.csv
+James Ave,2023-11-21,flow,221.842,m³/s,james-ave.csv
+James Ave,2023-11-22,flow,221.822,m³/s,james-ave.csv
+James Ave,2023-11-23,flow,221.74,m³/s,james-ave.csv
+James Ave,2023-11-24,flow,221.609,m³/s,james-ave.csv
+James Ave,2023-11-25,flow,221.629,m³/s,james-ave.csv
+James Ave,2023-11-26,flow,221.623,m³/s,james-ave.csv
+James Ave,2023-11-27,flow,221.662,m³/s,james-ave.csv
+James Ave,2023-11-28,flow,221.653,m³/s,james-ave.csv
+James Ave,2023-11-29,flow,221.605,m³/s,james-ave.csv
+James Ave,2023-11-30,flow,221.557,m³/s,james-ave.csv
+James Ave,2023-12-01,flow,221.504,m³/s,james-ave.csv
+James Ave,2023-12-02,flow,221.49,m³/s,james-ave.csv
+James Ave,2023-12-03,flow,221.591,m³/s,james-ave.csv
+James Ave,2023-12-04,flow,221.608,m³/s,james-ave.csv
+James Ave,2023-12-05,flow,221.617,m³/s,james-ave.csv
+James Ave,2023-12-06,flow,221.623,m³/s,james-ave.csv
+James Ave,2023-12-07,flow,221.624,m³/s,james-ave.csv
+James Ave,2023-12-08,flow,221.629,m³/s,james-ave.csv
+James Ave,2023-12-09,flow,221.69,m³/s,james-ave.csv
+James Ave,2023-12-10,flow,221.728,m³/s,james-ave.csv
+James Ave,2023-12-11,flow,221.811,m³/s,james-ave.csv
+James Ave,2023-12-12,flow,221.876,m³/s,james-ave.csv
+James Ave,2023-12-13,flow,221.864,m³/s,james-ave.csv
+James Ave,2023-12-14,flow,221.78,m³/s,james-ave.csv
+James Ave,2023-12-15,flow,221.695,m³/s,james-ave.csv
+James Ave,2023-12-16,flow,221.643,m³/s,james-ave.csv
+James Ave,2023-12-17,flow,221.611,m³/s,james-ave.csv
+James Ave,2023-12-18,flow,221.714,m³/s,james-ave.csv
+James Ave,2023-12-19,flow,221.835,m³/s,james-ave.csv
+James Ave,2023-12-20,flow,221.803,m³/s,james-ave.csv
+James Ave,2023-12-21,flow,221.744,m³/s,james-ave.csv
+James Ave,2023-12-22,flow,221.681,m³/s,james-ave.csv
+James Ave,2023-12-23,flow,221.628,m³/s,james-ave.csv
+James Ave,2023-12-24,flow,221.592,m³/s,james-ave.csv
+James Ave,2023-12-25,flow,221.576,m³/s,james-ave.csv
+James Ave,2023-12-26,flow,221.613,m³/s,james-ave.csv
+James Ave,2023-12-27,flow,221.603,m³/s,james-ave.csv
+James Ave,2023-12-28,flow,221.587,m³/s,james-ave.csv
+James Ave,2023-12-29,flow,221.605,m³/s,james-ave.csv
+James Ave,2023-12-30,flow,221.619,m³/s,james-ave.csv
+James Ave,2023-12-31,flow,221.689,m³/s,james-ave.csv
+James Ave,2024-01-01,flow,221.727,m³/s,james-ave.csv
+James Ave,2024-01-02,flow,221.709,m³/s,james-ave.csv
+James Ave,2024-01-03,flow,221.768,m³/s,james-ave.csv
+James Ave,2024-01-04,flow,221.871,m³/s,james-ave.csv
+James Ave,2024-01-05,flow,222.045,m³/s,james-ave.csv
+James Ave,2024-01-06,flow,222.185,m³/s,james-ave.csv
+James Ave,2024-01-07,flow,222.404,m³/s,james-ave.csv
+James Ave,2024-01-08,flow,222.547,m³/s,james-ave.csv
+James Ave,2024-01-09,flow,222.592,m³/s,james-ave.csv
+James Ave,2024-01-10,flow,222.563,m³/s,james-ave.csv
+James Ave,2024-01-11,flow,222.603,m³/s,james-ave.csv
+James Ave,2024-01-12,flow,222.805,m³/s,james-ave.csv
+James Ave,2024-01-13,flow,222.755,m³/s,james-ave.csv
+James Ave,2024-01-14,flow,222.646,m³/s,james-ave.csv
+James Ave,2024-01-15,flow,222.531,m³/s,james-ave.csv
+James Ave,2024-01-16,flow,222.429,m³/s,james-ave.csv
+James Ave,2024-01-17,flow,222.364,m³/s,james-ave.csv
+James Ave,2024-01-18,flow,222.269,m³/s,james-ave.csv
+James Ave,2024-01-19,flow,222.207,m³/s,james-ave.csv
+James Ave,2024-01-20,flow,222.179,m³/s,james-ave.csv
+James Ave,2024-01-21,flow,222.149,m³/s,james-ave.csv
+James Ave,2024-01-22,flow,222.121,m³/s,james-ave.csv
+James Ave,2024-01-23,flow,222.107,m³/s,james-ave.csv
+James Ave,2024-01-24,flow,222.087,m³/s,james-ave.csv
+James Ave,2024-01-25,flow,222.067,m³/s,james-ave.csv
+James Ave,2024-01-26,flow,222.048,m³/s,james-ave.csv
+James Ave,2024-01-27,flow,222.027,m³/s,james-ave.csv
+James Ave,2024-01-28,flow,222.006,m³/s,james-ave.csv
+James Ave,2024-01-29,flow,221.991,m³/s,james-ave.csv
+James Ave,2024-01-30,flow,221.978,m³/s,james-ave.csv
+James Ave,2024-01-31,flow,221.945,m³/s,james-ave.csv
+James Ave,2024-02-01,flow,221.897,m³/s,james-ave.csv
+James Ave,2024-02-02,flow,221.852,m³/s,james-ave.csv
+James Ave,2024-02-03,flow,221.822,m³/s,james-ave.csv
+James Ave,2024-02-04,flow,221.798,m³/s,james-ave.csv
+James Ave,2024-02-05,flow,221.774,m³/s,james-ave.csv
+James Ave,2024-02-06,flow,221.767,m³/s,james-ave.csv
+James Ave,2024-02-07,flow,221.772,m³/s,james-ave.csv
+James Ave,2024-02-08,flow,221.825,m³/s,james-ave.csv
+James Ave,2024-02-09,flow,221.873,m³/s,james-ave.csv
+James Ave,2024-02-10,flow,221.955,m³/s,james-ave.csv
+James Ave,2024-02-11,flow,221.938,m³/s,james-ave.csv
+James Ave,2024-02-12,flow,221.913,m³/s,james-ave.csv
+James Ave,2024-02-13,flow,221.895,m³/s,james-ave.csv
+James Ave,2024-02-14,flow,221.918,m³/s,james-ave.csv
+James Ave,2024-02-15,flow,222.057,m³/s,james-ave.csv
+James Ave,2024-02-16,flow,222.241,m³/s,james-ave.csv
+James Ave,2024-02-17,flow,222.348,m³/s,james-ave.csv
+James Ave,2024-02-19,flow,222.411,m³/s,james-ave.csv
+James Ave,2024-02-20,flow,222.389,m³/s,james-ave.csv
+James Ave,2024-02-21,flow,222.342,m³/s,james-ave.csv
+James Ave,2024-02-22,flow,222.295,m³/s,james-ave.csv
+James Ave,2024-02-23,flow,222.318,m³/s,james-ave.csv
+James Ave,2024-02-24,flow,222.243,m³/s,james-ave.csv
+James Ave,2024-02-25,flow,222.173,m³/s,james-ave.csv
+James Ave,2024-02-26,flow,222.138,m³/s,james-ave.csv
+James Ave,2024-02-27,flow,222.342,m³/s,james-ave.csv
+James Ave,2024-02-28,flow,222.429,m³/s,james-ave.csv
+James Ave,2024-02-29,flow,222.286,m³/s,james-ave.csv
+James Ave,2024-03-01,flow,222.214,m³/s,james-ave.csv
+James Ave,2024-03-02,flow,222.177,m³/s,james-ave.csv
+James Ave,2024-03-03,flow,222.165,m³/s,james-ave.csv
+James Ave,2024-03-04,flow,222.172,m³/s,james-ave.csv
+James Ave,2024-03-05,flow,222.164,m³/s,james-ave.csv
+James Ave,2024-03-06,flow,222.137,m³/s,james-ave.csv
+James Ave,2024-03-07,flow,222.106,m³/s,james-ave.csv
+James Ave,2024-03-08,flow,222.085,m³/s,james-ave.csv
+James Ave,2024-03-09,flow,222.062,m³/s,james-ave.csv
+James Ave,2024-03-10,flow,222.054,m³/s,james-ave.csv
+James Ave,2024-03-11,flow,222.078,m³/s,james-ave.csv
+James Ave,2024-03-12,flow,222.058,m³/s,james-ave.csv
+James Ave,2024-03-13,flow,222.052,m³/s,james-ave.csv
+James Ave,2024-03-14,flow,222.136,m³/s,james-ave.csv
+James Ave,2024-03-15,flow,222.273,m³/s,james-ave.csv
+James Ave,2024-03-16,flow,222.456,m³/s,james-ave.csv
+James Ave,2024-03-17,flow,222.69,m³/s,james-ave.csv
+James Ave,2024-03-18,flow,222.83,m³/s,james-ave.csv
+James Ave,2024-03-19,flow,222.872,m³/s,james-ave.csv
+James Ave,2024-03-20,flow,223.194,m³/s,james-ave.csv
+James Ave,2024-03-21,flow,223.263,m³/s,james-ave.csv
+James Ave,2024-03-22,flow,223.241,m³/s,james-ave.csv
+James Ave,2024-03-23,flow,223.259,m³/s,james-ave.csv
+James Ave,2024-03-24,flow,223.22,m³/s,james-ave.csv
+James Ave,2024-03-25,flow,223.265,m³/s,james-ave.csv
+James Ave,2024-03-26,flow,223.223,m³/s,james-ave.csv
+James Ave,2024-03-27,flow,223.231,m³/s,james-ave.csv
+James Ave,2024-03-28,flow,223.056,m³/s,james-ave.csv
+James Ave,2024-03-29,flow,222.859,m³/s,james-ave.csv
+James Ave,2024-03-30,flow,222.717,m³/s,james-ave.csv
+James Ave,2024-03-31,flow,222.608,m³/s,james-ave.csv
+James Ave,2024-04-01,flow,222.542,m³/s,james-ave.csv
+James Ave,2024-04-02,flow,222.501,m³/s,james-ave.csv
+James Ave,2024-04-03,flow,222.481,m³/s,james-ave.csv
+James Ave,2024-04-04,flow,222.529,m³/s,james-ave.csv
+James Ave,2024-04-05,flow,222.66,m³/s,james-ave.csv
+James Ave,2024-04-06,flow,222.876,m³/s,james-ave.csv
+James Ave,2024-04-07,flow,223.157,m³/s,james-ave.csv
+James Ave,2024-04-08,flow,223.336,m³/s,james-ave.csv
+James Ave,2024-04-09,flow,223.489,m³/s,james-ave.csv
+James Ave,2024-04-10,flow,223.699,m³/s,james-ave.csv
+James Ave,2024-04-11,flow,223.78,m³/s,james-ave.csv
+James Ave,2024-04-12,flow,223.47,m³/s,james-ave.csv
+James Ave,2024-04-13,flow,223.393,m³/s,james-ave.csv
+James Ave,2024-04-14,flow,223.495,m³/s,james-ave.csv
+James Ave,2024-04-15,flow,223.56,m³/s,james-ave.csv
+James Ave,2024-04-16,flow,223.631,m³/s,james-ave.csv
+James Ave,2024-04-17,flow,223.674,m³/s,james-ave.csv
+James Ave,2024-04-18,flow,223.679,m³/s,james-ave.csv
+James Ave,2024-04-19,flow,223.694,m³/s,james-ave.csv
+James Ave,2024-04-20,flow,223.701,m³/s,james-ave.csv
+James Ave,2024-04-21,flow,223.708,m³/s,james-ave.csv
+James Ave,2024-04-22,flow,223.703,m³/s,james-ave.csv
+James Ave,2024-04-23,flow,223.698,m³/s,james-ave.csv
+James Ave,2024-04-24,flow,223.692,m³/s,james-ave.csv
+James Ave,2024-04-25,flow,223.692,m³/s,james-ave.csv
+James Ave,2024-04-26,flow,223.708,m³/s,james-ave.csv
+James Ave,2024-04-27,flow,223.747,m³/s,james-ave.csv
+James Ave,2024-04-28,flow,223.752,m³/s,james-ave.csv
+James Ave,2024-04-29,flow,223.761,m³/s,james-ave.csv
+James Ave,2024-04-30,flow,223.773,m³/s,james-ave.csv
+James Ave,2024-05-01,flow,223.777,m³/s,james-ave.csv
+James Ave,2024-05-02,flow,223.803,m³/s,james-ave.csv
+James Ave,2024-05-03,flow,223.847,m³/s,james-ave.csv
+James Ave,2024-05-04,flow,223.864,m³/s,james-ave.csv
+James Ave,2024-05-05,flow,223.918,m³/s,james-ave.csv
+James Ave,2024-05-06,flow,223.998,m³/s,james-ave.csv
+James Ave,2024-05-07,flow,224.066,m³/s,james-ave.csv
+James Ave,2024-05-08,flow,224.084,m³/s,james-ave.csv
+James Ave,2024-05-09,flow,224.073,m³/s,james-ave.csv
+James Ave,2024-05-10,flow,224.067,m³/s,james-ave.csv
+James Ave,2024-05-11,flow,224.059,m³/s,james-ave.csv
+James Ave,2024-05-12,flow,224.043,m³/s,james-ave.csv
+James Ave,2024-05-13,flow,224.006,m³/s,james-ave.csv
+James Ave,2024-05-14,flow,223.969,m³/s,james-ave.csv
+James Ave,2024-05-15,flow,223.953,m³/s,james-ave.csv
+James Ave,2024-05-16,flow,223.935,m³/s,james-ave.csv
+James Ave,2024-05-17,flow,223.968,m³/s,james-ave.csv
+James Ave,2024-05-18,flow,223.912,m³/s,james-ave.csv
+James Ave,2024-05-19,flow,223.855,m³/s,james-ave.csv
+James Ave,2024-05-20,flow,223.785,m³/s,james-ave.csv
+James Ave,2024-05-21,flow,223.753,m³/s,james-ave.csv
+James Ave,2024-05-22,flow,223.854,m³/s,james-ave.csv
+James Ave,2024-05-23,flow,223.84,m³/s,james-ave.csv
+James Ave,2024-05-24,flow,223.87,m³/s,james-ave.csv
+James Ave,2024-05-25,flow,224.117,m³/s,james-ave.csv
+James Ave,2024-05-26,flow,224.499,m³/s,james-ave.csv
+James Ave,2024-05-27,flow,224.83,m³/s,james-ave.csv
+James Ave,2024-05-28,flow,225.012,m³/s,james-ave.csv
+James Ave,2024-05-29,flow,225.156,m³/s,james-ave.csv
+James Ave,2024-05-30,flow,225.3,m³/s,james-ave.csv
+James Ave,2024-05-31,flow,225.362,m³/s,james-ave.csv
+James Ave,2024-06-01,flow,225.383,m³/s,james-ave.csv
+James Ave,2024-06-02,flow,225.421,m³/s,james-ave.csv
+James Ave,2024-06-03,flow,225.511,m³/s,james-ave.csv
+James Ave,2024-06-04,flow,225.489,m³/s,james-ave.csv
+James Ave,2024-06-05,flow,225.427,m³/s,james-ave.csv
+James Ave,2024-06-06,flow,225.338,m³/s,james-ave.csv
+James Ave,2024-06-07,flow,225.258,m³/s,james-ave.csv
+James Ave,2024-06-08,flow,225.198,m³/s,james-ave.csv
+James Ave,2024-06-09,flow,225.179,m³/s,james-ave.csv
+James Ave,2024-06-10,flow,225.188,m³/s,james-ave.csv
+James Ave,2024-06-11,flow,225.189,m³/s,james-ave.csv
+James Ave,2024-06-12,flow,225.159,m³/s,james-ave.csv
+James Ave,2024-06-13,flow,225.115,m³/s,james-ave.csv
+James Ave,2024-06-14,flow,225.033,m³/s,james-ave.csv
+James Ave,2024-06-15,flow,224.905,m³/s,james-ave.csv
+James Ave,2024-06-16,flow,224.797,m³/s,james-ave.csv
+James Ave,2024-06-17,flow,224.578,m³/s,james-ave.csv
+James Ave,2024-06-18,flow,224.464,m³/s,james-ave.csv
+James Ave,2024-06-19,flow,224.315,m³/s,james-ave.csv
+James Ave,2024-06-20,flow,224.234,m³/s,james-ave.csv
+James Ave,2024-06-21,flow,224.232,m³/s,james-ave.csv
+James Ave,2024-06-22,flow,224.354,m³/s,james-ave.csv
+James Ave,2024-06-23,flow,224.558,m³/s,james-ave.csv
+James Ave,2024-06-24,flow,224.736,m³/s,james-ave.csv
+James Ave,2024-06-25,flow,224.859,m³/s,james-ave.csv
+James Ave,2024-06-26,flow,224.916,m³/s,james-ave.csv
+James Ave,2024-06-27,flow,224.905,m³/s,james-ave.csv
+James Ave,2024-06-28,flow,224.892,m³/s,james-ave.csv
+James Ave,2024-06-29,flow,224.849,m³/s,james-ave.csv
+James Ave,2024-06-30,flow,224.778,m³/s,james-ave.csv
+James Ave,2024-07-01,flow,224.735,m³/s,james-ave.csv
+James Ave,2024-07-02,flow,224.981,m³/s,james-ave.csv
+James Ave,2024-07-03,flow,225.314,m³/s,james-ave.csv
+James Ave,2024-07-04,flow,225.616,m³/s,james-ave.csv
+James Ave,2024-07-05,flow,225.845,m³/s,james-ave.csv
+James Ave,2024-07-06,flow,225.917,m³/s,james-ave.csv
+James Ave,2024-07-07,flow,225.92,m³/s,james-ave.csv
+James Ave,2024-07-08,flow,225.897,m³/s,james-ave.csv
+James Ave,2024-07-09,flow,225.844,m³/s,james-ave.csv
+James Ave,2024-07-10,flow,225.752,m³/s,james-ave.csv
+James Ave,2024-07-11,flow,225.613,m³/s,james-ave.csv
+James Ave,2024-07-12,flow,225.448,m³/s,james-ave.csv
+James Ave,2024-07-13,flow,225.29,m³/s,james-ave.csv
+James Ave,2024-07-14,flow,225.105,m³/s,james-ave.csv
+James Ave,2024-07-15,flow,224.937,m³/s,james-ave.csv
+James Ave,2024-07-16,flow,224.752,m³/s,james-ave.csv
+James Ave,2024-07-17,flow,224.579,m³/s,james-ave.csv
+James Ave,2024-07-18,flow,224.411,m³/s,james-ave.csv
+James Ave,2024-07-19,flow,224.249,m³/s,james-ave.csv
+James Ave,2024-07-20,flow,224.102,m³/s,james-ave.csv
+James Ave,2024-07-21,flow,223.976,m³/s,james-ave.csv
+James Ave,2024-07-22,flow,223.904,m³/s,james-ave.csv
+James Ave,2024-07-23,flow,223.812,m³/s,james-ave.csv
+James Ave,2024-07-24,flow,223.765,m³/s,james-ave.csv
+James Ave,2024-07-25,flow,223.841,m³/s,james-ave.csv
+James Ave,2024-07-26,flow,223.855,m³/s,james-ave.csv
+James Ave,2024-07-27,flow,223.802,m³/s,james-ave.csv
+James Ave,2024-07-28,flow,223.768,m³/s,james-ave.csv
+James Ave,2024-07-29,flow,223.729,m³/s,james-ave.csv
+James Ave,2024-07-30,flow,223.733,m³/s,james-ave.csv
+James Ave,2024-07-31,flow,223.742,m³/s,james-ave.csv
+James Ave,2024-08-01,flow,223.781,m³/s,james-ave.csv
+James Ave,2024-08-02,flow,223.874,m³/s,james-ave.csv
+James Ave,2024-08-03,flow,223.883,m³/s,james-ave.csv
+James Ave,2024-08-04,flow,223.887,m³/s,james-ave.csv
+James Ave,2024-08-05,flow,223.823,m³/s,james-ave.csv
+James Ave,2024-08-06,flow,223.738,m³/s,james-ave.csv
+James Ave,2024-08-07,flow,223.698,m³/s,james-ave.csv
+James Ave,2024-08-08,flow,223.738,m³/s,james-ave.csv
+James Ave,2024-08-09,flow,223.735,m³/s,james-ave.csv
+James Ave,2024-08-10,flow,223.738,m³/s,james-ave.csv
+James Ave,2024-08-11,flow,223.726,m³/s,james-ave.csv
+James Ave,2024-08-12,flow,223.735,m³/s,james-ave.csv
+James Ave,2024-08-13,flow,223.755,m³/s,james-ave.csv
+James Ave,2024-08-14,flow,223.754,m³/s,james-ave.csv
+James Ave,2024-08-15,flow,223.824,m³/s,james-ave.csv
+James Ave,2024-08-16,flow,223.844,m³/s,james-ave.csv
+James Ave,2024-08-17,flow,223.868,m³/s,james-ave.csv
+James Ave,2024-08-18,flow,223.894,m³/s,james-ave.csv
+James Ave,2024-08-19,flow,223.903,m³/s,james-ave.csv
+James Ave,2024-08-20,flow,223.898,m³/s,james-ave.csv
+James Ave,2024-08-21,flow,223.899,m³/s,james-ave.csv
+James Ave,2024-08-22,flow,223.913,m³/s,james-ave.csv
+James Ave,2024-08-23,flow,223.873,m³/s,james-ave.csv
+James Ave,2024-08-24,flow,223.804,m³/s,james-ave.csv
+James Ave,2024-08-25,flow,223.744,m³/s,james-ave.csv
+James Ave,2024-08-26,flow,223.704,m³/s,james-ave.csv
+James Ave,2024-08-27,flow,223.736,m³/s,james-ave.csv
+James Ave,2024-08-28,flow,223.779,m³/s,james-ave.csv
+James Ave,2024-08-29,flow,223.826,m³/s,james-ave.csv
+James Ave,2024-08-30,flow,223.815,m³/s,james-ave.csv
+James Ave,2024-08-31,flow,223.818,m³/s,james-ave.csv
+James Ave,2024-09-01,flow,223.814,m³/s,james-ave.csv
+James Ave,2024-09-02,flow,223.822,m³/s,james-ave.csv
+James Ave,2024-09-03,flow,223.911,m³/s,james-ave.csv
+James Ave,2024-09-04,flow,223.97,m³/s,james-ave.csv
+James Ave,2024-09-05,flow,223.98,m³/s,james-ave.csv
+James Ave,2024-09-06,flow,223.899,m³/s,james-ave.csv
+James Ave,2024-09-07,flow,223.853,m³/s,james-ave.csv
+James Ave,2024-09-08,flow,223.831,m³/s,james-ave.csv
+James Ave,2024-09-09,flow,223.821,m³/s,james-ave.csv
+James Ave,2024-09-10,flow,223.812,m³/s,james-ave.csv
+James Ave,2024-09-11,flow,223.814,m³/s,james-ave.csv
+James Ave,2024-09-12,flow,223.792,m³/s,james-ave.csv
+James Ave,2024-09-13,flow,223.784,m³/s,james-ave.csv
+James Ave,2024-09-14,flow,223.831,m³/s,james-ave.csv
+James Ave,2024-09-15,flow,223.828,m³/s,james-ave.csv
+James Ave,2024-09-16,flow,223.792,m³/s,james-ave.csv
+James Ave,2024-09-17,flow,223.786,m³/s,james-ave.csv
+James Ave,2024-09-18,flow,224.007,m³/s,james-ave.csv
+James Ave,2024-09-19,flow,224.112,m³/s,james-ave.csv
+James Ave,2024-09-20,flow,224.117,m³/s,james-ave.csv
+James Ave,2024-09-21,flow,224.006,m³/s,james-ave.csv
+James Ave,2024-09-22,flow,223.849,m³/s,james-ave.csv
+James Ave,2024-09-23,flow,223.634,m³/s,james-ave.csv
+James Ave,2024-09-24,flow,223.682,m³/s,james-ave.csv
+James Ave,2024-09-25,flow,223.715,m³/s,james-ave.csv
+James Ave,2024-09-26,flow,223.719,m³/s,james-ave.csv
+James Ave,2024-09-27,flow,223.755,m³/s,james-ave.csv
+James Ave,2024-09-28,flow,223.703,m³/s,james-ave.csv
+James Ave,2024-09-29,flow,223.67,m³/s,james-ave.csv
+James Ave,2024-09-30,flow,223.704,m³/s,james-ave.csv
+James Ave,2024-10-01,flow,223.69,m³/s,james-ave.csv
+James Ave,2024-10-02,flow,223.705,m³/s,james-ave.csv
+James Ave,2024-10-03,flow,223.729,m³/s,james-ave.csv
+James Ave,2024-10-04,flow,223.79,m³/s,james-ave.csv
+James Ave,2024-10-05,flow,223.837,m³/s,james-ave.csv
+James Ave,2024-10-06,flow,223.855,m³/s,james-ave.csv
+James Ave,2024-10-07,flow,223.868,m³/s,james-ave.csv
+James Ave,2024-10-08,flow,223.847,m³/s,james-ave.csv
+James Ave,2024-10-09,flow,223.821,m³/s,james-ave.csv
+James Ave,2024-10-10,flow,223.8,m³/s,james-ave.csv
+James Ave,2024-10-11,flow,223.775,m³/s,james-ave.csv
+James Ave,2024-10-12,flow,223.747,m³/s,james-ave.csv
+James Ave,2024-10-13,flow,223.706,m³/s,james-ave.csv
+James Ave,2024-10-14,flow,223.64,m³/s,james-ave.csv
+James Ave,2024-10-15,flow,223.54,m³/s,james-ave.csv
+James Ave,2024-10-16,flow,223.419,m³/s,james-ave.csv
+James Ave,2024-10-17,flow,223.282,m³/s,james-ave.csv
+James Ave,2024-10-18,flow,223.128,m³/s,james-ave.csv
+James Ave,2024-10-19,flow,222.967,m³/s,james-ave.csv
+James Ave,2024-10-20,flow,222.83,m³/s,james-ave.csv
+James Ave,2024-10-21,flow,222.702,m³/s,james-ave.csv
+James Ave,2024-10-22,flow,222.582,m³/s,james-ave.csv
+James Ave,2024-10-23,flow,222.44,m³/s,james-ave.csv
+James Ave,2024-10-24,flow,222.309,m³/s,james-ave.csv
+James Ave,2024-10-25,flow,222.189,m³/s,james-ave.csv
+James Ave,2024-10-26,flow,222.1,m³/s,james-ave.csv
+James Ave,2024-10-27,flow,222.016,m³/s,james-ave.csv
+James Ave,2024-10-28,flow,221.945,m³/s,james-ave.csv
+James Ave,2024-10-29,flow,221.885,m³/s,james-ave.csv
+James Ave,2024-10-30,flow,221.835,m³/s,james-ave.csv
+James Ave,2024-10-31,flow,221.787,m³/s,james-ave.csv
+James Ave,2024-11-01,flow,221.732,m³/s,james-ave.csv
+James Ave,2024-11-02,flow,221.734,m³/s,james-ave.csv
+James Ave,2024-11-03,flow,221.791,m³/s,james-ave.csv
+James Ave,2024-11-04,flow,221.922,m³/s,james-ave.csv
+James Ave,2024-11-05,flow,221.879,m³/s,james-ave.csv
+James Ave,2024-11-06,flow,221.857,m³/s,james-ave.csv
+James Ave,2024-11-07,flow,221.85,m³/s,james-ave.csv
+James Ave,2024-11-08,flow,221.873,m³/s,james-ave.csv
+James Ave,2024-11-09,flow,221.893,m³/s,james-ave.csv
+James Ave,2024-11-10,flow,221.91,m³/s,james-ave.csv
+James Ave,2024-11-11,flow,221.919,m³/s,james-ave.csv
+James Ave,2024-11-12,flow,221.908,m³/s,james-ave.csv
+James Ave,2024-11-13,flow,221.899,m³/s,james-ave.csv
+James Ave,2024-11-14,flow,221.904,m³/s,james-ave.csv
+James Ave,2024-11-15,flow,221.894,m³/s,james-ave.csv
+James Ave,2024-11-16,flow,221.889,m³/s,james-ave.csv
+James Ave,2024-11-17,flow,221.897,m³/s,james-ave.csv
+James Ave,2024-11-18,flow,221.881,m³/s,james-ave.csv
+James Ave,2024-11-19,flow,221.964,m³/s,james-ave.csv
+James Ave,2024-11-20,flow,222.098,m³/s,james-ave.csv
+James Ave,2024-11-21,flow,222.064,m³/s,james-ave.csv
+James Ave,2024-11-22,flow,222.08,m³/s,james-ave.csv
+James Ave,2024-11-23,flow,222.024,m³/s,james-ave.csv
+James Ave,2024-11-24,flow,221.913,m³/s,james-ave.csv
+James Ave,2024-11-25,flow,221.829,m³/s,james-ave.csv
+James Ave,2024-11-26,flow,221.685,m³/s,james-ave.csv
+James Ave,2024-11-27,flow,221.644,m³/s,james-ave.csv
+James Ave,2024-11-28,flow,221.642,m³/s,james-ave.csv
+James Ave,2024-11-29,flow,221.638,m³/s,james-ave.csv
+James Ave,2024-11-30,flow,221.67,m³/s,james-ave.csv
+James Ave,2024-12-01,flow,221.717,m³/s,james-ave.csv
+James Ave,2024-12-02,flow,221.747,m³/s,james-ave.csv
+James Ave,2024-12-03,flow,221.77,m³/s,james-ave.csv
+James Ave,2024-12-04,flow,221.897,m³/s,james-ave.csv
+James Ave,2024-12-05,flow,222.01,m³/s,james-ave.csv
+James Ave,2024-12-06,flow,221.977,m³/s,james-ave.csv
+James Ave,2024-12-07,flow,221.926,m³/s,james-ave.csv
+James Ave,2024-12-08,flow,221.892,m³/s,james-ave.csv
+James Ave,2024-12-09,flow,221.91,m³/s,james-ave.csv
+James Ave,2024-12-10,flow,221.927,m³/s,james-ave.csv
+James Ave,2024-12-11,flow,221.961,m³/s,james-ave.csv
+James Ave,2024-12-12,flow,222.005,m³/s,james-ave.csv
+James Ave,2024-12-13,flow,222.04,m³/s,james-ave.csv
+James Ave,2024-12-14,flow,222.08,m³/s,james-ave.csv
+James Ave,2024-12-15,flow,222.085,m³/s,james-ave.csv
+James Ave,2024-12-16,flow,222.062,m³/s,james-ave.csv
+James Ave,2024-12-17,flow,222.035,m³/s,james-ave.csv
+James Ave,2024-12-18,flow,222.017,m³/s,james-ave.csv
+James Ave,2024-12-19,flow,222.009,m³/s,james-ave.csv
+James Ave,2024-12-20,flow,222.01,m³/s,james-ave.csv
+James Ave,2024-12-21,flow,222.003,m³/s,james-ave.csv
+James Ave,2024-12-22,flow,221.992,m³/s,james-ave.csv
+James Ave,2024-12-23,flow,221.98,m³/s,james-ave.csv
+James Ave,2024-12-24,flow,221.976,m³/s,james-ave.csv
+James Ave,2024-12-25,flow,221.963,m³/s,james-ave.csv
+James Ave,2024-12-26,flow,221.939,m³/s,james-ave.csv
+James Ave,2024-12-27,flow,221.924,m³/s,james-ave.csv
+James Ave,2024-12-28,flow,221.912,m³/s,james-ave.csv
+James Ave,2024-12-29,flow,221.887,m³/s,james-ave.csv
+James Ave,2024-12-30,flow,221.882,m³/s,james-ave.csv
+James Ave,2024-12-31,flow,221.889,m³/s,james-ave.csv
+Lockport,2023-03-01,level,219.885,m,lockport-upstream.csv
+Lockport,2023-03-02,level,219.892,m,lockport-upstream.csv
+Lockport,2023-03-03,level,219.9,m,lockport-upstream.csv
+Lockport,2023-03-04,level,219.915,m,lockport-upstream.csv
+Lockport,2023-03-05,level,219.915,m,lockport-upstream.csv
+Lockport,2023-03-06,level,219.917,m,lockport-upstream.csv
+Lockport,2023-03-07,level,219.933,m,lockport-upstream.csv
+Lockport,2023-03-08,level,219.947,m,lockport-upstream.csv
+Lockport,2023-03-09,level,219.961,m,lockport-upstream.csv
+Lockport,2023-03-10,level,219.963,m,lockport-upstream.csv
+Lockport,2023-03-11,level,219.946,m,lockport-upstream.csv
+Lockport,2023-03-12,level,219.941,m,lockport-upstream.csv
+Lockport,2023-03-13,level,219.941,m,lockport-upstream.csv
+Lockport,2023-03-14,level,219.95,m,lockport-upstream.csv
+Lockport,2023-03-15,level,219.954,m,lockport-upstream.csv
+Lockport,2023-03-16,level,219.939,m,lockport-upstream.csv
+Lockport,2023-03-17,level,219.932,m,lockport-upstream.csv
+Lockport,2023-03-18,level,219.947,m,lockport-upstream.csv
+Lockport,2023-03-19,level,219.951,m,lockport-upstream.csv
+Lockport,2023-03-20,level,219.954,m,lockport-upstream.csv
+Lockport,2023-03-21,level,219.965,m,lockport-upstream.csv
+Lockport,2023-03-22,level,219.974,m,lockport-upstream.csv
+Lockport,2023-03-23,level,219.974,m,lockport-upstream.csv
+Lockport,2023-03-24,level,219.992,m,lockport-upstream.csv
+Lockport,2023-03-25,level,219.998,m,lockport-upstream.csv
+Lockport,2023-03-26,level,219.995,m,lockport-upstream.csv
+Lockport,2023-03-27,level,219.993,m,lockport-upstream.csv
+Lockport,2023-03-28,level,219.994,m,lockport-upstream.csv
+Lockport,2023-03-29,level,220.002,m,lockport-upstream.csv
+Lockport,2023-03-30,level,220.011,m,lockport-upstream.csv
+Lockport,2023-03-31,level,220.012,m,lockport-upstream.csv
+Lockport,2023-04-01,level,220.005,m,lockport-upstream.csv
+Lockport,2023-04-02,level,219.994,m,lockport-upstream.csv
+Lockport,2023-04-03,level,219.95,m,lockport-upstream.csv
+Lockport,2023-04-04,level,219.897,m,lockport-upstream.csv
+Lockport,2023-04-05,level,219.877,m,lockport-upstream.csv
+Lockport,2023-04-06,level,219.891,m,lockport-upstream.csv
+Lockport,2023-04-07,level,219.915,m,lockport-upstream.csv
+Lockport,2023-04-08,level,219.914,m,lockport-upstream.csv
+Lockport,2023-04-09,level,219.911,m,lockport-upstream.csv
+Lockport,2023-04-10,level,219.922,m,lockport-upstream.csv
+Lockport,2023-04-11,level,219.949,m,lockport-upstream.csv
+Lockport,2023-04-12,level,220.003,m,lockport-upstream.csv
+Lockport,2023-04-13,level,220.135,m,lockport-upstream.csv
+Lockport,2023-04-14,level,220.346,m,lockport-upstream.csv
+Lockport,2023-04-15,level,220.501,m,lockport-upstream.csv
+Lockport,2023-04-16,level,220.727,m,lockport-upstream.csv
+Lockport,2023-04-17,level,221.042,m,lockport-upstream.csv
+Lockport,2023-04-18,level,221.265,m,lockport-upstream.csv
+Lockport,2023-04-19,level,221.561,m,lockport-upstream.csv
+Lockport,2023-04-20,level,221.66,m,lockport-upstream.csv
+Lockport,2023-04-21,level,221.59,m,lockport-upstream.csv
+Lockport,2023-04-22,level,221.639,m,lockport-upstream.csv
+Lockport,2023-04-23,level,221.678,m,lockport-upstream.csv
+Lockport,2023-04-24,level,221.677,m,lockport-upstream.csv
+Lockport,2023-04-25,level,221.7,m,lockport-upstream.csv
+Lockport,2023-04-26,level,221.653,m,lockport-upstream.csv
+Lockport,2023-04-27,level,221.68,m,lockport-upstream.csv
+Lockport,2023-04-28,level,221.7,m,lockport-upstream.csv
+Lockport,2023-04-29,level,221.722,m,lockport-upstream.csv
+Lockport,2023-04-30,level,221.742,m,lockport-upstream.csv
+Lockport,2023-05-01,level,221.729,m,lockport-upstream.csv
+Lockport,2023-05-02,level,221.725,m,lockport-upstream.csv
+Lockport,2023-05-03,level,221.71,m,lockport-upstream.csv
+Lockport,2023-05-04,level,221.707,m,lockport-upstream.csv
+Lockport,2023-05-05,level,221.694,m,lockport-upstream.csv
+Lockport,2023-05-06,level,221.689,m,lockport-upstream.csv
+Lockport,2023-05-07,level,221.695,m,lockport-upstream.csv
+Lockport,2023-05-08,level,221.686,m,lockport-upstream.csv
+Lockport,2023-05-09,level,221.674,m,lockport-upstream.csv
+Lockport,2023-05-10,level,221.675,m,lockport-upstream.csv
+Lockport,2023-05-11,level,221.679,m,lockport-upstream.csv
+Lockport,2023-05-12,level,221.655,m,lockport-upstream.csv
+Lockport,2023-05-13,level,221.637,m,lockport-upstream.csv
+Lockport,2023-05-14,level,221.623,m,lockport-upstream.csv
+Lockport,2023-05-15,level,221.609,m,lockport-upstream.csv
+Lockport,2023-05-16,level,221.584,m,lockport-upstream.csv
+Lockport,2023-05-17,level,221.553,m,lockport-upstream.csv
+Lockport,2023-05-18,level,221.511,m,lockport-upstream.csv
+Lockport,2023-05-19,level,221.461,m,lockport-upstream.csv
+Lockport,2023-05-20,level,221.394,m,lockport-upstream.csv
+Lockport,2023-05-21,level,221.315,m,lockport-upstream.csv
+Lockport,2023-05-22,level,221.239,m,lockport-upstream.csv
+Lockport,2023-05-23,level,221.151,m,lockport-upstream.csv
+Lockport,2023-05-24,level,221.086,m,lockport-upstream.csv
+Lockport,2023-06-02,level,221.178,m,lockport-upstream.csv
+Lockport,2023-06-03,level,221.165,m,lockport-upstream.csv
+Lockport,2023-06-04,level,221.136,m,lockport-upstream.csv
+Lockport,2023-06-05,level,221.106,m,lockport-upstream.csv
+Lockport,2023-06-06,level,221.087,m,lockport-upstream.csv
+Lockport,2023-06-07,level,221.092,m,lockport-upstream.csv
+Lockport,2023-06-08,level,221.362,m,lockport-upstream.csv
+Lockport,2023-06-09,level,221.912,m,lockport-upstream.csv
+Lockport,2023-06-10,level,222.601,m,lockport-upstream.csv
+Lockport,2023-06-11,level,222.712,m,lockport-upstream.csv
+Lockport,2023-06-12,level,222.728,m,lockport-upstream.csv
+Lockport,2023-06-13,level,222.726,m,lockport-upstream.csv
+Lockport,2023-06-14,level,222.835,m,lockport-upstream.csv
+Lockport,2023-06-15,level,222.86,m,lockport-upstream.csv
+Lockport,2023-06-16,level,222.981,m,lockport-upstream.csv
+Lockport,2023-06-17,level,223.023,m,lockport-upstream.csv
+Lockport,2023-06-18,level,223.103,m,lockport-upstream.csv
+Lockport,2023-06-19,level,223.164,m,lockport-upstream.csv
+Lockport,2023-06-20,level,223.099,m,lockport-upstream.csv
+Lockport,2023-06-21,level,223.037,m,lockport-upstream.csv
+Lockport,2023-06-22,level,223.065,m,lockport-upstream.csv
+Lockport,2023-06-23,level,223.159,m,lockport-upstream.csv
+Lockport,2023-06-24,level,223.318,m,lockport-upstream.csv
+Lockport,2023-06-25,level,223.477,m,lockport-upstream.csv
+Lockport,2023-06-26,level,223.37,m,lockport-upstream.csv
+Lockport,2023-06-27,level,223.194,m,lockport-upstream.csv
+Lockport,2023-06-28,level,223.043,m,lockport-upstream.csv
+Lockport,2023-06-29,level,222.975,m,lockport-upstream.csv
+Lockport,2023-06-30,level,222.973,m,lockport-upstream.csv
+Lockport,2023-07-01,level,223.1,m,lockport-upstream.csv
+Lockport,2023-07-02,level,223.225,m,lockport-upstream.csv
+Lockport,2023-07-03,level,223.25,m,lockport-upstream.csv
+Lockport,2023-07-04,level,223.164,m,lockport-upstream.csv
+Lockport,2023-07-05,level,223.201,m,lockport-upstream.csv
+Lockport,2023-07-06,level,223.319,m,lockport-upstream.csv
+Lockport,2023-07-07,level,223.4,m,lockport-upstream.csv
+Lockport,2023-07-08,level,223.452,m,lockport-upstream.csv
+Lockport,2023-07-09,level,223.464,m,lockport-upstream.csv
+Lockport,2023-07-10,level,223.444,m,lockport-upstream.csv
+Lockport,2023-07-11,level,223.518,m,lockport-upstream.csv
+Lockport,2023-07-12,level,223.517,m,lockport-upstream.csv
+Lockport,2023-07-13,level,223.516,m,lockport-upstream.csv
+Lockport,2023-07-14,level,223.571,m,lockport-upstream.csv
+Lockport,2023-07-15,level,223.597,m,lockport-upstream.csv
+Lockport,2023-07-16,level,223.577,m,lockport-upstream.csv
+Lockport,2023-07-17,level,223.556,m,lockport-upstream.csv
+Lockport,2023-07-18,level,223.573,m,lockport-upstream.csv
+Lockport,2023-07-19,level,223.596,m,lockport-upstream.csv
+Lockport,2023-07-20,level,223.61,m,lockport-upstream.csv
+Lockport,2023-07-21,level,223.609,m,lockport-upstream.csv
+Lockport,2023-07-22,level,223.626,m,lockport-upstream.csv
+Lockport,2023-07-23,level,223.61,m,lockport-upstream.csv
+Lockport,2023-07-24,level,223.599,m,lockport-upstream.csv
+Lockport,2023-07-25,level,223.74,m,lockport-upstream.csv
+Lockport,2023-07-26,level,223.783,m,lockport-upstream.csv
+Lockport,2023-07-27,level,223.783,m,lockport-upstream.csv
+Lockport,2023-07-28,level,223.767,m,lockport-upstream.csv
+Lockport,2023-07-29,level,223.754,m,lockport-upstream.csv
+Lockport,2023-07-30,level,223.714,m,lockport-upstream.csv
+Lockport,2023-07-31,level,223.672,m,lockport-upstream.csv
+Lockport,2023-08-01,level,223.714,m,lockport-upstream.csv
+Lockport,2023-08-02,level,223.726,m,lockport-upstream.csv
+Lockport,2023-08-03,level,223.672,m,lockport-upstream.csv
+Lockport,2023-08-04,level,223.637,m,lockport-upstream.csv
+Lockport,2023-08-05,level,223.63,m,lockport-upstream.csv
+Lockport,2023-08-06,level,223.619,m,lockport-upstream.csv
+Lockport,2023-08-07,level,223.605,m,lockport-upstream.csv
+Lockport,2023-08-08,level,223.573,m,lockport-upstream.csv
+Lockport,2023-08-09,level,223.56,m,lockport-upstream.csv
+Lockport,2023-08-10,level,223.627,m,lockport-upstream.csv
+Lockport,2023-08-11,level,223.76,m,lockport-upstream.csv
+Lockport,2023-08-12,level,223.842,m,lockport-upstream.csv
+Lockport,2023-08-13,level,223.896,m,lockport-upstream.csv
+Lockport,2023-08-14,level,223.936,m,lockport-upstream.csv
+Lockport,2023-08-15,level,223.928,m,lockport-upstream.csv
+Lockport,2023-08-16,level,223.907,m,lockport-upstream.csv
+Lockport,2023-08-17,level,223.888,m,lockport-upstream.csv
+Lockport,2023-08-18,level,223.879,m,lockport-upstream.csv
+Lockport,2023-08-19,level,223.845,m,lockport-upstream.csv
+Lockport,2023-08-20,level,223.839,m,lockport-upstream.csv
+Lockport,2023-08-21,level,223.844,m,lockport-upstream.csv
+Lockport,2023-08-22,level,223.833,m,lockport-upstream.csv
+Lockport,2023-08-23,level,223.834,m,lockport-upstream.csv
+Lockport,2023-08-24,level,223.837,m,lockport-upstream.csv
+Lockport,2023-08-25,level,223.825,m,lockport-upstream.csv
+Lockport,2023-08-26,level,223.85,m,lockport-upstream.csv
+Lockport,2023-08-27,level,223.854,m,lockport-upstream.csv
+Lockport,2023-08-28,level,223.837,m,lockport-upstream.csv
+Lockport,2023-08-29,level,223.824,m,lockport-upstream.csv
+Lockport,2023-08-30,level,223.823,m,lockport-upstream.csv
+Lockport,2023-08-31,level,223.81,m,lockport-upstream.csv
+Lockport,2023-09-01,level,223.775,m,lockport-upstream.csv
+Lockport,2023-09-02,level,223.747,m,lockport-upstream.csv
+Lockport,2023-09-03,level,223.692,m,lockport-upstream.csv
+Lockport,2023-09-04,level,223.639,m,lockport-upstream.csv
+Lockport,2023-09-05,level,223.596,m,lockport-upstream.csv
+Lockport,2023-09-06,level,223.582,m,lockport-upstream.csv
+Lockport,2023-09-07,level,223.582,m,lockport-upstream.csv
+Lockport,2023-09-08,level,223.577,m,lockport-upstream.csv
+Lockport,2023-09-09,level,223.61,m,lockport-upstream.csv
+Lockport,2023-09-10,level,223.623,m,lockport-upstream.csv
+Lockport,2023-09-11,level,223.612,m,lockport-upstream.csv
+Lockport,2023-09-12,level,223.632,m,lockport-upstream.csv
+Lockport,2023-09-13,level,223.65,m,lockport-upstream.csv
+Lockport,2023-09-14,level,223.663,m,lockport-upstream.csv
+Lockport,2023-09-15,level,223.702,m,lockport-upstream.csv
+Lockport,2023-09-16,level,223.736,m,lockport-upstream.csv
+Lockport,2023-09-17,level,223.77,m,lockport-upstream.csv
+Lockport,2023-09-18,level,223.785,m,lockport-upstream.csv
+Lockport,2023-09-19,level,223.797,m,lockport-upstream.csv
+Lockport,2023-09-20,level,223.796,m,lockport-upstream.csv
+Lockport,2023-09-21,level,223.818,m,lockport-upstream.csv
+Lockport,2023-09-22,level,223.824,m,lockport-upstream.csv
+Lockport,2023-09-23,level,223.803,m,lockport-upstream.csv
+Lockport,2023-09-24,level,223.797,m,lockport-upstream.csv
+Lockport,2023-09-25,level,223.806,m,lockport-upstream.csv
+Lockport,2023-09-26,level,223.816,m,lockport-upstream.csv
+Lockport,2023-09-27,level,223.821,m,lockport-upstream.csv
+Lockport,2023-09-28,level,223.826,m,lockport-upstream.csv
+Lockport,2023-09-29,level,223.796,m,lockport-upstream.csv
+Lockport,2023-09-30,level,223.768,m,lockport-upstream.csv
+Lockport,2023-10-01,level,223.737,m,lockport-upstream.csv
+Lockport,2023-10-02,level,223.727,m,lockport-upstream.csv
+Lockport,2023-10-03,level,223.772,m,lockport-upstream.csv
+Lockport,2023-10-04,level,223.755,m,lockport-upstream.csv
+Lockport,2023-10-05,level,223.779,m,lockport-upstream.csv
+Lockport,2023-10-06,level,223.741,m,lockport-upstream.csv
+Lockport,2023-10-07,level,223.691,m,lockport-upstream.csv
+Lockport,2023-10-08,level,223.671,m,lockport-upstream.csv
+Lockport,2023-10-09,level,223.695,m,lockport-upstream.csv
+Lockport,2023-10-10,level,223.712,m,lockport-upstream.csv
+Lockport,2023-10-11,level,223.717,m,lockport-upstream.csv
+Lockport,2023-10-12,level,223.704,m,lockport-upstream.csv
+Lockport,2023-10-13,level,223.671,m,lockport-upstream.csv
+Lockport,2023-10-14,level,223.654,m,lockport-upstream.csv
+Lockport,2023-10-15,level,223.588,m,lockport-upstream.csv
+Lockport,2023-10-16,level,223.482,m,lockport-upstream.csv
+Lockport,2023-10-17,level,223.348,m,lockport-upstream.csv
+Lockport,2023-10-18,level,223.191,m,lockport-upstream.csv
+Lockport,2023-10-19,level,223.06,m,lockport-upstream.csv
+Lockport,2023-10-20,level,222.901,m,lockport-upstream.csv
+Lockport,2023-10-21,level,222.737,m,lockport-upstream.csv
+Lockport,2023-10-22,level,222.599,m,lockport-upstream.csv
+Lockport,2023-10-23,level,222.447,m,lockport-upstream.csv
+Lockport,2023-10-24,level,222.307,m,lockport-upstream.csv
+Lockport,2023-10-25,level,222.159,m,lockport-upstream.csv
+Lockport,2023-10-26,level,222.022,m,lockport-upstream.csv
+Lockport,2023-10-27,level,221.929,m,lockport-upstream.csv
+Lockport,2023-10-28,level,221.781,m,lockport-upstream.csv
+Lockport,2023-10-29,level,221.594,m,lockport-upstream.csv
+Lockport,2023-10-30,level,221.457,m,lockport-upstream.csv
+Lockport,2023-10-31,level,221.311,m,lockport-upstream.csv
+Lockport,2023-11-01,level,221.2,m,lockport-upstream.csv
+Lockport,2024-02-27,level,219.84,m,lockport-upstream.csv
+Lockport,2024-02-28,level,219.926,m,lockport-upstream.csv
+Lockport,2024-02-29,level,219.926,m,lockport-upstream.csv
+Lockport,2024-03-01,level,219.928,m,lockport-upstream.csv
+Lockport,2024-03-02,level,219.919,m,lockport-upstream.csv
+Lockport,2024-03-03,level,219.916,m,lockport-upstream.csv
+Lockport,2024-03-04,level,219.915,m,lockport-upstream.csv
+Lockport,2024-03-05,level,219.906,m,lockport-upstream.csv
+Lockport,2024-03-06,level,219.905,m,lockport-upstream.csv
+Lockport,2024-03-07,level,219.904,m,lockport-upstream.csv
+Lockport,2024-03-08,level,219.899,m,lockport-upstream.csv
+Lockport,2024-03-09,level,219.891,m,lockport-upstream.csv
+Lockport,2024-03-10,level,219.896,m,lockport-upstream.csv
+Lockport,2024-03-11,level,219.901,m,lockport-upstream.csv
+Lockport,2024-03-12,level,219.909,m,lockport-upstream.csv
+Lockport,2024-03-13,level,219.912,m,lockport-upstream.csv
+Lockport,2024-03-14,level,219.943,m,lockport-upstream.csv
+Lockport,2024-03-15,level,219.986,m,lockport-upstream.csv
+Lockport,2024-03-16,level,220.025,m,lockport-upstream.csv
+Lockport,2024-03-17,level,219.998,m,lockport-upstream.csv
+Lockport,2024-03-18,level,220.069,m,lockport-upstream.csv
+Lockport,2024-03-19,level,220.1,m,lockport-upstream.csv
+Lockport,2024-03-20,level,220.099,m,lockport-upstream.csv
+Lockport,2024-03-21,level,220.213,m,lockport-upstream.csv
+Lockport,2024-03-22,level,220.235,m,lockport-upstream.csv
+Lockport,2024-03-23,level,220.26,m,lockport-upstream.csv
+Lockport,2024-03-24,level,220.276,m,lockport-upstream.csv
+Lockport,2024-03-25,level,220.257,m,lockport-upstream.csv
+Lockport,2024-03-26,level,220.228,m,lockport-upstream.csv
+Lockport,2024-03-27,level,220.216,m,lockport-upstream.csv
+Lockport,2024-03-28,level,220.216,m,lockport-upstream.csv
+Lockport,2024-03-29,level,220.184,m,lockport-upstream.csv
+Lockport,2024-03-30,level,220.148,m,lockport-upstream.csv
+Lockport,2024-03-31,level,220.119,m,lockport-upstream.csv
+Lockport,2024-04-01,level,220.097,m,lockport-upstream.csv
+Lockport,2024-04-02,level,220.084,m,lockport-upstream.csv
+Lockport,2024-04-03,level,220.078,m,lockport-upstream.csv
+Lockport,2024-04-04,level,220.092,m,lockport-upstream.csv
+Lockport,2024-04-05,level,220.132,m,lockport-upstream.csv
+Lockport,2024-04-06,level,220.211,m,lockport-upstream.csv
+Lockport,2024-04-07,level,220.31,m,lockport-upstream.csv
+Lockport,2024-04-08,level,220.373,m,lockport-upstream.csv
+Lockport,2024-04-09,level,220.448,m,lockport-upstream.csv
+Lockport,2024-04-10,level,220.503,m,lockport-upstream.csv
+Lockport,2024-04-11,level,220.533,m,lockport-upstream.csv
+Lockport,2024-04-12,level,220.401,m,lockport-upstream.csv
+Lockport,2024-04-13,level,220.36,m,lockport-upstream.csv
+Lockport,2024-04-14,level,220.406,m,lockport-upstream.csv
+Lockport,2024-04-15,level,220.43,m,lockport-upstream.csv
+Lockport,2024-04-16,level,220.457,m,lockport-upstream.csv
+Lockport,2024-04-17,level,220.479,m,lockport-upstream.csv
+Lockport,2024-04-18,level,220.481,m,lockport-upstream.csv
+Lockport,2024-04-19,level,220.48,m,lockport-upstream.csv
+Lockport,2024-04-20,level,220.481,m,lockport-upstream.csv
+Lockport,2024-04-21,level,220.482,m,lockport-upstream.csv
+Lockport,2024-04-22,level,220.48,m,lockport-upstream.csv
+Lockport,2024-04-23,level,220.471,m,lockport-upstream.csv
+Lockport,2024-04-24,level,220.473,m,lockport-upstream.csv
+Lockport,2024-04-25,level,220.474,m,lockport-upstream.csv
+Lockport,2024-04-26,level,220.478,m,lockport-upstream.csv
+Lockport,2024-04-27,level,220.485,m,lockport-upstream.csv
+Lockport,2024-04-28,level,220.488,m,lockport-upstream.csv
+Lockport,2024-04-29,level,220.491,m,lockport-upstream.csv
+Lockport,2024-04-30,level,220.536,m,lockport-upstream.csv
+Lockport,2024-05-01,level,220.67,m,lockport-upstream.csv
+Lockport,2024-05-02,level,220.763,m,lockport-upstream.csv
+Lockport,2024-05-03,level,220.787,m,lockport-upstream.csv
+Lockport,2024-05-04,level,220.795,m,lockport-upstream.csv
+Lockport,2024-05-05,level,220.82,m,lockport-upstream.csv
+Lockport,2024-05-06,level,220.856,m,lockport-upstream.csv
+Lockport,2024-05-07,level,220.887,m,lockport-upstream.csv
+Lockport,2024-05-08,level,220.894,m,lockport-upstream.csv
+Lockport,2024-05-09,level,220.895,m,lockport-upstream.csv
+Lockport,2024-05-10,level,220.892,m,lockport-upstream.csv
+Lockport,2024-05-11,level,220.899,m,lockport-upstream.csv
+Lockport,2024-05-12,level,220.887,m,lockport-upstream.csv
+Lockport,2024-05-13,level,221.022,m,lockport-upstream.csv
+Lockport,2024-05-14,level,221.118,m,lockport-upstream.csv
+Lockport,2024-05-15,level,221.11,m,lockport-upstream.csv
+Lockport,2024-05-16,level,221.338,m,lockport-upstream.csv
+Lockport,2024-05-17,level,221.625,m,lockport-upstream.csv
+Lockport,2024-05-18,level,221.603,m,lockport-upstream.csv
+Lockport,2024-05-19,level,221.56,m,lockport-upstream.csv
+Lockport,2024-05-20,level,221.496,m,lockport-upstream.csv
+Lockport,2024-05-21,level,221.763,m,lockport-upstream.csv
+Lockport,2024-05-22,level,222.502,m,lockport-upstream.csv
+Lockport,2024-05-23,level,222.208,m,lockport-upstream.csv
+Lockport,2024-05-24,level,221.954,m,lockport-upstream.csv
+Lockport,2024-05-25,level,221.951,m,lockport-upstream.csv
+Lockport,2024-05-26,level,221.789,m,lockport-upstream.csv
+Lockport,2024-05-27,level,221.697,m,lockport-upstream.csv
+Lockport,2024-05-28,level,221.652,m,lockport-upstream.csv
+Lockport,2024-05-29,level,221.716,m,lockport-upstream.csv
+Lockport,2024-05-30,level,221.717,m,lockport-upstream.csv
+Lockport,2024-05-31,level,221.686,m,lockport-upstream.csv
+Lockport,2024-06-01,level,221.693,m,lockport-upstream.csv
+Lockport,2024-06-02,level,221.708,m,lockport-upstream.csv
+Lockport,2024-06-03,level,221.769,m,lockport-upstream.csv
+Lockport,2024-06-04,level,221.758,m,lockport-upstream.csv
+Lockport,2024-06-05,level,221.724,m,lockport-upstream.csv
+Lockport,2024-06-06,level,221.665,m,lockport-upstream.csv
+Lockport,2024-06-07,level,221.631,m,lockport-upstream.csv
+Lockport,2024-06-08,level,221.597,m,lockport-upstream.csv
+Lockport,2024-06-09,level,221.582,m,lockport-upstream.csv
+Lockport,2024-06-10,level,221.588,m,lockport-upstream.csv
+Lockport,2024-06-11,level,221.595,m,lockport-upstream.csv
+Lockport,2024-06-12,level,221.57,m,lockport-upstream.csv
+Lockport,2024-06-13,level,221.546,m,lockport-upstream.csv
+Lockport,2024-06-14,level,221.504,m,lockport-upstream.csv
+Lockport,2024-06-15,level,221.439,m,lockport-upstream.csv
+Lockport,2024-06-16,level,221.387,m,lockport-upstream.csv
+Lockport,2024-06-17,level,221.257,m,lockport-upstream.csv
+Lockport,2024-06-18,level,221.189,m,lockport-upstream.csv
+Lockport,2024-06-19,level,221.284,m,lockport-upstream.csv
+Lockport,2024-06-20,level,221.413,m,lockport-upstream.csv
+Lockport,2024-06-21,level,221.403,m,lockport-upstream.csv
+Lockport,2024-06-22,level,221.479,m,lockport-upstream.csv
+Lockport,2024-06-23,level,221.618,m,lockport-upstream.csv
+Lockport,2024-06-24,level,221.658,m,lockport-upstream.csv
+Lockport,2024-06-25,level,221.664,m,lockport-upstream.csv
+Lockport,2024-06-26,level,221.715,m,lockport-upstream.csv
+Lockport,2024-06-27,level,221.67,m,lockport-upstream.csv
+Lockport,2024-06-28,level,221.597,m,lockport-upstream.csv
+Lockport,2024-06-29,level,221.579,m,lockport-upstream.csv
+Lockport,2024-06-30,level,221.539,m,lockport-upstream.csv
+Lockport,2024-07-01,level,221.51,m,lockport-upstream.csv
+Lockport,2024-07-02,level,221.643,m,lockport-upstream.csv
+Lockport,2024-07-03,level,221.696,m,lockport-upstream.csv
+Lockport,2024-07-04,level,221.778,m,lockport-upstream.csv
+Lockport,2024-07-05,level,221.781,m,lockport-upstream.csv
+Lockport,2024-07-06,level,221.742,m,lockport-upstream.csv
+Lockport,2024-07-07,level,221.74,m,lockport-upstream.csv
+Lockport,2024-07-08,level,221.73,m,lockport-upstream.csv
+Lockport,2024-07-09,level,221.706,m,lockport-upstream.csv
+Lockport,2024-07-10,level,221.663,m,lockport-upstream.csv
+Lockport,2024-07-11,level,221.6,m,lockport-upstream.csv
+Lockport,2024-07-12,level,221.52,m,lockport-upstream.csv
+Lockport,2024-07-13,level,221.441,m,lockport-upstream.csv
+Lockport,2024-07-14,level,221.353,m,lockport-upstream.csv
+Lockport,2024-07-15,level,221.277,m,lockport-upstream.csv
+Lockport,2024-07-16,level,221.191,m,lockport-upstream.csv
+Lockport,2024-07-17,level,221.239,m,lockport-upstream.csv
+Lockport,2024-07-18,level,221.254,m,lockport-upstream.csv
+Lockport,2024-07-19,level,221.349,m,lockport-upstream.csv
+Lockport,2024-07-20,level,221.398,m,lockport-upstream.csv
+Lockport,2024-07-21,level,221.32,m,lockport-upstream.csv
+Lockport,2024-07-22,level,221.274,m,lockport-upstream.csv
+Lockport,2024-07-23,level,221.477,m,lockport-upstream.csv
+Lockport,2024-07-24,level,221.912,m,lockport-upstream.csv
+Lockport,2024-07-25,level,222.789,m,lockport-upstream.csv
+Lockport,2024-07-26,level,222.853,m,lockport-upstream.csv
+Lockport,2024-07-27,level,222.857,m,lockport-upstream.csv
+Lockport,2024-07-28,level,222.897,m,lockport-upstream.csv
+Lockport,2024-07-29,level,222.922,m,lockport-upstream.csv
+Lockport,2024-07-30,level,223.022,m,lockport-upstream.csv
+Lockport,2024-07-31,level,223.08,m,lockport-upstream.csv
+Lockport,2024-08-01,level,223.126,m,lockport-upstream.csv
+Lockport,2024-08-02,level,223.169,m,lockport-upstream.csv
+Lockport,2024-08-03,level,223.075,m,lockport-upstream.csv
+Lockport,2024-08-04,level,223.083,m,lockport-upstream.csv
+Lockport,2024-08-05,level,222.988,m,lockport-upstream.csv
+Lockport,2024-08-06,level,222.961,m,lockport-upstream.csv
+Lockport,2024-08-07,level,223.042,m,lockport-upstream.csv
+Lockport,2024-08-08,level,223.173,m,lockport-upstream.csv
+Lockport,2024-08-09,level,223.207,m,lockport-upstream.csv
+Lockport,2024-08-10,level,223.245,m,lockport-upstream.csv
+Lockport,2024-08-11,level,223.258,m,lockport-upstream.csv
+Lockport,2024-08-12,level,223.301,m,lockport-upstream.csv
+Lockport,2024-08-13,level,223.36,m,lockport-upstream.csv
+Lockport,2024-08-14,level,223.37,m,lockport-upstream.csv
+Lockport,2024-08-15,level,223.417,m,lockport-upstream.csv
+Lockport,2024-08-16,level,223.451,m,lockport-upstream.csv
+Lockport,2024-08-17,level,223.498,m,lockport-upstream.csv
+Lockport,2024-08-18,level,223.531,m,lockport-upstream.csv
+Lockport,2024-08-19,level,223.549,m,lockport-upstream.csv
+Lockport,2024-08-20,level,223.558,m,lockport-upstream.csv
+Lockport,2024-08-21,level,223.576,m,lockport-upstream.csv
+Lockport,2024-08-22,level,223.571,m,lockport-upstream.csv
+Lockport,2024-08-23,level,223.499,m,lockport-upstream.csv
+Lockport,2024-08-24,level,223.429,m,lockport-upstream.csv
+Lockport,2024-08-25,level,223.364,m,lockport-upstream.csv
+Lockport,2024-08-26,level,223.337,m,lockport-upstream.csv
+Lockport,2024-08-27,level,223.402,m,lockport-upstream.csv
+Lockport,2024-08-28,level,223.484,m,lockport-upstream.csv
+Lockport,2024-08-29,level,223.54,m,lockport-upstream.csv
+Lockport,2024-08-30,level,223.554,m,lockport-upstream.csv
+Lockport,2024-08-31,level,223.571,m,lockport-upstream.csv
+Lockport,2024-09-01,level,223.57,m,lockport-upstream.csv
+Lockport,2024-09-02,level,223.589,m,lockport-upstream.csv
+Lockport,2024-09-03,level,223.637,m,lockport-upstream.csv
+Lockport,2024-09-04,level,223.611,m,lockport-upstream.csv
+Lockport,2024-09-05,level,223.539,m,lockport-upstream.csv
+Lockport,2024-09-06,level,223.447,m,lockport-upstream.csv
+Lockport,2024-09-07,level,223.476,m,lockport-upstream.csv
+Lockport,2024-09-08,level,223.503,m,lockport-upstream.csv
+Lockport,2024-09-09,level,223.549,m,lockport-upstream.csv
+Lockport,2024-09-10,level,223.577,m,lockport-upstream.csv
+Lockport,2024-09-11,level,223.577,m,lockport-upstream.csv
+Lockport,2024-09-12,level,223.578,m,lockport-upstream.csv
+Lockport,2024-09-13,level,223.609,m,lockport-upstream.csv
+Lockport,2024-09-14,level,223.663,m,lockport-upstream.csv
+Lockport,2024-09-15,level,223.661,m,lockport-upstream.csv
+Lockport,2024-09-16,level,223.617,m,lockport-upstream.csv
+Lockport,2024-09-17,level,223.597,m,lockport-upstream.csv
+Lockport,2024-09-18,level,223.594,m,lockport-upstream.csv
+Lockport,2024-09-19,level,223.538,m,lockport-upstream.csv
+Lockport,2024-09-20,level,223.226,m,lockport-upstream.csv
+Lockport,2024-09-21,level,222.844,m,lockport-upstream.csv
+Lockport,2024-09-22,level,222.683,m,lockport-upstream.csv
+Lockport,2024-09-23,level,222.774,m,lockport-upstream.csv
+Lockport,2024-09-24,level,223.208,m,lockport-upstream.csv
+Lockport,2024-09-25,level,223.351,m,lockport-upstream.csv
+Lockport,2024-09-26,level,223.465,m,lockport-upstream.csv
+Lockport,2024-09-27,level,223.525,m,lockport-upstream.csv
+Lockport,2024-09-28,level,223.488,m,lockport-upstream.csv
+Lockport,2024-09-29,level,223.516,m,lockport-upstream.csv
+Lockport,2024-09-30,level,223.592,m,lockport-upstream.csv
+Lockport,2024-10-01,level,223.564,m,lockport-upstream.csv
+Lockport,2024-10-02,level,223.575,m,lockport-upstream.csv
+Lockport,2024-10-03,level,223.616,m,lockport-upstream.csv
+Lockport,2024-10-04,level,223.689,m,lockport-upstream.csv
+Lockport,2024-10-05,level,223.781,m,lockport-upstream.csv
+Lockport,2024-10-06,level,223.757,m,lockport-upstream.csv
+Lockport,2024-10-07,level,223.77,m,lockport-upstream.csv
+Lockport,2024-10-08,level,223.752,m,lockport-upstream.csv
+Lockport,2024-10-09,level,223.74,m,lockport-upstream.csv
+Lockport,2024-10-10,level,223.706,m,lockport-upstream.csv
+Lockport,2024-10-11,level,223.675,m,lockport-upstream.csv
+Lockport,2024-10-12,level,223.649,m,lockport-upstream.csv
+Lockport,2024-10-13,level,223.599,m,lockport-upstream.csv
+Lockport,2024-10-14,level,223.532,m,lockport-upstream.csv
+Lockport,2024-10-15,level,223.454,m,lockport-upstream.csv
+Lockport,2024-10-16,level,223.34,m,lockport-upstream.csv
+Lockport,2024-10-17,level,223.189,m,lockport-upstream.csv
+Lockport,2024-10-18,level,222.997,m,lockport-upstream.csv
+Lockport,2024-10-19,level,222.846,m,lockport-upstream.csv
+Lockport,2024-10-20,level,222.693,m,lockport-upstream.csv
+Lockport,2024-10-21,level,222.539,m,lockport-upstream.csv
+Lockport,2024-10-22,level,222.394,m,lockport-upstream.csv
+Lockport,2024-10-23,level,222.252,m,lockport-upstream.csv
+Lockport,2024-10-24,level,222.078,m,lockport-upstream.csv
+Lockport,2024-10-25,level,221.934,m,lockport-upstream.csv
+Lockport,2024-10-26,level,221.805,m,lockport-upstream.csv
+Lockport,2024-10-27,level,221.645,m,lockport-upstream.csv
+Lockport,2024-10-28,level,221.543,m,lockport-upstream.csv
+Lockport,2024-10-29,level,221.395,m,lockport-upstream.csv
+Lockport,2024-10-30,level,221.285,m,lockport-upstream.csv
+Lockport,2024-10-31,level,220.821,m,lockport-upstream.csv
+Lockport,2025-09-09,level,223.769,m,api_realtime
+Lockport,2025-09-10,level,223.761,m,api_realtime
+Lockport,2025-09-11,level,223.769,m,api_realtime
+Lockport,2025-09-12,level,223.783,m,api_realtime
+Lockport,2025-09-13,level,223.814,m,api_realtime
+Lockport,2025-09-14,level,223.835,m,api_realtime
+Lockport,2025-09-15,level,223.773,m,api_realtime
+Lockport,2025-09-16,level,223.771,m,api_realtime
+Lockport,2025-09-17,level,223.729,m,api_realtime
+Lockport,2025-09-18,level,223.71,m,api_realtime
+Lockport,2025-09-19,level,223.757,m,api_realtime
+Lockport,2025-09-20,level,223.79,m,api_realtime
+Lockport,2025-09-21,level,223.805,m,api_realtime
+Lockport,2025-09-22,level,223.746,m,api_realtime
+Lockport,2025-09-23,level,223.733,m,api_realtime
+Lockport,2025-09-24,level,223.726,m,api_realtime
+Lockport,2025-09-25,level,223.76,m,api_realtime
+Lockport,2025-09-26,level,223.734,m,api_realtime
+Lockport,2025-09-27,level,223.768,m,api_realtime
+Lockport,2025-09-28,level,223.746,m,api_realtime
+Lockport,2025-09-29,level,223.77,m,api_realtime
+Lockport,2025-09-30,level,223.756,m,api_realtime
+Lockport,2025-10-01,level,223.798,m,api_realtime
+Lockport,2025-10-02,level,223.776,m,api_realtime
+Lockport,2025-10-03,level,223.735,m,api_realtime
+Lockport,2025-10-04,level,223.706,m,api_realtime
+Lockport,2025-10-05,level,223.682,m,api_realtime
+Lockport,2025-10-06,level,223.608,m,api_realtime
+Lockport,2025-10-07,level,223.599,m,api_realtime
+Lockport,2025-10-08,level,223.675,m,api_realtime
+Lockport,2025-10-09,level,223.764,m,api_realtime
+Selkirk,2023-01-01,flow,115.0,m³/s,selkirk.csv
+Selkirk,2023-01-02,flow,119.0,m³/s,selkirk.csv
+Selkirk,2023-01-03,flow,96.3,m³/s,selkirk.csv
+Selkirk,2023-01-04,flow,89.0,m³/s,selkirk.csv
+Selkirk,2023-01-05,flow,107.0,m³/s,selkirk.csv
+Selkirk,2023-01-06,flow,79.9,m³/s,selkirk.csv
+Selkirk,2023-01-07,flow,80.8,m³/s,selkirk.csv
+Selkirk,2023-01-08,flow,91.2,m³/s,selkirk.csv
+Selkirk,2023-01-09,flow,103.0,m³/s,selkirk.csv
+Selkirk,2023-01-10,flow,81.8,m³/s,selkirk.csv
+Selkirk,2023-01-11,flow,83.1,m³/s,selkirk.csv
+Selkirk,2023-01-12,flow,72.1,m³/s,selkirk.csv
+Selkirk,2023-01-13,flow,69.2,m³/s,selkirk.csv
+Selkirk,2023-01-14,flow,68.9,m³/s,selkirk.csv
+Selkirk,2023-01-15,flow,68.9,m³/s,selkirk.csv
+Selkirk,2023-01-16,flow,68.2,m³/s,selkirk.csv
+Selkirk,2023-01-17,flow,73.3,m³/s,selkirk.csv
+Selkirk,2023-01-18,flow,99.8,m³/s,selkirk.csv
+Selkirk,2023-01-19,flow,81.9,m³/s,selkirk.csv
+Selkirk,2023-01-20,flow,74.7,m³/s,selkirk.csv
+Selkirk,2023-01-21,flow,86.8,m³/s,selkirk.csv
+Selkirk,2023-01-22,flow,83.2,m³/s,selkirk.csv
+Selkirk,2023-01-23,flow,101.0,m³/s,selkirk.csv
+Selkirk,2023-01-24,flow,102.0,m³/s,selkirk.csv
+Selkirk,2023-01-25,flow,94.4,m³/s,selkirk.csv
+Selkirk,2023-01-26,flow,94.0,m³/s,selkirk.csv
+Selkirk,2023-01-27,flow,72.7,m³/s,selkirk.csv
+Selkirk,2023-01-28,flow,111.0,m³/s,selkirk.csv
+Selkirk,2023-01-29,flow,81.1,m³/s,selkirk.csv
+Selkirk,2023-01-30,flow,105.0,m³/s,selkirk.csv
+Selkirk,2023-01-31,flow,88.7,m³/s,selkirk.csv
+Selkirk,2023-02-01,flow,85.0,m³/s,selkirk.csv
+Selkirk,2023-02-02,flow,79.1,m³/s,selkirk.csv
+Selkirk,2023-02-03,flow,82.5,m³/s,selkirk.csv
+Selkirk,2023-02-04,flow,94.1,m³/s,selkirk.csv
+Selkirk,2023-02-05,flow,87.4,m³/s,selkirk.csv
+Selkirk,2023-02-06,flow,81.1,m³/s,selkirk.csv
+Selkirk,2023-02-07,flow,92.5,m³/s,selkirk.csv
+Selkirk,2023-02-08,flow,89.2,m³/s,selkirk.csv
+Selkirk,2023-02-09,flow,74.6,m³/s,selkirk.csv
+Selkirk,2023-02-10,flow,79.1,m³/s,selkirk.csv
+Selkirk,2023-02-11,flow,75.5,m³/s,selkirk.csv
+Selkirk,2023-02-12,flow,76.9,m³/s,selkirk.csv
+Selkirk,2023-02-13,flow,82.9,m³/s,selkirk.csv
+Selkirk,2023-02-14,flow,77.4,m³/s,selkirk.csv
+Selkirk,2023-02-15,flow,90.4,m³/s,selkirk.csv
+Selkirk,2023-02-16,flow,101.0,m³/s,selkirk.csv
+Selkirk,2023-02-17,flow,99.7,m³/s,selkirk.csv
+Selkirk,2023-02-18,flow,94.1,m³/s,selkirk.csv
+Selkirk,2023-02-19,flow,105.0,m³/s,selkirk.csv
+Selkirk,2023-02-20,flow,83.6,m³/s,selkirk.csv
+Selkirk,2023-02-21,flow,85.4,m³/s,selkirk.csv
+Selkirk,2023-02-22,flow,107.0,m³/s,selkirk.csv
+Selkirk,2023-02-23,flow,120.0,m³/s,selkirk.csv
+Selkirk,2023-02-24,flow,95.5,m³/s,selkirk.csv
+Selkirk,2023-02-25,flow,80.4,m³/s,selkirk.csv
+Selkirk,2023-02-26,flow,90.3,m³/s,selkirk.csv
+Selkirk,2023-02-27,flow,85.9,m³/s,selkirk.csv
+Selkirk,2023-02-28,flow,99.3,m³/s,selkirk.csv
+Selkirk,2023-03-01,flow,85.5,m³/s,selkirk.csv
+Selkirk,2023-03-02,flow,93.2,m³/s,selkirk.csv
+Selkirk,2023-03-03,flow,103.0,m³/s,selkirk.csv
+Selkirk,2023-03-04,flow,108.0,m³/s,selkirk.csv
+Selkirk,2023-03-05,flow,96.0,m³/s,selkirk.csv
+Selkirk,2023-03-06,flow,94.1,m³/s,selkirk.csv
+Selkirk,2023-03-07,flow,113.0,m³/s,selkirk.csv
+Selkirk,2023-03-08,flow,122.0,m³/s,selkirk.csv
+Selkirk,2023-03-09,flow,124.0,m³/s,selkirk.csv
+Selkirk,2023-03-10,flow,125.0,m³/s,selkirk.csv
+Selkirk,2023-03-11,flow,124.0,m³/s,selkirk.csv
+Selkirk,2023-03-12,flow,142.0,m³/s,selkirk.csv
+Selkirk,2023-03-13,flow,129.0,m³/s,selkirk.csv
+Selkirk,2023-03-14,flow,130.0,m³/s,selkirk.csv
+Selkirk,2023-03-15,flow,108.0,m³/s,selkirk.csv
+Selkirk,2023-03-16,flow,99.8,m³/s,selkirk.csv
+Selkirk,2023-03-17,flow,119.0,m³/s,selkirk.csv
+Selkirk,2023-03-18,flow,121.0,m³/s,selkirk.csv
+Selkirk,2023-03-19,flow,117.0,m³/s,selkirk.csv
+Selkirk,2023-03-20,flow,126.0,m³/s,selkirk.csv
+Selkirk,2023-03-21,flow,115.0,m³/s,selkirk.csv
+Selkirk,2023-03-22,flow,148.0,m³/s,selkirk.csv
+Selkirk,2023-03-23,flow,152.0,m³/s,selkirk.csv
+Selkirk,2023-03-24,flow,137.0,m³/s,selkirk.csv
+Selkirk,2023-03-25,flow,147.0,m³/s,selkirk.csv
+Selkirk,2023-03-26,flow,163.0,m³/s,selkirk.csv
+Selkirk,2023-03-27,flow,157.0,m³/s,selkirk.csv
+Selkirk,2023-03-28,flow,148.0,m³/s,selkirk.csv
+Selkirk,2023-03-29,flow,140.0,m³/s,selkirk.csv
+Selkirk,2023-03-30,flow,145.0,m³/s,selkirk.csv
+Selkirk,2023-03-31,flow,156.0,m³/s,selkirk.csv
+Selkirk,2023-04-01,flow,171.0,m³/s,selkirk.csv
+Selkirk,2023-04-02,flow,154.0,m³/s,selkirk.csv
+Selkirk,2023-04-03,flow,144.0,m³/s,selkirk.csv
+Selkirk,2023-04-04,flow,136.0,m³/s,selkirk.csv
+Selkirk,2023-04-05,flow,115.0,m³/s,selkirk.csv
+Selkirk,2023-04-06,flow,123.0,m³/s,selkirk.csv
+Selkirk,2023-04-07,flow,139.0,m³/s,selkirk.csv
+Selkirk,2023-04-08,flow,147.0,m³/s,selkirk.csv
+Selkirk,2023-04-09,flow,152.0,m³/s,selkirk.csv
+Selkirk,2023-04-10,flow,168.0,m³/s,selkirk.csv
+Selkirk,2023-04-11,flow,192.0,m³/s,selkirk.csv
+Selkirk,2023-04-12,flow,234.0,m³/s,selkirk.csv
+Selkirk,2023-04-13,flow,319.0,m³/s,selkirk.csv
+Selkirk,2023-04-14,flow,495.0,m³/s,selkirk.csv
+Selkirk,2023-04-15,flow,628.0,m³/s,selkirk.csv
+Selkirk,2023-04-16,flow,752.0,m³/s,selkirk.csv
+Selkirk,2023-04-17,flow,879.0,m³/s,selkirk.csv
+Selkirk,2023-04-18,flow,1070.0,m³/s,selkirk.csv
+Selkirk,2023-04-19,flow,1280.0,m³/s,selkirk.csv
+Selkirk,2023-04-20,flow,1320.0,m³/s,selkirk.csv
+Selkirk,2023-04-21,flow,1250.0,m³/s,selkirk.csv
+Selkirk,2023-04-22,flow,1370.0,m³/s,selkirk.csv
+Selkirk,2023-04-23,flow,1400.0,m³/s,selkirk.csv
+Selkirk,2023-04-24,flow,1400.0,m³/s,selkirk.csv
+Selkirk,2023-04-25,flow,1470.0,m³/s,selkirk.csv
+Selkirk,2023-04-26,flow,1460.0,m³/s,selkirk.csv
+Selkirk,2023-04-27,flow,1480.0,m³/s,selkirk.csv
+Selkirk,2023-04-28,flow,1540.0,m³/s,selkirk.csv
+Selkirk,2023-04-29,flow,1570.0,m³/s,selkirk.csv
+Selkirk,2023-04-30,flow,1610.0,m³/s,selkirk.csv
+Selkirk,2023-05-01,flow,1630.0,m³/s,selkirk.csv
+Selkirk,2023-05-02,flow,1650.0,m³/s,selkirk.csv
+Selkirk,2023-05-03,flow,1600.0,m³/s,selkirk.csv
+Selkirk,2023-05-04,flow,1600.0,m³/s,selkirk.csv
+Selkirk,2023-05-05,flow,1610.0,m³/s,selkirk.csv
+Selkirk,2023-05-06,flow,1590.0,m³/s,selkirk.csv
+Selkirk,2023-05-07,flow,1570.0,m³/s,selkirk.csv
+Selkirk,2023-05-08,flow,1600.0,m³/s,selkirk.csv
+Selkirk,2023-05-09,flow,1580.0,m³/s,selkirk.csv
+Selkirk,2023-05-10,flow,1560.0,m³/s,selkirk.csv
+Selkirk,2023-05-11,flow,1550.0,m³/s,selkirk.csv
+Selkirk,2023-05-12,flow,1500.0,m³/s,selkirk.csv
+Selkirk,2023-05-13,flow,1440.0,m³/s,selkirk.csv
+Selkirk,2023-05-14,flow,1440.0,m³/s,selkirk.csv
+Selkirk,2023-05-15,flow,1370.0,m³/s,selkirk.csv
+Selkirk,2023-05-16,flow,1290.0,m³/s,selkirk.csv
+Selkirk,2023-05-17,flow,1210.0,m³/s,selkirk.csv
+Selkirk,2023-05-18,flow,1160.0,m³/s,selkirk.csv
+Selkirk,2023-05-19,flow,1100.0,m³/s,selkirk.csv
+Selkirk,2023-05-20,flow,1000.0,m³/s,selkirk.csv
+Selkirk,2023-05-21,flow,954.0,m³/s,selkirk.csv
+Selkirk,2023-05-22,flow,895.0,m³/s,selkirk.csv
+Selkirk,2023-05-23,flow,833.0,m³/s,selkirk.csv
+Selkirk,2023-05-24,flow,778.0,m³/s,selkirk.csv
+Selkirk,2023-05-25,flow,704.0,m³/s,selkirk.csv
+Selkirk,2023-05-26,flow,653.0,m³/s,selkirk.csv
+Selkirk,2023-05-27,flow,615.0,m³/s,selkirk.csv
+Selkirk,2023-05-28,flow,578.0,m³/s,selkirk.csv
+Selkirk,2023-05-29,flow,535.0,m³/s,selkirk.csv
+Selkirk,2023-05-30,flow,509.0,m³/s,selkirk.csv
+Selkirk,2023-05-31,flow,496.0,m³/s,selkirk.csv
+Selkirk,2023-06-01,flow,481.0,m³/s,selkirk.csv
+Selkirk,2023-06-02,flow,464.0,m³/s,selkirk.csv
+Selkirk,2023-06-03,flow,450.0,m³/s,selkirk.csv
+Selkirk,2023-06-04,flow,438.0,m³/s,selkirk.csv
+Selkirk,2023-06-05,flow,441.0,m³/s,selkirk.csv
+Selkirk,2023-06-06,flow,426.0,m³/s,selkirk.csv
+Selkirk,2023-06-07,flow,430.0,m³/s,selkirk.csv
+Selkirk,2023-06-08,flow,404.0,m³/s,selkirk.csv
+Selkirk,2023-06-09,flow,362.0,m³/s,selkirk.csv
+Selkirk,2023-06-10,flow,387.0,m³/s,selkirk.csv
+Selkirk,2023-06-11,flow,389.0,m³/s,selkirk.csv
+Selkirk,2023-06-12,flow,374.0,m³/s,selkirk.csv
+Selkirk,2023-06-13,flow,359.0,m³/s,selkirk.csv
+Selkirk,2023-06-14,flow,369.0,m³/s,selkirk.csv
+Selkirk,2023-06-15,flow,357.0,m³/s,selkirk.csv
+Selkirk,2023-06-16,flow,329.0,m³/s,selkirk.csv
+Selkirk,2023-06-17,flow,322.0,m³/s,selkirk.csv
+Selkirk,2023-06-18,flow,325.0,m³/s,selkirk.csv
+Selkirk,2023-06-19,flow,338.0,m³/s,selkirk.csv
+Selkirk,2023-06-20,flow,330.0,m³/s,selkirk.csv
+Selkirk,2023-06-21,flow,312.0,m³/s,selkirk.csv
+Selkirk,2023-06-22,flow,301.0,m³/s,selkirk.csv
+Selkirk,2023-06-23,flow,283.0,m³/s,selkirk.csv
+Selkirk,2023-06-24,flow,266.0,m³/s,selkirk.csv
+Selkirk,2023-06-25,flow,281.0,m³/s,selkirk.csv
+Selkirk,2023-06-26,flow,301.0,m³/s,selkirk.csv
+Selkirk,2023-06-27,flow,336.0,m³/s,selkirk.csv
+Selkirk,2023-06-28,flow,348.0,m³/s,selkirk.csv
+Selkirk,2023-06-29,flow,353.0,m³/s,selkirk.csv
+Selkirk,2023-06-30,flow,359.0,m³/s,selkirk.csv
+Selkirk,2023-07-01,flow,349.0,m³/s,selkirk.csv
+Selkirk,2023-07-02,flow,362.0,m³/s,selkirk.csv
+Selkirk,2023-07-03,flow,336.0,m³/s,selkirk.csv
+Selkirk,2023-07-04,flow,325.0,m³/s,selkirk.csv
+Selkirk,2023-07-05,flow,322.0,m³/s,selkirk.csv
+Selkirk,2023-07-06,flow,295.0,m³/s,selkirk.csv
+Selkirk,2023-07-07,flow,264.0,m³/s,selkirk.csv
+Selkirk,2023-07-08,flow,278.0,m³/s,selkirk.csv
+Selkirk,2023-07-09,flow,234.0,m³/s,selkirk.csv
+Selkirk,2023-07-10,flow,230.0,m³/s,selkirk.csv
+Selkirk,2023-07-11,flow,218.0,m³/s,selkirk.csv
+Selkirk,2023-07-12,flow,222.0,m³/s,selkirk.csv
+Selkirk,2023-07-13,flow,196.0,m³/s,selkirk.csv
+Selkirk,2023-07-14,flow,180.0,m³/s,selkirk.csv
+Selkirk,2023-07-15,flow,184.0,m³/s,selkirk.csv
+Selkirk,2023-07-16,flow,179.0,m³/s,selkirk.csv
+Selkirk,2023-07-17,flow,175.0,m³/s,selkirk.csv
+Selkirk,2023-07-18,flow,178.0,m³/s,selkirk.csv
+Selkirk,2023-07-19,flow,164.0,m³/s,selkirk.csv
+Selkirk,2023-07-20,flow,151.0,m³/s,selkirk.csv
+Selkirk,2023-07-21,flow,146.0,m³/s,selkirk.csv
+Selkirk,2023-07-22,flow,140.0,m³/s,selkirk.csv
+Selkirk,2023-07-23,flow,165.0,m³/s,selkirk.csv
+Selkirk,2023-07-24,flow,144.0,m³/s,selkirk.csv
+Selkirk,2023-07-25,flow,143.0,m³/s,selkirk.csv
+Selkirk,2023-07-26,flow,141.0,m³/s,selkirk.csv
+Selkirk,2023-07-27,flow,147.0,m³/s,selkirk.csv
+Selkirk,2023-07-28,flow,166.0,m³/s,selkirk.csv
+Selkirk,2023-07-29,flow,156.0,m³/s,selkirk.csv
+Selkirk,2023-07-30,flow,150.0,m³/s,selkirk.csv
+Selkirk,2023-07-31,flow,153.0,m³/s,selkirk.csv
+Selkirk,2023-08-01,flow,150.0,m³/s,selkirk.csv
+Selkirk,2023-08-02,flow,142.0,m³/s,selkirk.csv
+Selkirk,2023-08-03,flow,143.0,m³/s,selkirk.csv
+Selkirk,2023-08-04,flow,145.0,m³/s,selkirk.csv
+Selkirk,2023-08-05,flow,130.0,m³/s,selkirk.csv
+Selkirk,2023-08-06,flow,149.0,m³/s,selkirk.csv
+Selkirk,2023-08-07,flow,152.0,m³/s,selkirk.csv
+Selkirk,2023-08-08,flow,142.0,m³/s,selkirk.csv
+Selkirk,2023-08-09,flow,141.0,m³/s,selkirk.csv
+Selkirk,2023-08-10,flow,146.0,m³/s,selkirk.csv
+Selkirk,2023-08-11,flow,128.0,m³/s,selkirk.csv
+Selkirk,2023-08-12,flow,131.0,m³/s,selkirk.csv
+Selkirk,2023-08-13,flow,132.0,m³/s,selkirk.csv
+Selkirk,2023-08-14,flow,144.0,m³/s,selkirk.csv
+Selkirk,2023-08-15,flow,138.0,m³/s,selkirk.csv
+Selkirk,2023-08-16,flow,135.0,m³/s,selkirk.csv
+Selkirk,2023-08-17,flow,152.0,m³/s,selkirk.csv
+Selkirk,2023-08-18,flow,178.0,m³/s,selkirk.csv
+Selkirk,2023-08-19,flow,123.0,m³/s,selkirk.csv
+Selkirk,2023-08-20,flow,142.0,m³/s,selkirk.csv
+Selkirk,2023-08-21,flow,143.0,m³/s,selkirk.csv
+Selkirk,2023-08-22,flow,144.0,m³/s,selkirk.csv
+Selkirk,2023-08-23,flow,147.0,m³/s,selkirk.csv
+Selkirk,2023-08-24,flow,140.0,m³/s,selkirk.csv
+Selkirk,2023-08-25,flow,150.0,m³/s,selkirk.csv
+Selkirk,2023-08-26,flow,151.0,m³/s,selkirk.csv
+Selkirk,2023-08-27,flow,147.0,m³/s,selkirk.csv
+Selkirk,2023-08-28,flow,137.0,m³/s,selkirk.csv
+Selkirk,2023-08-29,flow,135.0,m³/s,selkirk.csv
+Selkirk,2023-08-30,flow,155.0,m³/s,selkirk.csv
+Selkirk,2023-08-31,flow,172.0,m³/s,selkirk.csv
+Selkirk,2023-09-01,flow,126.0,m³/s,selkirk.csv
+Selkirk,2023-09-02,flow,149.0,m³/s,selkirk.csv
+Selkirk,2023-09-03,flow,127.0,m³/s,selkirk.csv
+Selkirk,2023-09-04,flow,130.0,m³/s,selkirk.csv
+Selkirk,2023-09-05,flow,132.0,m³/s,selkirk.csv
+Selkirk,2023-09-06,flow,142.0,m³/s,selkirk.csv
+Selkirk,2023-09-07,flow,142.0,m³/s,selkirk.csv
+Selkirk,2023-09-08,flow,113.0,m³/s,selkirk.csv
+Selkirk,2023-09-09,flow,114.0,m³/s,selkirk.csv
+Selkirk,2023-09-10,flow,115.0,m³/s,selkirk.csv
+Selkirk,2023-09-11,flow,117.0,m³/s,selkirk.csv
+Selkirk,2023-09-12,flow,116.0,m³/s,selkirk.csv
+Selkirk,2023-09-13,flow,124.0,m³/s,selkirk.csv
+Selkirk,2023-09-14,flow,94.3,m³/s,selkirk.csv
+Selkirk,2023-09-15,flow,87.2,m³/s,selkirk.csv
+Selkirk,2023-09-16,flow,111.0,m³/s,selkirk.csv
+Selkirk,2023-09-17,flow,111.0,m³/s,selkirk.csv
+Selkirk,2023-09-18,flow,126.0,m³/s,selkirk.csv
+Selkirk,2023-09-19,flow,109.0,m³/s,selkirk.csv
+Selkirk,2023-09-20,flow,106.0,m³/s,selkirk.csv
+Selkirk,2023-09-21,flow,102.0,m³/s,selkirk.csv
+Selkirk,2023-09-22,flow,106.0,m³/s,selkirk.csv
+Selkirk,2023-09-23,flow,100.0,m³/s,selkirk.csv
+Selkirk,2023-09-24,flow,102.0,m³/s,selkirk.csv
+Selkirk,2023-09-25,flow,100.0,m³/s,selkirk.csv
+Selkirk,2023-09-26,flow,95.3,m³/s,selkirk.csv
+Selkirk,2023-09-27,flow,112.0,m³/s,selkirk.csv
+Selkirk,2023-09-28,flow,109.0,m³/s,selkirk.csv
+Selkirk,2023-09-29,flow,82.7,m³/s,selkirk.csv
+Selkirk,2023-09-30,flow,98.3,m³/s,selkirk.csv
+Selkirk,2023-10-01,flow,95.9,m³/s,selkirk.csv
+Selkirk,2023-10-02,flow,91.2,m³/s,selkirk.csv
+Selkirk,2023-10-03,flow,102.0,m³/s,selkirk.csv
+Selkirk,2023-10-04,flow,97.4,m³/s,selkirk.csv
+Selkirk,2023-10-05,flow,111.0,m³/s,selkirk.csv
+Selkirk,2023-10-06,flow,125.0,m³/s,selkirk.csv
+Selkirk,2023-10-07,flow,143.0,m³/s,selkirk.csv
+Selkirk,2023-10-08,flow,96.4,m³/s,selkirk.csv
+Selkirk,2023-10-09,flow,92.6,m³/s,selkirk.csv
+Selkirk,2023-10-10,flow,76.5,m³/s,selkirk.csv
+Selkirk,2023-10-11,flow,90.2,m³/s,selkirk.csv
+Selkirk,2023-10-12,flow,78.3,m³/s,selkirk.csv
+Selkirk,2023-10-13,flow,88.2,m³/s,selkirk.csv
+Selkirk,2023-10-14,flow,98.6,m³/s,selkirk.csv
+Selkirk,2023-10-15,flow,94.9,m³/s,selkirk.csv
+Selkirk,2023-10-16,flow,104.0,m³/s,selkirk.csv
+Selkirk,2023-10-17,flow,91.3,m³/s,selkirk.csv
+Selkirk,2023-10-18,flow,78.9,m³/s,selkirk.csv
+Selkirk,2023-10-19,flow,95.8,m³/s,selkirk.csv
+Selkirk,2023-10-20,flow,100.0,m³/s,selkirk.csv
+Selkirk,2023-10-21,flow,73.9,m³/s,selkirk.csv
+Selkirk,2023-10-22,flow,91.0,m³/s,selkirk.csv
+Selkirk,2023-10-23,flow,70.9,m³/s,selkirk.csv
+Selkirk,2023-10-24,flow,94.1,m³/s,selkirk.csv
+Selkirk,2023-10-25,flow,72.4,m³/s,selkirk.csv
+Selkirk,2023-10-26,flow,67.4,m³/s,selkirk.csv
+Selkirk,2023-10-27,flow,58.9,m³/s,selkirk.csv
+Selkirk,2023-10-28,flow,71.2,m³/s,selkirk.csv
+Selkirk,2023-10-29,flow,67.6,m³/s,selkirk.csv
+Selkirk,2023-10-30,flow,65.1,m³/s,selkirk.csv
+Selkirk,2023-10-31,flow,96.4,m³/s,selkirk.csv
+Selkirk,2023-11-01,flow,81.7,m³/s,selkirk.csv
+Selkirk,2023-11-02,flow,92.9,m³/s,selkirk.csv
+Selkirk,2023-11-03,flow,71.9,m³/s,selkirk.csv
+Selkirk,2023-11-04,flow,89.5,m³/s,selkirk.csv
+Selkirk,2023-11-05,flow,87.7,m³/s,selkirk.csv
+Selkirk,2023-11-06,flow,79.9,m³/s,selkirk.csv
+Selkirk,2023-11-07,flow,92.4,m³/s,selkirk.csv
+Selkirk,2023-11-08,flow,75.6,m³/s,selkirk.csv
+Selkirk,2023-11-09,flow,80.8,m³/s,selkirk.csv
+Selkirk,2023-11-10,flow,101.0,m³/s,selkirk.csv
+Selkirk,2023-11-11,flow,100.0,m³/s,selkirk.csv
+Selkirk,2023-11-12,flow,82.0,m³/s,selkirk.csv
+Selkirk,2023-11-13,flow,89.7,m³/s,selkirk.csv
+Selkirk,2023-11-14,flow,85.8,m³/s,selkirk.csv
+Selkirk,2023-11-15,flow,89.6,m³/s,selkirk.csv
+Selkirk,2023-11-16,flow,79.5,m³/s,selkirk.csv
+Selkirk,2023-11-17,flow,109.0,m³/s,selkirk.csv
+Selkirk,2023-11-18,flow,82.1,m³/s,selkirk.csv
+Selkirk,2023-11-19,flow,106.0,m³/s,selkirk.csv
+Selkirk,2023-11-20,flow,93.1,m³/s,selkirk.csv
+Selkirk,2023-11-21,flow,82.4,m³/s,selkirk.csv
+Selkirk,2023-11-22,flow,98.9,m³/s,selkirk.csv
+Selkirk,2023-11-23,flow,75.0,m³/s,selkirk.csv
+Selkirk,2023-11-24,flow,77.0,m³/s,selkirk.csv
+Selkirk,2023-11-25,flow,59.1,m³/s,selkirk.csv
+Selkirk,2023-11-26,flow,54.4,m³/s,selkirk.csv
+Selkirk,2023-11-27,flow,72.5,m³/s,selkirk.csv
+Selkirk,2023-11-28,flow,62.2,m³/s,selkirk.csv
+Selkirk,2023-11-29,flow,63.9,m³/s,selkirk.csv
+Selkirk,2023-11-30,flow,64.1,m³/s,selkirk.csv
+Selkirk,2023-12-01,flow,58.5,m³/s,selkirk.csv
+Selkirk,2023-12-02,flow,63.9,m³/s,selkirk.csv
+Selkirk,2023-12-03,flow,55.9,m³/s,selkirk.csv
+Selkirk,2023-12-04,flow,68.5,m³/s,selkirk.csv
+Selkirk,2023-12-05,flow,66.0,m³/s,selkirk.csv
+Selkirk,2023-12-06,flow,63.9,m³/s,selkirk.csv
+Selkirk,2023-12-07,flow,62.6,m³/s,selkirk.csv
+Selkirk,2023-12-08,flow,64.4,m³/s,selkirk.csv
+Selkirk,2023-12-09,flow,70.6,m³/s,selkirk.csv
+Selkirk,2023-12-10,flow,73.2,m³/s,selkirk.csv
+Selkirk,2023-12-11,flow,65.1,m³/s,selkirk.csv
+Selkirk,2023-12-12,flow,64.2,m³/s,selkirk.csv
+Selkirk,2023-12-13,flow,81.0,m³/s,selkirk.csv
+Selkirk,2023-12-14,flow,72.8,m³/s,selkirk.csv
+Selkirk,2023-12-15,flow,66.4,m³/s,selkirk.csv
+Selkirk,2023-12-16,flow,62.4,m³/s,selkirk.csv
+Selkirk,2023-12-17,flow,64.4,m³/s,selkirk.csv
+Selkirk,2023-12-18,flow,67.0,m³/s,selkirk.csv
+Selkirk,2023-12-19,flow,71.9,m³/s,selkirk.csv
+Selkirk,2023-12-20,flow,66.4,m³/s,selkirk.csv
+Selkirk,2023-12-21,flow,76.2,m³/s,selkirk.csv
+Selkirk,2023-12-22,flow,76.7,m³/s,selkirk.csv
+Selkirk,2023-12-23,flow,64.2,m³/s,selkirk.csv
+Selkirk,2023-12-24,flow,60.1,m³/s,selkirk.csv
+Selkirk,2023-12-25,flow,62.5,m³/s,selkirk.csv
+Selkirk,2023-12-26,flow,64.9,m³/s,selkirk.csv
+Selkirk,2023-12-27,flow,68.7,m³/s,selkirk.csv
+Selkirk,2023-12-28,flow,57.0,m³/s,selkirk.csv
+Selkirk,2023-12-29,flow,63.9,m³/s,selkirk.csv
+Selkirk,2023-12-30,flow,59.1,m³/s,selkirk.csv
+Selkirk,2023-12-31,flow,64.4,m³/s,selkirk.csv
+Selkirk,2025-09-09,flow,173.0,m³/s,api_realtime
+Selkirk,2025-09-10,flow,177.0,m³/s,api_realtime
+Selkirk,2025-09-11,flow,126.0,m³/s,api_realtime
+Selkirk,2025-09-12,flow,183.0,m³/s,api_realtime
+Selkirk,2025-09-13,flow,168.0,m³/s,api_realtime
+Selkirk,2025-09-14,flow,278.0,m³/s,api_realtime
+Selkirk,2025-09-15,flow,219.0,m³/s,api_realtime
+Selkirk,2025-09-16,flow,184.0,m³/s,api_realtime
+Selkirk,2025-09-17,flow,181.0,m³/s,api_realtime
+Selkirk,2025-09-18,flow,142.0,m³/s,api_realtime
+Selkirk,2025-09-19,flow,190.0,m³/s,api_realtime
+Selkirk,2025-09-20,flow,177.0,m³/s,api_realtime
+Selkirk,2025-09-21,flow,226.0,m³/s,api_realtime
+Selkirk,2025-09-22,flow,184.0,m³/s,api_realtime
+Selkirk,2025-09-23,flow,174.0,m³/s,api_realtime
+Selkirk,2025-09-24,flow,179.0,m³/s,api_realtime
+Selkirk,2025-09-25,flow,172.0,m³/s,api_realtime
+Selkirk,2025-09-26,flow,147.0,m³/s,api_realtime
+Ste. Agathe,2023-01-01,flow,47.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-02,flow,47.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-03,flow,47.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-04,flow,47.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-05,flow,47.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-06,flow,47.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-07,flow,46.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-08,flow,46.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-09,flow,46.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-10,flow,46.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-11,flow,46.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-12,flow,47.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-13,flow,47.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-14,flow,47.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-15,flow,47.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-16,flow,47.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-17,flow,48.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-18,flow,48.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-19,flow,48.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-20,flow,48.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-21,flow,48.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-22,flow,48.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-23,flow,49.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-24,flow,49.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-25,flow,49.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-26,flow,49.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-27,flow,50.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-28,flow,50.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-29,flow,50.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-30,flow,50.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-01-31,flow,50.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-01,flow,49.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-02,flow,49.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-03,flow,49.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-04,flow,49.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-05,flow,49.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-06,flow,49.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-07,flow,48.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-08,flow,48.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-09,flow,48.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-10,flow,48.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-11,flow,48.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-12,flow,48.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-13,flow,49.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-14,flow,50.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-15,flow,50.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-16,flow,51.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-17,flow,52.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-18,flow,53.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-19,flow,53.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-20,flow,54.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-21,flow,54.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-22,flow,53.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-23,flow,53.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-24,flow,52.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-25,flow,52.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-26,flow,51.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-27,flow,51.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-02-28,flow,50.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-01,flow,50.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-02,flow,50.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-03,flow,51.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-04,flow,51.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-05,flow,52.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-06,flow,53.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-07,flow,53.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-08,flow,53.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-09,flow,53.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-10,flow,53.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-11,flow,54.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-12,flow,54.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-13,flow,55.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-14,flow,55.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-15,flow,56.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-16,flow,56.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-17,flow,57.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-18,flow,58.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-19,flow,59.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-20,flow,60.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-21,flow,63.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-22,flow,67.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-23,flow,73.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-24,flow,75.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-25,flow,76.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-26,flow,77.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-27,flow,78.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-28,flow,78.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-29,flow,78.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-30,flow,79.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-03-31,flow,79.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-01,flow,79.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-02,flow,79.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-03,flow,79.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-04,flow,80.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-05,flow,81.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-06,flow,82.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-07,flow,82.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-08,flow,82.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-09,flow,83.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-10,flow,83.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-11,flow,84.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-12,flow,93.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-13,flow,151.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-14,flow,217.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-15,flow,343.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-16,flow,496.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-17,flow,656.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-18,flow,797.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-19,flow,928.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-20,flow,1010.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-21,flow,1100.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-22,flow,1140.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-23,flow,1170.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-24,flow,1210.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-25,flow,1260.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-26,flow,1300.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-27,flow,1320.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-28,flow,1350.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-29,flow,1370.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-04-30,flow,1400.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-01,flow,1410.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-02,flow,1420.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-03,flow,1420.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-04,flow,1430.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-05,flow,1430.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-06,flow,1430.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-07,flow,1430.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-08,flow,1430.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-09,flow,1420.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-10,flow,1400.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-11,flow,1380.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-12,flow,1360.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-13,flow,1320.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-14,flow,1280.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-15,flow,1230.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-16,flow,1170.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-17,flow,1110.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-18,flow,1050.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-19,flow,986.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-20,flow,924.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-21,flow,861.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-22,flow,796.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-23,flow,731.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-24,flow,669.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-25,flow,618.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-26,flow,562.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-27,flow,510.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-28,flow,469.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-29,flow,446.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-30,flow,432.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-05-31,flow,419.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-01,flow,403.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-02,flow,386.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-03,flow,370.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-04,flow,354.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-05,flow,338.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-06,flow,324.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-07,flow,310.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-08,flow,298.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-09,flow,284.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-10,flow,270.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-11,flow,256.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-12,flow,248.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-13,flow,243.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-14,flow,237.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-15,flow,231.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-16,flow,223.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-17,flow,215.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-18,flow,207.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-19,flow,197.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-20,flow,189.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-21,flow,180.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-22,flow,172.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-23,flow,165.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-24,flow,160.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-25,flow,159.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-26,flow,171.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-27,flow,206.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-28,flow,224.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-29,flow,226.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-06-30,flow,229.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-01,flow,235.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-02,flow,236.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-03,flow,226.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-04,flow,208.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-05,flow,189.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-06,flow,173.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-07,flow,161.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-08,flow,149.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-09,flow,139.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-10,flow,129.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-11,flow,121.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-12,flow,114.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-13,flow,108.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-14,flow,102.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-15,flow,96.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-16,flow,90.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-17,flow,85.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-18,flow,80.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-19,flow,77.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-20,flow,75.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-21,flow,73.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-22,flow,71.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-23,flow,70.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-24,flow,67.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-25,flow,68.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-26,flow,69.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-27,flow,69.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-28,flow,69.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-29,flow,66.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-30,flow,63.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-07-31,flow,60.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-01,flow,60.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-02,flow,60.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-03,flow,57.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-04,flow,55.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-05,flow,53.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-06,flow,53.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-07,flow,51.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-08,flow,49.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-09,flow,48.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-10,flow,50.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-11,flow,57.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-12,flow,65.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-13,flow,72.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-14,flow,73.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-15,flow,70.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-16,flow,67.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-17,flow,64.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-18,flow,61.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-19,flow,61.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-20,flow,62.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-21,flow,64.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-22,flow,65.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-23,flow,64.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-24,flow,64.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-25,flow,67.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-26,flow,68.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-27,flow,67.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-28,flow,66.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-29,flow,65.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-30,flow,62.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-08-31,flow,58.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-01,flow,55.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-02,flow,52.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-03,flow,48.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-04,flow,45.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-05,flow,44.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-06,flow,41.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-07,flow,38.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-08,flow,38.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-09,flow,38.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-10,flow,39.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-11,flow,39.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-12,flow,38.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-13,flow,38.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-14,flow,39.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-15,flow,41.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-16,flow,44.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-17,flow,44.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-18,flow,44.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-19,flow,45.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-20,flow,47.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-21,flow,49.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-22,flow,50.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-23,flow,50.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-24,flow,49.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-25,flow,48.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-26,flow,48.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-27,flow,48.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-28,flow,49.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-29,flow,48.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-09-30,flow,48.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-01,flow,49.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-02,flow,51.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-03,flow,52.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-04,flow,54.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-05,flow,57.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-06,flow,61.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-07,flow,59.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-08,flow,58.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-09,flow,58.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-10,flow,58.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-11,flow,57.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-12,flow,57.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-13,flow,57.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-14,flow,57.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-15,flow,57.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-16,flow,55.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-17,flow,53.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-18,flow,51.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-19,flow,50.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-20,flow,48.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-21,flow,47.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-22,flow,48.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-23,flow,49.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-24,flow,49.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-25,flow,50.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-26,flow,51.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-27,flow,53.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-28,flow,55.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-29,flow,55.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-30,flow,55.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-10-31,flow,55.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-01,flow,55.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-02,flow,55.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-03,flow,55.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-04,flow,56.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-05,flow,56.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-06,flow,55.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-07,flow,55.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-08,flow,55.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-09,flow,56.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-10,flow,57.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-11,flow,57.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-12,flow,58.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-13,flow,58.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-14,flow,58.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-15,flow,57.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-16,flow,56.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-17,flow,56.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-18,flow,55.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-19,flow,55.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-20,flow,54.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-21,flow,54.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-22,flow,53.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-23,flow,51.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-24,flow,48.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-25,flow,38.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-26,flow,33.2,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-27,flow,31.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-28,flow,30.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-29,flow,29.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-11-30,flow,30.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-01,flow,33.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-02,flow,36.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-03,flow,39.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-04,flow,41.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-05,flow,44.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-06,flow,45.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-07,flow,45.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-08,flow,44.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-09,flow,44.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-10,flow,44.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-11,flow,43.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-12,flow,43.7,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-13,flow,44.1,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-14,flow,44.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-15,flow,45.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-16,flow,45.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-17,flow,45.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-18,flow,45.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-19,flow,44.9,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-20,flow,44.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-21,flow,43.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-22,flow,42.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-23,flow,42.0,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-24,flow,41.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-25,flow,41.6,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-26,flow,42.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-27,flow,43.5,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-28,flow,44.8,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-29,flow,46.4,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-30,flow,48.3,m³/s,ste-agathe.csv
+Ste. Agathe,2023-12-31,flow,50.5,m³/s,ste-agathe.csv
+Ste. Agathe,2025-09-09,flow,111.0,m³/s,api_realtime
+Ste. Agathe,2025-09-10,flow,110.0,m³/s,api_realtime
+Ste. Agathe,2025-09-11,flow,111.0,m³/s,api_realtime
+Ste. Agathe,2025-09-12,flow,111.0,m³/s,api_realtime
+Ste. Agathe,2025-09-13,flow,125.0,m³/s,api_realtime
+Ste. Agathe,2025-09-14,flow,137.0,m³/s,api_realtime
+Ste. Agathe,2025-09-15,flow,127.0,m³/s,api_realtime
+Ste. Agathe,2025-09-16,flow,116.0,m³/s,api_realtime
+Ste. Agathe,2025-09-17,flow,110.0,m³/s,api_realtime
+Ste. Agathe,2025-09-18,flow,106.0,m³/s,api_realtime
+Ste. Agathe,2025-09-19,flow,104.0,m³/s,api_realtime
+Ste. Agathe,2025-09-20,flow,103.0,m³/s,api_realtime
+Ste. Agathe,2025-09-21,flow,107.0,m³/s,api_realtime
+Ste. Agathe,2025-09-22,flow,111.0,m³/s,api_realtime
+Ste. Agathe,2025-09-23,flow,110.0,m³/s,api_realtime
+Ste. Agathe,2025-09-24,flow,107.0,m³/s,api_realtime
+Ste. Agathe,2025-09-25,flow,105.0,m³/s,api_realtime
+Ste. Agathe,2025-09-26,flow,103.0,m³/s,api_realtime
+Ste. Agathe,2025-09-27,flow,96.7,m³/s,api_realtime
+Ste. Agathe,2025-09-28,flow,92.9,m³/s,api_realtime
+Ste. Agathe,2025-09-29,flow,90.0,m³/s,api_realtime
+Ste. Agathe,2025-09-30,flow,91.0,m³/s,api_realtime
+Ste. Agathe,2025-10-01,flow,91.1,m³/s,api_realtime
+Ste. Agathe,2025-10-02,flow,92.2,m³/s,api_realtime
+Ste. Agathe,2025-10-03,flow,95.9,m³/s,api_realtime
+Ste. Agathe,2025-10-04,flow,99.4,m³/s,api_realtime
+Ste. Agathe,2025-10-05,flow,101.0,m³/s,api_realtime
+Ste. Agathe,2025-10-06,flow,104.0,m³/s,api_realtime
+Ste. Agathe,2025-10-07,flow,97.4,m³/s,api_realtime
+Ste. Agathe,2025-10-08,flow,96.9,m³/s,api_realtime
+Ste. Agathe,2025-10-09,flow,98.3,m³/s,api_realtime

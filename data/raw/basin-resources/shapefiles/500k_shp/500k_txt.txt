@@ -1,0 +1,34 @@
+                   LAND INFORMATION DIVISION
+                MANITOBA 1:500000   5KTEXT.TXT
+
+AR31250001RB    RB              34   TOWN (INC) SYMBOL                   
+AR31250002RB    RB              37   VILLAGE (INC) SYMBOL                
+AR31250003RB    RB             947   LOCALITY, COM, VILLAGE (UIC) SYMBOL 
+AR31250005PH    PH             115   SIDING - TRAIN SYMBOL               
+KA07970820                     116   CULTURE TEXT - SIDING - TRAIN       
+KA17950901                       7   TEXT - CITY INCORPORATED - GEO      
+KA17950902                      34   TEXT - TOWN INCORPORATED - GEO      
+KA17950903                      39   TEXT - VILLAGE INCORPORATED - GEO   
+KA17950904                     976   TEXT - LOCALITIES, ETC UNINCOR - GEO
+KB14250160                       1   TEXT, CANAL-FLOODWAY (PART OF)      
+KB14250170                      16   LABEL, DAM                          
+KB14250190                      12   LABEL, FALLS                        
+KB14250260                      99   TEXT, SMALL - ISLAND                
+KB14250261                     127   TEXT, SMALL - POINT                 
+KB14250279                     104   TEXT, SMALL - BAY                   
+KB14250285                       8   HYDROGRAPHY TEXT - FRENCH - LAKE    
+KB14250289                    4490   TEXT, SMALL - LAKE, PERENNIAL       
+KB14250360                      25   TEXT, RAPIDS                        
+KB14250390                    1075   TEXT, SMALL - RIVER/STREAM          
+KB14250395                      25   HYDROGRAPHY TEXT - FRENCH - RIVER   
+KB34250260                      16   TEXT, MEDIUM - ISLAND               
+KB34250261                       1   TEXT, MEDIUM - POINT                
+KB34250279                      71   TEXT, MEDIUM - BAY                  
+KB34250289                     141   TEXT, MEDIUM - LAKE, PERENNIAL      
+KB34250390                      97   TEXT, MEDIUM - RIVER/STREAM         
+KB54250260                      31   TEXT, LARGE - ISLAND                
+KB54250261                       7   TEXT, LARGE - POINT                 
+KB54250279                       2   TEXT, LARGE - BAY                   
+KB54250289                      22   TEXT, LARGE - LAKE, PERENNIAL       
+KB54250390                      22   TEXT, LARGE - RIVER/STREAM          
+                                    

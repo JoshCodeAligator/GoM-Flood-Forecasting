@@ -1,0 +1,11 @@
+                 LAND INFORMATION DIVISION
+              MANITOBA 1:500000   5KHYD-R.TXT
+ 
+GA08450000                      14   DAM
+GA08800000                       7   DITCH
+GA10450000                       6   FALLS - DOUBLE LINE RIVER
+GA23500110                      11   RAPIDS
+GA24850001                      48   RIVER - MAJOR
+GA24850002                     142   RIVER - MEDIUM
+GA24850003                   62956   RIVER - MINOR
+GC02300150                       5   BOG - STRING

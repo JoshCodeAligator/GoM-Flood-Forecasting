@@ -95,7 +95,7 @@ def overlay_precip_map(
     ax.imshow(img, extent=[minx, maxx, miny, maxy], origin="lower", alpha=alpha_img)
 
     # Plot basins
-    basins_gdf.boundary.plot(ax=ax, color=basin_edge, linewidth=basin_linewidth)
+    basins_gdf.boundary.plot(ax=ax, color=basin_edge, linewidth=basin_linewidth, label="Basins")
 
     # Plot stations (drop rows without coordinates)
     if isinstance(stations_df, pd.DataFrame) and not stations_df.empty:
@@ -179,12 +179,15 @@ def main(outdir=None):
     basins = load_basins()
     stations_ret = load_stations()
     stations = stations_ret[0] if isinstance(stations_ret, tuple) else stations_ret
+    
+    (REPORTS / "step2_precip").mkdir(parents=True, exist_ok=True)
+
     maps = _discover_maps(MAPS)
     if not maps:
         print(f"[precip] No JPEG maps found under: {MAPS}")
         return
     for m in maps:
-        out = REPORTS / f"precip_overlay_{m.stem}.png"
+        out = REPORTS / "step2_precip" / f"precip_overlay_{m.stem}.png"
         print(f"[precip] Overlay → {out.name}")
         overlay_precip_map(m, basins, stations, out_path=out)
 

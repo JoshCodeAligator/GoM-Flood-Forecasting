@@ -37,7 +37,6 @@ ENV/
 # Data (decide what to track)
 data/interim/
 data/tmp/
-reports/figures/
 
 # Keep your processed Tier-1 CSVs tracked:
 !data/processed/baseline_observed.csv

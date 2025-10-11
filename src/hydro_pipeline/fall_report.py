@@ -1,5 +1,4 @@
-
-
+from __future__ import annotations
 """
 Step 3 – Fall Conditions (Baseline Wetness & Baseflows)
 
@@ -11,19 +10,16 @@ upserts to CSV, and produces a small QA plot.
 If structured tables are not reliably parsed, it falls back to safe manual overrides
 (populated with the values you've already curated for Red and Assiniboine).
 """
-
-from __future__ import annotations
-
 from pathlib import Path
 import re
+from .io import ROOT, REPORTS, DATA
 from typing import List, Dict, Optional
-
+import matplotlib.pyplot as plt
 import pandas as pd
 
-# Optional dependencies (we handle gracefully if missing)
 try:
     import pdfplumber  # robust for text extraction
-except Exception:  # pragma: no cover
+except Exception:      # pragma: no cover
     pdfplumber = None
 
 try:
@@ -31,17 +27,13 @@ try:
 except Exception:  # pragma: no cover
     tabula = None
 
-# ---------- Paths ----------
-ROOT = Path(__file__).resolve().parents[2]
-PDFS = ROOT / "pdf-reports"
+PDFS = ROOT / "data" / "raw" / "pdf-reports"
 PROCESSED = ROOT / "data" / "processed"
-REPORTS = ROOT / "reports" / "figures"
 REPORTS.mkdir(parents=True, exist_ok=True)
 PROCESSED.mkdir(parents=True, exist_ok=True)
 
 FALL_PDF = PDFS / "2024_fall_conditions_report.pdf"
 
-# ---------- Utility: CSV upsert ----------
 def _upsert_csv(out_path: Path, df_new: pd.DataFrame, key_cols: List[str]) -> pd.DataFrame:
     """
     Append/merge df_new into out_path on key_cols (keep last), return merged.
@@ -65,8 +57,7 @@ def _upsert_csv(out_path: Path, df_new: pd.DataFrame, key_cols: List[str]) -> pd
     merged.to_csv(out_path, index=False)
     return merged
 
-# ---------- PDF helpers ----------
-def _all_page_text(pdf_path: Path) -> List[str]:
+ def _all_page_text(pdf_path: Path) -> List[str]:
     """
     Return list of page texts from the PDF (one string per page).
     If pdfplumber is unavailable or parsing fails, return [].
@@ -114,7 +105,6 @@ def _search_soil_moisture_blocks(pages: List[str]) -> Dict[str, str]:
             results[basin] = norm
     return results
 
-# ---------- Core extractors ----------
 def extract_soil_wetness(pdf_path: Path) -> pd.DataFrame:
     """
     Try to parse soil moisture (qualitative class) from the Fall PDF.
@@ -135,15 +125,15 @@ def extract_soil_wetness(pdf_path: Path) -> pd.DataFrame:
         "assiniboine": parsed.get("assiniboine", manual_overrides["assiniboine"]),
     }
 
-    # Build tidy rows
+    # Build
     rows.append({
         "basin": "Red",
         "asof_date": "2024-12-05",
         "metric": "soil_wetness_class",
         "value": final_classes["red"],
         "unit": "class",
-        "value_SI": None,
-        "unit_SI": None,
+        "value_SI": "N/A",
+        "unit_SI": "",
         "note": "Soil Moisture at Freeze-up (parsed/confirmed)",
         "source": "Fall Report | Soil Moisture at Freeze-up",
     })
@@ -153,13 +143,14 @@ def extract_soil_wetness(pdf_path: Path) -> pd.DataFrame:
         "metric": "soil_wetness_class",
         "value": final_classes["assiniboine"],
         "unit": "class",
-        "value_SI": None,
-        "unit_SI": None,
+        "value_SI": "N/A",
+        "unit_SI": "",
         "note": "Soil Moisture at Freeze-up (parsed/confirmed)",
         "source": "Fall Report | Soil Moisture at Freeze-up",
     })
-
     df = pd.DataFrame(rows)
+    df["value_SI"] = df["value_SI"].astype("string")
+    df["unit_SI"] = df["unit_SI"].astype("string")
     df["asof_date"] = pd.to_datetime(df["asof_date"])
     return df
 
@@ -179,32 +170,43 @@ def extract_freezeup_flows(pdf_path: Path) -> pd.DataFrame:
     cols = ["basin","station","asof_date","metric","value","unit","value_SI","unit_SI","source"]
     return pd.DataFrame(columns=cols)
 
-# ---------- QA plot ----------
-def plot_soil_wetness_bars(df: pd.DataFrame, out_path: Path = REPORTS/"soil_wetness_bars.png") -> None:
+def plot_soil_wetness_bars(df: pd.DataFrame, out_path: Path = REPORTS/"step3_soil"/"soil_wetness_bars.png") -> None:
     """
-    Simple bar chart for quick QA of parsed/confirmed classes.
+    Qualitative classes aren't numeric, so draw 1.0-height bars and annotate the class
+    text on each bar. Keeps the figure simple for QA.
     """
-    import matplotlib.pyplot as plt
+    plot_df = df[["basin", "value"]].copy()
+    basins = plot_df["basin"].tolist()
+    classes = plot_df["value"].astype(str).tolist()
+    heights = [1.0] * len(basins)
 
-    plot_df = df.copy()
-    plot_df = plot_df[["basin","value"]].set_index("basin")
+    fig, ax = plt.subplots(figsize=(8, 3.6))
+    bars = ax.bar(basins, heights)
 
-    ax = plot_df["value"].astype(str).plot(kind="bar", figsize=(8, 4))
-    ax.set_ylabel("Soil wetness class")
+    # Remove numeric y-axis; we're showing labels instead
+    ax.set_ylim(0, 1.25)
+    ax.set_yticks([])
+    ax.set_ylabel("")
     ax.set_title("Soil Moisture at Freeze-up (Fall 2024)")
 
-    # Annotate class on bars
-    for p, txt in zip(ax.patches, plot_df["value"].tolist()):
-        ax.annotate(txt, (p.get_x() + p.get_width()/2, p.get_height()),
-                    ha="center", va="bottom", fontsize=8, rotation=0)
-
+    # Put the class label above each bar
+    for i, (bar, cls) in enumerate(zip(bars, classes)):
+        ax.text(
+            bar.get_x() + bar.get_width() / 2,
+            bar.get_height() + 0.05,
+            cls.replace("_", " "),
+            ha="center",
+            va="bottom",
+            fontsize=9,
+            rotation=0,
+            wrap=True,
+        )
     out_path.parent.mkdir(parents=True, exist_ok=True)
     plt.tight_layout()
     plt.savefig(out_path, dpi=200)
     plt.close()
 
-# ---------- Orchestration ----------
-def run_fall_step():
+def main(outdir=None):
     """
     Main entrypoint for Step 3:
     - Extract soil wetness classes (qualitative).
@@ -231,7 +233,7 @@ def run_fall_step():
     print(f"  - Updated: {PROCESSED / 'state_indices.csv'}")
     if not extra.empty:
         print(f"  - Updated: {PROCESSED / 'baseline_observed.csv'}")
-    print(f"  - Figure:  {REPORTS / 'soil_wetness_bars.png'}")
+    print(f"  - Figure:  {REPORTS / 'step3_soil' / 'soil_wetness_bars.png'}")
 
 if __name__ == "__main__":
-    run_fall_step()
+    main()

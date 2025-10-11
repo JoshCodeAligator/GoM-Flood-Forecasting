@@ -56,6 +56,5 @@ def main():
 
     _run_task(args.task, outdir)
 
-
 if __name__ == "__main__":
     main()

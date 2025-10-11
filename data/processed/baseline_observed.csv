@@ -2,6 +2,7 @@ basin,station,asof_date,metric,value,unit,value_SI,unit_SI,source
 Red,Emerson,2024-12-05,flow,2029,cfs,57.451,m³/s,"Fall Report, Table 1"
 Red,Ste. Agathe,2024-12-05,flow,2913,cfs,82.502,m³/s,"Fall Report, Table 1"
 Red,James Ave,2024-12-05,level,0.84,ft,0.256,m,"Fall Report, Table 1"
+Red,Selkirk,2024-12-05,flow,4200,cfs,118.931,m³/s,"Fall Report, Table 1"
 Assiniboine,Russell,2024-12-05,flow,262,cfs,7.419,m³/s,"Fall Report, Table 1"
 Assiniboine,Brandon,2024-12-05,flow,649,cfs,18.379,m³/s,"Fall Report, Table 1"
 Assiniboine,Headingley,2024-12-05,flow,796,cfs,22.540,m³/s,"Fall Report, Table 1"

@@ -1,5 +1,4 @@
-
-
+from __future__ import annotations
 """
 Step 5 – Flood Outlooks (Scenario Benchmarks)
 
@@ -12,11 +11,11 @@ What this module does
 Run:
     python -m hydro_pipeline.outlooks --station Emerson --days 120
     python -m hydro_pipeline.outlooks --station "James Ave" --metric level
+    python -m hydro_pipeline.outlooks --station all
 
 Outputs:
-    reports/figures/{station}_{metric}_scenarios.png
+    reports/figures/step5/{station}_{metric}_scenarios.png
 """
-from __future__ import annotations
 import argparse
 from pathlib import Path
 import pandas as pd
@@ -29,22 +28,20 @@ from .io import (
 )
 from .visualize import plot_bands
 
-# -----------------------------
-# Helpers
-# -----------------------------
+STEP5_DIR = REPORTS / "step5_outlooks"
+STEP5_DIR.mkdir(parents=True, exist_ok=True)
 
 FLOW_STATIONS = {
-    # Red River (flow):
     "Emerson": {"metric": "flow"},
     "Ste. Agathe": {"metric": "flow"},
+    "Selkirk": {"metric": "flow"},
 }
 LEVEL_STATIONS = {
-    # Red River (level):
     "James Ave": {"metric": "level"},
+    "Lockport": {"metric": "level"},
+    "Breezy Point": {"metric": "level"},
 }
-
 VALID_STATIONS = {**FLOW_STATIONS, **LEVEL_STATIONS}
-
 
 def _pick_metric_for_station(station: str, metric: str | None) -> str:
     """Return the metric to use ("flow" or "level"). If user did not
@@ -56,9 +53,7 @@ def _pick_metric_for_station(station: str, metric: str | None) -> str:
         return "flow"
     if station in LEVEL_STATIONS:
         return "level"
-    # default to flow
     return "flow"
-
 
 def _scenario_band_for_station(scen_df: pd.DataFrame, station: str, metric: str) -> pd.DataFrame:
     """Return a tiny DataFrame with columns [scenario, percentile, value_SI]
@@ -90,26 +85,25 @@ def _scenario_band_for_station(scen_df: pd.DataFrame, station: str, metric: str)
 
     return sub
 
-
-# -----------------------------
-# Main
-# -----------------------------
-
 def run(station: str, metric: str | None, days: int) -> Path:
     metric = _pick_metric_for_station(station, metric)
 
-    # 1) Observed series (historical + API last-30d extension)
+    # 1) Observed series (historical + API extension)
     hist_df = load_historical_flows()
-    obs_df = extend_with_current(hist_df, days=days)
+    all_df, _cur = extend_with_current(hist_df)  # io.extend_with_current returns (all_df, current_df)
 
-    # Keep only this station/metric; sort by date
+    # Restrict to requested station/metric and last N days
+    today = pd.Timestamp.today().normalize()
+    start = (today - pd.Timedelta(days=days-1)) if days and days > 0 else None
     obs_filt = (
-        obs_df.query("station == @station and metric == @metric")[
+        all_df.query("station == @station and metric == @metric")[
             ["date", "station", "metric", "value_SI", "unit_SI", "source"]
         ]
         .sort_values("date")
-        .reset_index(drop=True)
     )
+    if start is not None and not obs_filt.empty:
+        obs_filt = obs_filt[obs_filt["date"] >= start]
+    obs_filt = obs_filt.reset_index(drop=True)
 
     if obs_filt.empty:
         raise SystemExit(f"No observed data found for station={station!r}, metric={metric!r}.")
@@ -126,8 +120,15 @@ def run(station: str, metric: str | None, days: int) -> Path:
     ylabel = "Flow (m³/s)" if metric == "flow" else "Level (m)"
     title = f"{station} — Observed vs Forecast Bands"
 
-    out_path = REPORTS / f"{station.replace(' ', '_').lower()}_{metric}_scenarios.png"
-    out_path.parent.mkdir(parents=True, exist_ok=True)
+    station_slug = station.replace(' ', '_').lower()
+    out_png = STEP5_DIR / f"{station_slug}_{metric}_scenarios.png"
+    (STEP5_DIR / "data").mkdir(parents=True, exist_ok=True)
+    
+    # Save the exact inputs we used for traceability
+    obs_csv = STEP5_DIR / "data" / f"{station_slug}_{metric}_observed.csv"
+    bands_csv = STEP5_DIR / "data" / f"{station_slug}_{metric}_bands.csv"
+    obs_filt.to_csv(obs_csv, index=False)
+    bands.to_csv(bands_csv, index=False)
 
     plot_bands(
         df_obs=obs_filt,
@@ -136,22 +137,39 @@ def run(station: str, metric: str | None, days: int) -> Path:
         bands_df=bands,
         ylabel=ylabel,
         title=title,
-        out_path=out_path,
-        freeze_marker=None,  # Optional: pass a marker dict if you want to annotate freeze-up
+        out_path=out_png,
+        freeze_marker=None,
     )
 
-    return out_path
+    return out_png
 
+def run_all(days: int) -> list[Path]:
+    outputs: list[Path] = []
+    for st, meta in VALID_STATIONS.items():
+        try:
+            outputs.append(run(st, meta.get("metric"), days))
+        except SystemExit as e:
+            print(f"[WARN] {st}: {e}")
+    return outputs
 
-def main():
+def main(outdir=None):
     p = argparse.ArgumentParser(description="Step 5 – Outlook scenario comparison plots")
-    p.add_argument("--station", default="Emerson", help="Station name (e.g., Emerson, Ste. Agathe, James Ave)")
+    p.add_argument("--station", default="Emerson", help="Station name (e.g., Emerson, Ste. Agathe, James Ave, Lockport, Selkirk, Breezy Point, or 'all')")
     p.add_argument("--metric", choices=["flow", "level"], default=None, help="Override metric (flow|level)")
     p.add_argument("--days", type=int, default=120, help="Observed window (days) to include")
     args = p.parse_args()
 
-    out = run(args.station, args.metric, args.days)
-    print(f"[OK] Wrote {out}")
+    if args.station.lower() == "all":
+        outs = run_all(args.days)
+        if outs:
+            print("[OK] Wrote:")
+            for pth in outs:
+                print("  ", pth)
+        else:
+            print("[WARN] No outputs produced (no matching data/bands).")
+    else:
+        out = run(args.station, args.metric, args.days)
+        print(f"[OK] Wrote {out}")
 
 
 if __name__ == "__main__":

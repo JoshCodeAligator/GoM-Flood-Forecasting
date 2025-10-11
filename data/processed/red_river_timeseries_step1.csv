@@ -451,8 +451,7 @@ Breezy Point,2024-10-28,level,216.947,m,breezy-point.csv
 Breezy Point,2024-10-29,level,217.255,m,breezy-point.csv
 Breezy Point,2024-10-30,level,217.438,m,breezy-point.csv
 Breezy Point,2024-10-31,level,217.276,m,breezy-point.csv
-Breezy Point,2025-09-09,level,217.059,m,api_realtime
-Breezy Point,2025-09-10,level,217.135,m,api_realtime
+Breezy Point,2025-09-10,level,217.176,m,api_realtime
 Breezy Point,2025-09-11,level,217.065,m,api_realtime
 Breezy Point,2025-09-12,level,216.94,m,api_realtime
 Breezy Point,2025-09-13,level,217.166,m,api_realtime
@@ -481,6 +480,7 @@ Breezy Point,2025-10-05,level,217.302,m,api_realtime
 Breezy Point,2025-10-06,level,217.662,m,api_realtime
 Breezy Point,2025-10-07,level,217.071,m,api_realtime
 Breezy Point,2025-10-08,level,217.233,m,api_realtime
+Breezy Point,2025-10-10,level,216.863,m,api_realtime
 Emerson,2023-01-01,flow,45.3,m³/s,emerson.csv
 Emerson,2023-01-02,flow,46.0,m³/s,emerson.csv
 Emerson,2023-01-03,flow,46.4,m³/s,emerson.csv
@@ -846,7 +846,6 @@ Emerson,2023-12-28,flow,43.8,m³/s,emerson.csv
 Emerson,2023-12-29,flow,45.6,m³/s,emerson.csv
 Emerson,2023-12-30,flow,48.1,m³/s,emerson.csv
 Emerson,2023-12-31,flow,52.2,m³/s,emerson.csv
-Emerson,2025-09-09,flow,95.1,m³/s,api_realtime
 Emerson,2025-09-10,flow,96.1,m³/s,api_realtime
 Emerson,2025-09-11,flow,96.1,m³/s,api_realtime
 Emerson,2025-09-12,flow,95.1,m³/s,api_realtime
@@ -877,6 +876,38 @@ Emerson,2025-10-06,flow,84.9,m³/s,api_realtime
 Emerson,2025-10-07,flow,84.4,m³/s,api_realtime
 Emerson,2025-10-08,flow,81.4,m³/s,api_realtime
 Emerson,2025-10-09,flow,79.0,m³/s,api_realtime
+Emerson,2025-10-10,flow,79.1,m³/s,api_realtime
+Emerson,2025-09-10,level,228.964,m,api_realtime
+Emerson,2025-09-11,level,228.964,m,api_realtime
+Emerson,2025-09-12,level,228.948,m,api_realtime
+Emerson,2025-09-13,level,228.924,m,api_realtime
+Emerson,2025-09-14,level,228.902,m,api_realtime
+Emerson,2025-09-15,level,228.869,m,api_realtime
+Emerson,2025-09-16,level,228.84,m,api_realtime
+Emerson,2025-09-17,level,228.814,m,api_realtime
+Emerson,2025-09-18,level,228.785,m,api_realtime
+Emerson,2025-09-19,level,228.732,m,api_realtime
+Emerson,2025-09-20,level,228.723,m,api_realtime
+Emerson,2025-09-21,level,228.747,m,api_realtime
+Emerson,2025-09-22,level,228.752,m,api_realtime
+Emerson,2025-09-23,level,228.752,m,api_realtime
+Emerson,2025-09-24,level,228.733,m,api_realtime
+Emerson,2025-09-25,level,228.694,m,api_realtime
+Emerson,2025-09-26,level,228.631,m,api_realtime
+Emerson,2025-09-27,level,228.603,m,api_realtime
+Emerson,2025-09-28,level,228.584,m,api_realtime
+Emerson,2025-09-29,level,228.584,m,api_realtime
+Emerson,2025-09-30,level,228.603,m,api_realtime
+Emerson,2025-10-01,level,228.654,m,api_realtime
+Emerson,2025-10-02,level,228.737,m,api_realtime
+Emerson,2025-10-03,level,228.782,m,api_realtime
+Emerson,2025-10-04,level,228.792,m,api_realtime
+Emerson,2025-10-05,level,228.75,m,api_realtime
+Emerson,2025-10-06,level,228.778,m,api_realtime
+Emerson,2025-10-07,level,228.769,m,api_realtime
+Emerson,2025-10-08,level,228.717,m,api_realtime
+Emerson,2025-10-09,level,228.676,m,api_realtime
+Emerson,2025-10-10,level,228.678,m,api_realtime
 James Ave,2023-01-01,flow,222.053,m³/s,james-ave.csv
 James Ave,2023-01-02,flow,222.043,m³/s,james-ave.csv
 James Ave,2023-01-03,flow,222.047,m³/s,james-ave.csv
@@ -1588,6 +1619,37 @@ James Ave,2024-12-28,flow,221.912,m³/s,james-ave.csv
 James Ave,2024-12-29,flow,221.887,m³/s,james-ave.csv
 James Ave,2024-12-30,flow,221.882,m³/s,james-ave.csv
 James Ave,2024-12-31,flow,221.889,m³/s,james-ave.csv
+James Ave,2025-09-10,level,223.89,m,api_realtime
+James Ave,2025-09-11,level,223.89,m,api_realtime
+James Ave,2025-09-12,level,223.889,m,api_realtime
+James Ave,2025-09-13,level,224.031,m,api_realtime
+James Ave,2025-09-14,level,224.016,m,api_realtime
+James Ave,2025-09-15,level,223.964,m,api_realtime
+James Ave,2025-09-16,level,223.91,m,api_realtime
+James Ave,2025-09-17,level,223.851,m,api_realtime
+James Ave,2025-09-18,level,223.866,m,api_realtime
+James Ave,2025-09-19,level,223.91,m,api_realtime
+James Ave,2025-09-20,level,223.929,m,api_realtime
+James Ave,2025-09-21,level,223.923,m,api_realtime
+James Ave,2025-09-22,level,223.908,m,api_realtime
+James Ave,2025-09-23,level,223.895,m,api_realtime
+James Ave,2025-09-24,level,223.88,m,api_realtime
+James Ave,2025-09-25,level,223.902,m,api_realtime
+James Ave,2025-09-26,level,223.887,m,api_realtime
+James Ave,2025-09-27,level,223.888,m,api_realtime
+James Ave,2025-09-28,level,223.873,m,api_realtime
+James Ave,2025-09-29,level,223.877,m,api_realtime
+James Ave,2025-09-30,level,223.885,m,api_realtime
+James Ave,2025-10-01,level,223.911,m,api_realtime
+James Ave,2025-10-02,level,223.897,m,api_realtime
+James Ave,2025-10-03,level,223.861,m,api_realtime
+James Ave,2025-10-04,level,223.839,m,api_realtime
+James Ave,2025-10-05,level,223.839,m,api_realtime
+James Ave,2025-10-06,level,223.84,m,api_realtime
+James Ave,2025-10-07,level,223.734,m,api_realtime
+James Ave,2025-10-08,level,223.812,m,api_realtime
+James Ave,2025-10-09,level,223.901,m,api_realtime
+James Ave,2025-10-10,level,223.43,m,api_realtime
 Lockport,2023-03-01,level,219.885,m,lockport-upstream.csv
 Lockport,2023-03-02,level,219.892,m,lockport-upstream.csv
 Lockport,2023-03-03,level,219.9,m,lockport-upstream.csv
@@ -2074,8 +2136,7 @@ Lockport,2024-10-28,level,221.543,m,lockport-upstream.csv
 Lockport,2024-10-29,level,221.395,m,lockport-upstream.csv
 Lockport,2024-10-30,level,221.285,m,lockport-upstream.csv
 Lockport,2024-10-31,level,220.821,m,lockport-upstream.csv
-Lockport,2025-09-09,level,223.769,m,api_realtime
-Lockport,2025-09-10,level,223.761,m,api_realtime
+Lockport,2025-09-10,level,223.76,m,api_realtime
 Lockport,2025-09-11,level,223.769,m,api_realtime
 Lockport,2025-09-12,level,223.783,m,api_realtime
 Lockport,2025-09-13,level,223.814,m,api_realtime
@@ -2105,6 +2166,7 @@ Lockport,2025-10-06,level,223.608,m,api_realtime
 Lockport,2025-10-07,level,223.599,m,api_realtime
 Lockport,2025-10-08,level,223.675,m,api_realtime
 Lockport,2025-10-09,level,223.764,m,api_realtime
+Lockport,2025-10-10,level,223.735,m,api_realtime
 Selkirk,2023-01-01,flow,115.0,m³/s,selkirk.csv
 Selkirk,2023-01-02,flow,119.0,m³/s,selkirk.csv
 Selkirk,2023-01-03,flow,96.3,m³/s,selkirk.csv
@@ -2470,8 +2532,7 @@ Selkirk,2023-12-28,flow,57.0,m³/s,selkirk.csv
 Selkirk,2023-12-29,flow,63.9,m³/s,selkirk.csv
 Selkirk,2023-12-30,flow,59.1,m³/s,selkirk.csv
 Selkirk,2023-12-31,flow,64.4,m³/s,selkirk.csv
-Selkirk,2025-09-09,flow,173.0,m³/s,api_realtime
-Selkirk,2025-09-10,flow,177.0,m³/s,api_realtime
+Selkirk,2025-09-10,flow,184.0,m³/s,api_realtime
 Selkirk,2025-09-11,flow,126.0,m³/s,api_realtime
 Selkirk,2025-09-12,flow,183.0,m³/s,api_realtime
 Selkirk,2025-09-13,flow,168.0,m³/s,api_realtime
@@ -2488,6 +2549,25 @@ Selkirk,2025-09-23,flow,174.0,m³/s,api_realtime
 Selkirk,2025-09-24,flow,179.0,m³/s,api_realtime
 Selkirk,2025-09-25,flow,172.0,m³/s,api_realtime
 Selkirk,2025-09-26,flow,147.0,m³/s,api_realtime
+Selkirk,2025-09-27,flow,199.0,m³/s,api_realtime
+Selkirk,2025-09-10,level,217.472,m,api_realtime
+Selkirk,2025-09-11,level,217.382,m,api_realtime
+Selkirk,2025-09-12,level,217.269,m,api_realtime
+Selkirk,2025-09-13,level,217.501,m,api_realtime
+Selkirk,2025-09-14,level,217.466,m,api_realtime
+Selkirk,2025-09-15,level,217.4,m,api_realtime
+Selkirk,2025-09-16,level,217.267,m,api_realtime
+Selkirk,2025-09-17,level,217.605,m,api_realtime
+Selkirk,2025-09-18,level,217.624,m,api_realtime
+Selkirk,2025-09-19,level,217.515,m,api_realtime
+Selkirk,2025-09-20,level,217.409,m,api_realtime
+Selkirk,2025-09-21,level,217.525,m,api_realtime
+Selkirk,2025-09-22,level,217.446,m,api_realtime
+Selkirk,2025-09-23,level,217.315,m,api_realtime
+Selkirk,2025-09-24,level,217.59,m,api_realtime
+Selkirk,2025-09-25,level,217.322,m,api_realtime
+Selkirk,2025-09-26,level,217.782,m,api_realtime
+Selkirk,2025-09-27,level,217.197,m,api_realtime
 Ste. Agathe,2023-01-01,flow,47.0,m³/s,ste-agathe.csv
 Ste. Agathe,2023-01-02,flow,47.3,m³/s,ste-agathe.csv
 Ste. Agathe,2023-01-03,flow,47.4,m³/s,ste-agathe.csv
@@ -2853,7 +2933,6 @@ Ste. Agathe,2023-12-28,flow,44.8,m³/s,ste-agathe.csv
 Ste. Agathe,2023-12-29,flow,46.4,m³/s,ste-agathe.csv
 Ste. Agathe,2023-12-30,flow,48.3,m³/s,ste-agathe.csv
 Ste. Agathe,2023-12-31,flow,50.5,m³/s,ste-agathe.csv
-Ste. Agathe,2025-09-09,flow,111.0,m³/s,api_realtime
 Ste. Agathe,2025-09-10,flow,110.0,m³/s,api_realtime
 Ste. Agathe,2025-09-11,flow,111.0,m³/s,api_realtime
 Ste. Agathe,2025-09-12,flow,111.0,m³/s,api_realtime
@@ -2884,3 +2963,35 @@ Ste. Agathe,2025-10-06,flow,104.0,m³/s,api_realtime
 Ste. Agathe,2025-10-07,flow,97.4,m³/s,api_realtime
 Ste. Agathe,2025-10-08,flow,96.9,m³/s,api_realtime
 Ste. Agathe,2025-10-09,flow,98.3,m³/s,api_realtime
+Ste. Agathe,2025-10-10,flow,99.3,m³/s,api_realtime
+Ste. Agathe,2025-09-10,level,224.376,m,api_realtime
+Ste. Agathe,2025-09-11,level,224.38,m,api_realtime
+Ste. Agathe,2025-09-12,level,224.382,m,api_realtime
+Ste. Agathe,2025-09-13,level,224.508,m,api_realtime
+Ste. Agathe,2025-09-14,level,224.618,m,api_realtime
+Ste. Agathe,2025-09-15,level,224.532,m,api_realtime
+Ste. Agathe,2025-09-16,level,224.432,m,api_realtime
+Ste. Agathe,2025-09-17,level,224.373,m,api_realtime
+Ste. Agathe,2025-09-18,level,224.336,m,api_realtime
+Ste. Agathe,2025-09-19,level,224.311,m,api_realtime
+Ste. Agathe,2025-09-20,level,224.309,m,api_realtime
+Ste. Agathe,2025-09-21,level,224.344,m,api_realtime
+Ste. Agathe,2025-09-22,level,224.377,m,api_realtime
+Ste. Agathe,2025-09-23,level,224.367,m,api_realtime
+Ste. Agathe,2025-09-24,level,224.346,m,api_realtime
+Ste. Agathe,2025-09-25,level,224.327,m,api_realtime
+Ste. Agathe,2025-09-26,level,224.304,m,api_realtime
+Ste. Agathe,2025-09-27,level,224.243,m,api_realtime
+Ste. Agathe,2025-09-28,level,224.205,m,api_realtime
+Ste. Agathe,2025-09-29,level,224.175,m,api_realtime
+Ste. Agathe,2025-09-30,level,224.186,m,api_realtime
+Ste. Agathe,2025-10-01,level,224.187,m,api_realtime
+Ste. Agathe,2025-10-02,level,224.197,m,api_realtime
+Ste. Agathe,2025-10-03,level,224.235,m,api_realtime
+Ste. Agathe,2025-10-04,level,224.269,m,api_realtime
+Ste. Agathe,2025-10-05,level,224.284,m,api_realtime
+Ste. Agathe,2025-10-06,level,224.317,m,api_realtime
+Ste. Agathe,2025-10-07,level,224.249,m,api_realtime
+Ste. Agathe,2025-10-08,level,224.245,m,api_realtime
+Ste. Agathe,2025-10-09,level,224.258,m,api_realtime
+Ste. Agathe,2025-10-10,level,224.268,m,api_realtime

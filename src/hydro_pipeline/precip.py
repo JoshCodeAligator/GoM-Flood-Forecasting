@@ -1,5 +1,4 @@
 from __future__ import annotations
-from pathlib import Path
 """
 Step 2 – Precipitation Context in relation to flood forecasting.
 
@@ -24,9 +23,9 @@ Notes:
 """
 import re
 from typing import Optional, Iterable
-
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
+from pathlib import Path
 import pandas as pd
 import geopandas as gpd
 from .io import DATA, MAPS, RESOURCES, REPORTS, PROCESSED, reports_path, load_basins, load_stations

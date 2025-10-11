@@ -4,6 +4,13 @@ import pandas as pd
 import geopandas as gpd
 from typing import Optional
 
+import warnings
+try:
+    from shapely.geometry import box
+except Exception:
+    box = None
+
+
 # ABSOLUTE ROOT PATHS DEFINED FOR CORRECT DATA STORAGE AND USE
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data" 
@@ -12,8 +19,53 @@ PROCESSED = DATA / "processed"
 MAPS = DATA / "raw" / "precip-maps"
 RESOURCES = ROOT / "basin-resources"
 
-# ---- Red River stations (authoritative) ----
+# Default on-disk candidates for the Manitoba basins layer
+DEFAULT_BASIN_PATHS = [
+    DATA / "raw" / "basin-resources" / "shapefiles" / "500k_shp" / "500k_hyd-py.shp",
+    DATA / "raw" / "basin-resources" / "shapefiles" / "500k_shp" / "500k_hyd-py.geojson",
+]
 
+# Pilot Red River station catalog (lon/lat used for fallback bbox)
+STATION_CATALOG = [
+    {"station": "Emerson",      "station_number": "05OC001", "lon": -97.208, "lat": 49.000},
+    {"station": "Ste. Agathe",  "station_number": "05OC012", "lon": -97.138, "lat": 49.581},
+    {"station": "James Ave",    "station_number": "05OJ015", "lon": -97.139, "lat": 49.899},
+    {"station": "Lockport",     "station_number": "05OJ021", "lon": -96.938, "lat": 50.087},
+    {"station": "Selkirk",      "station_number": "05OJ005", "lon": -96.883, "lat": 50.143},
+    {"station": "Breezy Point", "station_number": "05OJ022", "lon": -96.851, "lat": 50.278},
+]
+
+def _require_geopandas():
+    """Ensure GeoPandas/Shapely are available for basin/station geometry ops."""
+    if gpd is None:
+        raise RuntimeError(
+            "GeoPandas/Shapely are required for basin loading.\n"
+            "Install with: pip install geopandas shapely pyproj fiona rtree"
+        )
+    if box is None:
+        raise RuntimeError(
+            "shapely is required for creating fallback geometries.\n"
+            "Install with: pip install shapely"
+        )
+
+def build_stations_gdf(catalog: list[dict]) -> "gpd.GeoDataFrame":
+    """Create a GeoDataFrame from a simple station catalog (lon/lat)."""
+    _require_geopandas()
+    df = pd.DataFrame(catalog)
+    gdf = gpd.GeoDataFrame(
+        df,
+        geometry=gpd.points_from_xy(df["lon"], df["lat"]),
+        crs="EPSG:4326",
+    )
+    return gdf
+
+def _first_existing_path(paths):
+    for p in paths:
+        if p.exists():
+            return p
+    return None
+
+# ---- Red River stations (authoritative) ----
 STATIONS_ID_TO_NAME = {
     "05OC001": "Emerson",
     "05OC012": "Ste. Agathe",
@@ -66,6 +118,7 @@ def load_baseline_markers():
     base = load_baseline().rename(columns={"asof_date": "date"})
     base["date"] = pd.to_datetime(base["date"]).dt.normalize()
     base = base[["station", "date", "metric", "value_SI", "unit_SI", "source"]]
+    
     # Keep only stations we care about
     base = base[base["station"].isin(STATIONS_NAME_TO_ID.keys())].copy()
     out = {}
@@ -160,44 +213,36 @@ def load_historical_flows():
 
 # Extends Historical Data with Current Data Measured in the last 30+ days from ECCC API
 def extend_with_current(historical_df: pd.DataFrame, date_end: Optional[str] = None):
-    """
-    For each station/metric in historical_df, fetch API data from the day after the last
-    historical point up to date_end (default today) and merge de-duplicated.
-    """
     date_end = (pd.Timestamp.today().normalize().strftime("%Y-%m-%d")
                 if date_end is None else date_end)
 
-    frames = []
-    # Find last date per (station, metric) that we already have
-    last = (historical_df
-            .groupby(["station", "metric"])["date"]
-            .max()
-            .dropna())
+    # Start with historical (may be empty for some (station,metric))
+    frames = [historical_df]
 
-    for (station_name, metric), last_dt in last.items():
-        station_id = STATIONS_NAME_TO_ID.get(station_name)
-        if not station_id:
-            continue
-        # Pull both flow & level, then keep rows matching this metric
+    for station_name, station_id in STATIONS_NAME_TO_ID.items():
+        # Decide a reasonable start date per station:
+        # if we have any history for this station, start the day after its max date;
+        # otherwise, fetch a recent window (e.g., 120 days) to seed it.
+        hist_st = historical_df[historical_df["station"] == station_name]
+        if not hist_st.empty:
+            start_date = (hist_st["date"].max() + pd.Timedelta(days=1)).strftime("%Y-%m-%d")
+        else:
+            start_date = (pd.Timestamp(date_end) - pd.Timedelta(days=119)).strftime("%Y-%m-%d")  # ~4 months
+
         df_cur = fetch_current_df(
             station_number=station_id,
             station_name=station_name,
-            start_date=(last_dt + pd.Timedelta(days=1)).strftime("%Y-%m-%d"),
+            start_date=start_date,
             end_date=date_end,
         )
         if not df_cur.empty:
-            df_cur = df_cur.query("metric == @metric")[["station","date","metric","value_SI","unit_SI","source"]]
-            frames.append(df_cur)
+            frames.append(df_cur[["station","date","metric","value_SI","unit_SI","source"]])
 
-    current_df = pd.concat(frames, ignore_index=True) if frames else historical_df.iloc[0:0]
-    cols = ["station","date","metric","value_SI","unit_SI","source"]
-    all_df = (pd.concat([historical_df, current_df], ignore_index=True)
+    all_df = (pd.concat(frames, ignore_index=True)
                 .sort_values(["station","metric","date"])
                 .drop_duplicates(subset=["station","metric","date"]))
-    all_df = all_df[cols]
-    current_df = current_df[cols] if not current_df.empty else current_df
-    print(current_df)
-    return all_df, current_df
+    cols = ["station","date","metric","value_SI","unit_SI","source"]
+    return all_df[cols], all_df[cols][all_df.index >= len(historical_df)]  
 
 # Fetch a fixed last-N-days window and merge with historical. More Specific Variant of extend_with_current
 def extend_with_current_last_n_days(historical_df: pd.DataFrame, n: int = 30):
@@ -345,7 +390,6 @@ def load_basins(path: Optional[Path] = None) -> gpd.GeoDataFrame:
 
     return gdf
 
-
 def load_stations(path: Optional[Path] = None) -> pd.DataFrame:
     """
     Load a minimal stations CSV with columns:
@@ -384,6 +428,47 @@ def load_stations(path: Optional[Path] = None) -> pd.DataFrame:
         merged["basin"] = "Red"
 
     return merged[["station","station_id","lon","lat","basin"]]
+
+#########################################################################
+### STEP 4 — Load basin polygons (or fallback bbox) for overlay mapping, reproject to EPSG:4326, and enable station→basin joins
+def load_basin_layer(basin_path: Path | None = None) -> gpd.GeoDataFrame:
+    """
+    Load the Manitoba basins layer. Returns a GeoDataFrame in WGS84 (EPSG:4326).
+    If the file isn't found, builds a minimal bounding box around pilot stations
+    as a stand-in so the rest of the pipeline still runs.
+    """
+    _require_geopandas()
+
+    if basin_path is None:
+        basin_path = _first_existing_path(DEFAULT_BASIN_PATHS)
+
+    if basin_path and basin_path.exists():
+        gdf = gpd.read_file(basin_path)
+        if gdf.crs is None:
+            # Assume WGS84 if missing
+            warnings.warn("Basin layer has no CRS; assuming WGS84 (EPSG:4326).")
+            gdf.set_crs(epsg=4326, inplace=True)
+        else:
+            gdf = gdf.to_crs(epsg=4326)
+        return gdf
+
+    # Fallback: create a simple bounding box polygon around the pilot stations
+    warnings.warn(
+        "No basin layer found. Using a simple bounding box around stations as a fallback."
+    )
+    stations = build_stations_gdf(STATION_CATALOG)
+    minx, miny, maxx, maxy = (
+        stations.geometry.x.min() - 0.3,
+        stations.geometry.y.min() - 0.3,
+        stations.geometry.x.max() + 0.3,
+        stations.geometry.y.max() + 0.3,
+    )
+    poly = gpd.GeoDataFrame(
+        {"BASIN_NAME": ["Red River (bbox fallback)"]},
+        geometry=[box(minx, miny, maxx, maxy)],
+        crs="EPSG:4326",
+    )
+    return poly
 
 
 ### MAIN IMPLEMENTATION CODE  

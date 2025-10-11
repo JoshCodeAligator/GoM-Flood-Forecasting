@@ -1,10 +1,10 @@
 basin,asof_date,metric,value,unit,value_SI,unit_SI,note,source
-Red,2024-12-05,soil_wetness_class,above_normal_to_well_above_normal,class,N/A,,Portions of Red River basin in MB & US,"Fall Report | Page 15 | Soil Moisture at Freeze-up"
-Assiniboine,2024-12-05,soil_wetness_class,near_normal_to_below_normal,class,N/A,,Most MB basins,"Fall Report | Page 15 | Soil Moisture at Freeze-up"
-Assiniboine,2025-03-20,swe,69,mm,0.069,m,"Shellmouth Reservoir basin average","Outlook Mar 2025 | Page 13 | Snow Water Equivalent"
-Red,2025-03-20,swe,0,mm,0,m,"Most of Southern MB, including US Red basin (Very little snow left)","Outlook Mar 2025 | Page 13 | Snow Water Equivalent"
-Assiniboine,2025-03-20,reservoir_level,1388.7,ft,423.28,m,"Shellmouth Reservoir current level","Outlook Mar 2025 | Page 23 | Table 2 (Current Level)"
-Assiniboine,2025-03-20,reservoir_outflow,683,cfs,19.3,m³/s,"Shellmouth Reservoir current outflow","Outlook Mar 2025 | Page 30 | Shellmouth Dam Section"
-Assiniboine,2025-03-20,forecasted_inflow_volume,130000,acre-ft,161,Mm³,"Shellmouth Favourable Inflow Volume (p10)","Outlook Mar 2025 | Page 30 | Shellmouth Dam Section"
-Assiniboine,2025-03-20,forecasted_inflow_volume,220000,acre-ft,272,Mm³,"Shellmouth Normal Inflow Volume (p50)","Outlook Mar 2025 | Page 30 | Shellmouth Dam Section"
-Assiniboine,2025-03-20,forecasted_inflow_volume,350000,acre-ft,432,Mm³,"Shellmouth Unfavourable Inflow Volume (p90)","Outlook Mar 2025 | Page 30 | Shellmouth Dam Section"
+Assiniboine,2024-12-05,soil_wetness_class,near_normal_to_below_normal,class,N/A,,Soil Moisture at Freeze-up (parsed/confirmed),Fall Report | Soil Moisture at Freeze-up
+Assiniboine,2025-03-20,forecasted_inflow_volume,350000,acre-ft,432.0,Mm³,Shellmouth Unfavourable Inflow Volume (p90),Outlook Mar 2025 | Page 30 | Shellmouth Dam Section
+Assiniboine,2025-03-20,reservoir_level,1388.7,ft,423.28,m,Shellmouth Reservoir current level,Outlook Mar 2025 | Page 23 | Table 2 (Current Level)
+Assiniboine,2025-03-20,reservoir_outflow,683,cfs,19.3,m³/s,Shellmouth Reservoir current outflow,Outlook Mar 2025 | Page 30 | Shellmouth Dam Section
+Assiniboine,2025-03-20,swe,69,mm,0.069,m,Shellmouth Reservoir basin average,Outlook Mar 2025 | Page 13 | Snow Water Equivalent
+Assiniboine,2025-03-20,forecasted_inflow_volume,130000,acre-ft,161,Mm³,Shellmouth Favourable Inflow Volume (p10),Outlook Mar 2025 | Page 30 | Shellmouth Dam Section
+Assiniboine,2025-03-20,forecasted_inflow_volume,220000,acre-ft,272,Mm³,Shellmouth Normal Inflow Volume (p50),Outlook Mar 2025 | Page 30 | Shellmouth Dam Section
+Red,2024-12-05,soil_wetness_class,above_normal_to_well_above_normal,class,N/A,,Soil Moisture at Freeze-up (parsed/confirmed),Fall Report | Soil Moisture at Freeze-up
+Red,2025-03-20,swe,0,mm,0.0,m,"Most of Southern MB, including US Red basin (Very little snow left)",Outlook Mar 2025 | Page 13 | Snow Water Equivalent

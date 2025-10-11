@@ -1,0 +1,4 @@
+station,scenario,percentile,metric,value_SI,unit_SI
+Emerson,favourable,p10,peak_flow,291.663,m³/s
+Emerson,normal,p50,peak_flow,586.138,m³/s
+Emerson,unfavourable,p90,peak_flow,993.882,m³/s
